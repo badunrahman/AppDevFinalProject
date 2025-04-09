@@ -1,9 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\2289453\\source\\repos\\StudentManagementSystem\\",
+  "WorkspaceRootPath": "C:\\Users\\2289453\\Documents\\AppDevFinalProject\\StudentManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|c:\\users\\2289453\\source\\repos\\studentmanagementsystem\\studentmanagementsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|c:\\users\\2289453\\documents\\appdevfinalproject\\studentmanagementsystem\\studentmanagementsystem\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|c:\\users\\2289453\\documents\\appdevfinalproject\\studentmanagementsystem\\studentmanagementsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -19,10 +23,22 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Form2.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\2289453\\Documents\\AppDevFinalProject\\StudentManagementSystem\\StudentManagementSystem\\Form2.cs",
+              "RelativeDocumentMoniker": "StudentManagementSystem\\Form2.cs",
+              "ToolTip": "C:\\Users\\2289453\\Documents\\AppDevFinalProject\\StudentManagementSystem\\StudentManagementSystem\\Form2.cs [Design]",
+              "RelativeToolTip": "StudentManagementSystem\\Form2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T19:52:16.137Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\2289453\\source\\repos\\StudentManagementSystem\\StudentManagementSystem\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\2289453\\Documents\\AppDevFinalProject\\StudentManagementSystem\\StudentManagementSystem\\Form1.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Form1.cs",
-              "ToolTip": "C:\\Users\\2289453\\source\\repos\\StudentManagementSystem\\StudentManagementSystem\\Form1.cs [Design]",
+              "ToolTip": "C:\\Users\\2289453\\Documents\\AppDevFinalProject\\StudentManagementSystem\\StudentManagementSystem\\Form1.cs [Design]",
               "RelativeToolTip": "StudentManagementSystem\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-09T17:38:19.951Z",
