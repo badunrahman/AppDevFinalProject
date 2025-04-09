@@ -1,0 +1,185 @@
+﻿namespace StudentManagementSystem
+{
+    partial class loginPageForm
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(loginPageForm));
+            this.titleLabel = new System.Windows.Forms.Label();
+            this.loginBox = new System.Windows.Forms.GroupBox();
+            this.loginLabel = new System.Windows.Forms.Label();
+            this.usernameTextBox = new System.Windows.Forms.TextBox();
+            this.passwordTextBox = new System.Windows.Forms.TextBox();
+            this.noAccountInfoLabel = new System.Windows.Forms.Label();
+            this.createAccountLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.logInButton = new System.Windows.Forms.Button();
+            this.frenchButton = new System.Windows.Forms.Button();
+            this.lightModeButton = new System.Windows.Forms.Button();
+            this.loginBox.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // titleLabel
+            // 
+            this.titleLabel.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLabel.Location = new System.Drawing.Point(114, 9);
+            this.titleLabel.Name = "titleLabel";
+            this.titleLabel.Size = new System.Drawing.Size(225, 63);
+            this.titleLabel.TabIndex = 0;
+            this.titleLabel.Text = "Student Management System";
+            this.titleLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // loginBox
+            // 
+            this.loginBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.loginBox.Controls.Add(this.logInButton);
+            this.loginBox.Controls.Add(this.createAccountLinkLabel);
+            this.loginBox.Controls.Add(this.noAccountInfoLabel);
+            this.loginBox.Controls.Add(this.passwordTextBox);
+            this.loginBox.Controls.Add(this.usernameTextBox);
+            this.loginBox.Controls.Add(this.loginLabel);
+            this.loginBox.Location = new System.Drawing.Point(28, 75);
+            this.loginBox.Name = "loginBox";
+            this.loginBox.Size = new System.Drawing.Size(403, 187);
+            this.loginBox.TabIndex = 1;
+            this.loginBox.TabStop = false;
+            // 
+            // loginLabel
+            // 
+            this.loginLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginLabel.Location = new System.Drawing.Point(148, 17);
+            this.loginLabel.Name = "loginLabel";
+            this.loginLabel.Size = new System.Drawing.Size(100, 23);
+            this.loginLabel.TabIndex = 2;
+            this.loginLabel.Text = "Login";
+            this.loginLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // usernameTextBox
+            // 
+            this.usernameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.usernameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameTextBox.Location = new System.Drawing.Point(91, 53);
+            this.usernameTextBox.Name = "usernameTextBox";
+            this.usernameTextBox.Size = new System.Drawing.Size(220, 22);
+            this.usernameTextBox.TabIndex = 3;
+            this.usernameTextBox.Text = "Enter your username:";
+            this.usernameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // passwordTextBox
+            // 
+            this.passwordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.passwordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordTextBox.Location = new System.Drawing.Point(91, 91);
+            this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.Size = new System.Drawing.Size(220, 22);
+            this.passwordTextBox.TabIndex = 4;
+            this.passwordTextBox.Text = "Enter your password:";
+            this.passwordTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // noAccountInfoLabel
+            // 
+            this.noAccountInfoLabel.AutoSize = true;
+            this.noAccountInfoLabel.Location = new System.Drawing.Point(88, 125);
+            this.noAccountInfoLabel.Name = "noAccountInfoLabel";
+            this.noAccountInfoLabel.Size = new System.Drawing.Size(122, 13);
+            this.noAccountInfoLabel.TabIndex = 5;
+            this.noAccountInfoLabel.Text = "Don\'t have an account?";
+            // 
+            // createAccountLinkLabel
+            // 
+            this.createAccountLinkLabel.AutoSize = true;
+            this.createAccountLinkLabel.Location = new System.Drawing.Point(115, 148);
+            this.createAccountLinkLabel.Name = "createAccountLinkLabel";
+            this.createAccountLinkLabel.Size = new System.Drawing.Size(95, 13);
+            this.createAccountLinkLabel.TabIndex = 6;
+            this.createAccountLinkLabel.TabStop = true;
+            this.createAccountLinkLabel.Text = "Create an account";
+            // 
+            // logInButton
+            // 
+            this.logInButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logInButton.Location = new System.Drawing.Point(236, 125);
+            this.logInButton.Name = "logInButton";
+            this.logInButton.Size = new System.Drawing.Size(75, 36);
+            this.logInButton.TabIndex = 7;
+            this.logInButton.Text = "Log In";
+            this.logInButton.UseVisualStyleBackColor = true;
+            // 
+            // frenchButton
+            // 
+            this.frenchButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("frenchButton.BackgroundImage")));
+            this.frenchButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.frenchButton.ForeColor = System.Drawing.Color.Silver;
+            this.frenchButton.Location = new System.Drawing.Point(360, 12);
+            this.frenchButton.Name = "frenchButton";
+            this.frenchButton.Size = new System.Drawing.Size(31, 30);
+            this.frenchButton.TabIndex = 2;
+            this.frenchButton.UseVisualStyleBackColor = true;
+            // 
+            // lightModeButton
+            // 
+            this.lightModeButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lightModeButton.BackgroundImage")));
+            this.lightModeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.lightModeButton.ForeColor = System.Drawing.Color.Silver;
+            this.lightModeButton.Location = new System.Drawing.Point(400, 12);
+            this.lightModeButton.Name = "lightModeButton";
+            this.lightModeButton.Size = new System.Drawing.Size(31, 30);
+            this.lightModeButton.TabIndex = 3;
+            this.lightModeButton.UseVisualStyleBackColor = true;
+            // 
+            // loginPageForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Silver;
+            this.ClientSize = new System.Drawing.Size(451, 293);
+            this.Controls.Add(this.lightModeButton);
+            this.Controls.Add(this.frenchButton);
+            this.Controls.Add(this.loginBox);
+            this.Controls.Add(this.titleLabel);
+            this.Name = "loginPageForm";
+            this.Text = "Login Page";
+            this.loginBox.ResumeLayout(false);
+            this.loginBox.PerformLayout();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label titleLabel;
+        private System.Windows.Forms.GroupBox loginBox;
+        private System.Windows.Forms.Label loginLabel;
+        private System.Windows.Forms.TextBox usernameTextBox;
+        private System.Windows.Forms.TextBox passwordTextBox;
+        private System.Windows.Forms.Button logInButton;
+        private System.Windows.Forms.LinkLabel createAccountLinkLabel;
+        private System.Windows.Forms.Label noAccountInfoLabel;
+        private System.Windows.Forms.Button frenchButton;
+        private System.Windows.Forms.Button lightModeButton;
+    }
+}
+
