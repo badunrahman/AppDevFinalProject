@@ -8,3 +8,14 @@ C:\Users\2289453\source\repos\StudentManagementSystem\StudentManagementSystem\ob
 C:\Users\2289453\source\repos\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.csproj.CoreCompileInputs.cache
 C:\Users\2289453\source\repos\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.exe
 C:\Users\2289453\source\repos\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.pdb
+C:\Users\Kukes\OneDrive\Documents\GitHub\AppDevFinalProject\StudentManagementSystem\StudentManagementSystem\bin\Debug\StudentManagementSystem.exe.config
+C:\Users\Kukes\OneDrive\Documents\GitHub\AppDevFinalProject\StudentManagementSystem\StudentManagementSystem\bin\Debug\StudentManagementSystem.exe
+C:\Users\Kukes\OneDrive\Documents\GitHub\AppDevFinalProject\StudentManagementSystem\StudentManagementSystem\bin\Debug\StudentManagementSystem.pdb
+C:\Users\Kukes\OneDrive\Documents\GitHub\AppDevFinalProject\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.csproj.AssemblyReference.cache
+C:\Users\Kukes\OneDrive\Documents\GitHub\AppDevFinalProject\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.loginPageForm.resources
+C:\Users\Kukes\OneDrive\Documents\GitHub\AppDevFinalProject\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.createAccountForm.resources
+C:\Users\Kukes\OneDrive\Documents\GitHub\AppDevFinalProject\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.Properties.Resources.resources
+C:\Users\Kukes\OneDrive\Documents\GitHub\AppDevFinalProject\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.csproj.GenerateResource.cache
+C:\Users\Kukes\OneDrive\Documents\GitHub\AppDevFinalProject\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\Kukes\OneDrive\Documents\GitHub\AppDevFinalProject\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.exe
+C:\Users\Kukes\OneDrive\Documents\GitHub\AppDevFinalProject\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.pdb
