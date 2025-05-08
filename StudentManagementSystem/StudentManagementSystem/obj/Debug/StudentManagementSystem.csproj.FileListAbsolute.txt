@@ -19,3 +19,16 @@ C:\Users\Kukes\OneDrive\Documents\GitHub\AppDevFinalProject\StudentManagementSys
 C:\Users\Kukes\OneDrive\Documents\GitHub\AppDevFinalProject\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.csproj.CoreCompileInputs.cache
 C:\Users\Kukes\OneDrive\Documents\GitHub\AppDevFinalProject\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.exe
 C:\Users\Kukes\OneDrive\Documents\GitHub\AppDevFinalProject\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.pdb
+D:\Application Dev\AppDevFinalProject-main\AppDevFinalProject-main\StudentManagementSystem\StudentManagementSystem\bin\Debug\Database\StudentDB.mdf
+D:\Application Dev\AppDevFinalProject-main\AppDevFinalProject-main\StudentManagementSystem\StudentManagementSystem\bin\Debug\Database\StudentDB_log.ldf
+D:\Application Dev\AppDevFinalProject-main\AppDevFinalProject-main\StudentManagementSystem\StudentManagementSystem\bin\Debug\StudentManagementSystem.exe.config
+D:\Application Dev\AppDevFinalProject-main\AppDevFinalProject-main\StudentManagementSystem\StudentManagementSystem\bin\Debug\StudentManagementSystem.exe
+D:\Application Dev\AppDevFinalProject-main\AppDevFinalProject-main\StudentManagementSystem\StudentManagementSystem\bin\Debug\StudentManagementSystem.pdb
+D:\Application Dev\AppDevFinalProject-main\AppDevFinalProject-main\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.csproj.AssemblyReference.cache
+D:\Application Dev\AppDevFinalProject-main\AppDevFinalProject-main\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.loginPageForm.resources
+D:\Application Dev\AppDevFinalProject-main\AppDevFinalProject-main\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.createAccountForm.resources
+D:\Application Dev\AppDevFinalProject-main\AppDevFinalProject-main\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.Properties.Resources.resources
+D:\Application Dev\AppDevFinalProject-main\AppDevFinalProject-main\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.csproj.GenerateResource.cache
+D:\Application Dev\AppDevFinalProject-main\AppDevFinalProject-main\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.csproj.CoreCompileInputs.cache
+D:\Application Dev\AppDevFinalProject-main\AppDevFinalProject-main\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.exe
+D:\Application Dev\AppDevFinalProject-main\AppDevFinalProject-main\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.pdb

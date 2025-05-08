@@ -1,14 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Kukes\\OneDrive\\Documents\\GitHub\\AppDevFinalProject\\StudentManagementSystem\\",
+  "WorkspaceRootPath": "D:\\Application Dev\\AppDevFinalProject-main\\AppDevFinalProject-main\\StudentManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|c:\\users\\kukes\\onedrive\\documents\\github\\appdevfinalproject\\studentmanagementsystem\\studentmanagementsystem\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|d:\\application dev\\appdevfinalproject-main\\appdevfinalproject-main\\studentmanagementsystem\\studentmanagementsystem\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|C:\\Users\\Kukes\\OneDrive\\Documents\\GitHub\\AppDevFinalProject\\StudentManagementSystem\\studentmanagementsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|d:\\application dev\\appdevfinalproject-main\\appdevfinalproject-main\\studentmanagementsystem\\studentmanagementsystem\\models\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\models\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|d:\\application dev\\appdevfinalproject-main\\appdevfinalproject-main\\studentmanagementsystem\\studentmanagementsystem\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|d:\\application dev\\appdevfinalproject-main\\appdevfinalproject-main\\studentmanagementsystem\\studentmanagementsystem\\models\\grade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\models\\grade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|d:\\application dev\\appdevfinalproject-main\\appdevfinalproject-main\\studentmanagementsystem\\studentmanagementsystem\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|d:\\application dev\\appdevfinalproject-main\\appdevfinalproject-main\\studentmanagementsystem\\studentmanagementsystem\\models\\studenttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\models\\studenttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|d:\\application dev\\appdevfinalproject-main\\appdevfinalproject-main\\studentmanagementsystem\\studentmanagementsystem\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|d:\\application dev\\appdevfinalproject-main\\appdevfinalproject-main\\studentmanagementsystem\\studentmanagementsystem\\models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|d:\\application dev\\appdevfinalproject-main\\appdevfinalproject-main\\studentmanagementsystem\\studentmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|d:\\application dev\\appdevfinalproject-main\\appdevfinalproject-main\\studentmanagementsystem\\studentmanagementsystem\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +50,135 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form2.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Kukes\\OneDrive\\Documents\\GitHub\\AppDevFinalProject\\StudentManagementSystem\\StudentManagementSystem\\Form2.cs",
-              "RelativeDocumentMoniker": "StudentManagementSystem\\Form2.cs",
-              "ToolTip": "C:\\Users\\Kukes\\OneDrive\\Documents\\GitHub\\AppDevFinalProject\\StudentManagementSystem\\StudentManagementSystem\\Form2.cs [Design]",
-              "RelativeToolTip": "StudentManagementSystem\\Form2.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "Feedback.cs",
+              "DocumentMoniker": "D:\\Application Dev\\AppDevFinalProject-main\\AppDevFinalProject-main\\StudentManagementSystem\\StudentManagementSystem\\Models\\Feedback.cs",
+              "RelativeDocumentMoniker": "StudentManagementSystem\\Models\\Feedback.cs",
+              "ToolTip": "D:\\Application Dev\\AppDevFinalProject-main\\AppDevFinalProject-main\\StudentManagementSystem\\StudentManagementSystem\\Models\\Feedback.cs",
+              "RelativeToolTip": "StudentManagementSystem\\Models\\Feedback.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T19:52:16.137Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-08T16:27:31.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Grade.cs",
+              "DocumentMoniker": "D:\\Application Dev\\AppDevFinalProject-main\\AppDevFinalProject-main\\StudentManagementSystem\\StudentManagementSystem\\Models\\Grade.cs",
+              "RelativeDocumentMoniker": "StudentManagementSystem\\Models\\Grade.cs",
+              "ToolTip": "D:\\Application Dev\\AppDevFinalProject-main\\AppDevFinalProject-main\\StudentManagementSystem\\StudentManagementSystem\\Models\\Grade.cs",
+              "RelativeToolTip": "StudentManagementSystem\\Models\\Grade.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowDYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T16:27:18.9Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Kukes\\OneDrive\\Documents\\GitHub\\AppDevFinalProject\\StudentManagementSystem\\StudentManagementSystem\\Form1.cs",
-              "RelativeDocumentMoniker": "StudentManagementSystem\\Form1.cs",
-              "ToolTip": "C:\\Users\\Kukes\\OneDrive\\Documents\\GitHub\\AppDevFinalProject\\StudentManagementSystem\\StudentManagementSystem\\Form1.cs [Design]",
-              "RelativeToolTip": "StudentManagementSystem\\Form1.cs [Design]",
+              "Title": "Enrollment.cs",
+              "DocumentMoniker": "D:\\Application Dev\\AppDevFinalProject-main\\AppDevFinalProject-main\\StudentManagementSystem\\StudentManagementSystem\\Models\\Enrollment.cs",
+              "RelativeDocumentMoniker": "StudentManagementSystem\\Models\\Enrollment.cs",
+              "ToolTip": "D:\\Application Dev\\AppDevFinalProject-main\\AppDevFinalProject-main\\StudentManagementSystem\\StudentManagementSystem\\Models\\Enrollment.cs",
+              "RelativeToolTip": "StudentManagementSystem\\Models\\Enrollment.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T17:38:19.951Z",
+              "WhenOpened": "2025-05-08T16:27:10.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Teacher.cs",
+              "DocumentMoniker": "D:\\Application Dev\\AppDevFinalProject-main\\AppDevFinalProject-main\\StudentManagementSystem\\StudentManagementSystem\\Models\\Teacher.cs",
+              "RelativeDocumentMoniker": "StudentManagementSystem\\Models\\Teacher.cs",
+              "ToolTip": "D:\\Application Dev\\AppDevFinalProject-main\\AppDevFinalProject-main\\StudentManagementSystem\\StudentManagementSystem\\Models\\Teacher.cs",
+              "RelativeToolTip": "StudentManagementSystem\\Models\\Teacher.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACcAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T16:26:49.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Course.cs",
+              "DocumentMoniker": "D:\\Application Dev\\AppDevFinalProject-main\\AppDevFinalProject-main\\StudentManagementSystem\\StudentManagementSystem\\Models\\Course.cs",
+              "RelativeDocumentMoniker": "StudentManagementSystem\\Models\\Course.cs",
+              "ToolTip": "D:\\Application Dev\\AppDevFinalProject-main\\AppDevFinalProject-main\\StudentManagementSystem\\StudentManagementSystem\\Models\\Course.cs",
+              "RelativeToolTip": "StudentManagementSystem\\Models\\Course.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T16:26:32.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Application Dev\\AppDevFinalProject-main\\AppDevFinalProject-main\\StudentManagementSystem\\StudentManagementSystem\\Models\\User.cs",
+              "RelativeDocumentMoniker": "StudentManagementSystem\\Models\\User.cs",
+              "ToolTip": "D:\\Application Dev\\AppDevFinalProject-main\\AppDevFinalProject-main\\StudentManagementSystem\\StudentManagementSystem\\Models\\User.cs",
+              "RelativeToolTip": "StudentManagementSystem\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T16:26:05.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Student.cs",
+              "DocumentMoniker": "D:\\Application Dev\\AppDevFinalProject-main\\AppDevFinalProject-main\\StudentManagementSystem\\StudentManagementSystem\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "StudentManagementSystem\\Models\\Student.cs",
+              "ToolTip": "D:\\Application Dev\\AppDevFinalProject-main\\AppDevFinalProject-main\\StudentManagementSystem\\StudentManagementSystem\\Models\\Student.cs",
+              "RelativeToolTip": "StudentManagementSystem\\Models\\Student.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAwwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T16:15:15.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StudentType.cs",
+              "DocumentMoniker": "D:\\Application Dev\\AppDevFinalProject-main\\AppDevFinalProject-main\\StudentManagementSystem\\StudentManagementSystem\\Models\\StudentType.cs",
+              "RelativeDocumentMoniker": "StudentManagementSystem\\Models\\StudentType.cs",
+              "ToolTip": "D:\\Application Dev\\AppDevFinalProject-main\\AppDevFinalProject-main\\StudentManagementSystem\\StudentManagementSystem\\Models\\StudentType.cs",
+              "RelativeToolTip": "StudentManagementSystem\\Models\\StudentType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T16:15:14.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Application Dev\\AppDevFinalProject-main\\AppDevFinalProject-main\\StudentManagementSystem\\StudentManagementSystem\\Program.cs",
+              "RelativeDocumentMoniker": "StudentManagementSystem\\Program.cs",
+              "ToolTip": "D:\\Application Dev\\AppDevFinalProject-main\\AppDevFinalProject-main\\StudentManagementSystem\\StudentManagementSystem\\Program.cs",
+              "RelativeToolTip": "StudentManagementSystem\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T16:14:52.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "D:\\Application Dev\\AppDevFinalProject-main\\AppDevFinalProject-main\\StudentManagementSystem\\StudentManagementSystem\\Forms\\LoginForm.cs",
+              "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\LoginForm.cs",
+              "ToolTip": "D:\\Application Dev\\AppDevFinalProject-main\\AppDevFinalProject-main\\StudentManagementSystem\\StudentManagementSystem\\Forms\\LoginForm.cs [Design]",
+              "RelativeToolTip": "StudentManagementSystem\\Forms\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T16:14:39.222Z",
               "EditorCaption": " [Design]"
             }
           ]

@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using StudentManagementSystem.Database;
 
 namespace StudentManagementSystem
 {
@@ -16,7 +14,37 @@ namespace StudentManagementSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new loginPageForm());
+
+            // 🔍 Test DB connection before starting app
+            TestDatabaseConnection();
+
+            Application.Run(new loginPageForm()); // continue to login screen
+        }
+
+        /// <summary>
+        /// Tries to connect to the database and shows a message.
+        /// </summary>
+        private static void TestDatabaseConnection()
+        {
+            try
+            {
+                bool isConnected = DatabaseConnection.TestConnection();
+                if (isConnected)
+                {
+                    MessageBox.Show("✅ Database connection successful!", "Connection Test",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("❌ Failed to connect to the database.", "Connection Test",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"❌ Error testing connection:\n{ex.Message}", "Connection Test",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
