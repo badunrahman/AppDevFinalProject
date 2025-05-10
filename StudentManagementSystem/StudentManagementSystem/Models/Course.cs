@@ -11,6 +11,8 @@ namespace StudentManagementSystem.Models
     {
         public int CourseID { get; set; }
 
+        public int TeacherID { get; set; }
+
         [Required(ErrorMessage = "Course name is required")]
         [StringLength(100, ErrorMessage = "Course name cannot exceed 100 characters")]
         public string CourseName { get; set; }

@@ -12,21 +12,21 @@ namespace StudentManagementSystem.Models
         public int EnrollmentID { get; set; }
         public int StudentID { get; set; }
         public int CourseID { get; set; }
-        public int TeacherID { get; set; }
+       
 
         // Navigation properties
         public Student Student { get; set; }
         public Course Course { get; set; }
-        public Teacher Teacher { get; set; }
+        
 
         // Constructors
         public Enrollment() { }
 
-        public Enrollment(int studentID, int courseID, int teacherID)
+        public Enrollment(int studentID, int courseID)
         {
             StudentID = studentID;
             CourseID = courseID;
-            TeacherID = teacherID;
+            
         }
 
         // Helper methods
@@ -46,11 +46,7 @@ namespace StudentManagementSystem.Models
                 return false;
             }
 
-            if (TeacherID <= 0)
-            {
-                errorMessage = "Valid teacher is required.";
-                return false;
-            }
+            
 
             return true;
         }

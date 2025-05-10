@@ -21,18 +21,15 @@ namespace StudentManagementSystem.Models
             [StringLength(100, ErrorMessage = "Name cannot exceed 100 characters")]
             public string Name { get; set; }
 
-            public int CourseID { get; set; }
-
-            // Navigation property
-            public Course Course { get; set; }
+          
 
             // Constructors
             public Teacher() { }
 
-            public Teacher(string name, int courseID, int userID)
+            public Teacher(string name,  int userID)
             {
                 Name = name;
-                CourseID = courseID;
+              
                 UserID = userID;
             }
 
@@ -48,11 +45,7 @@ namespace StudentManagementSystem.Models
                     return false;
                 }
 
-                if (CourseID <= 0)
-                {
-                    errorMessage = "Valid course assignment is required.";
-                    return false;
-                }
+            
 
                 if (UserID <= 0)
                 {
