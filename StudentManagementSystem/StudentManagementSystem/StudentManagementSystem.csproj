@@ -116,6 +116,11 @@
     <Compile Include="Services\LanguageService.cs" />
     <Compile Include="Services\StudentService.cs" />
     <Compile Include="Services\ThemeService.cs" />
+    <Compile Include="StudentDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudentDBDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Utils\LanguageManager.cs" />
     <Compile Include="Utils\PasswordHasher.cs" />
     <Compile Include="Utils\ThemeManager.cs" />
@@ -144,6 +149,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="StudentDBDataSet.xsc">
+      <DependentUpon>StudentDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StudentDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StudentDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StudentDBDataSet.xss">
+      <DependentUpon>StudentDBDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

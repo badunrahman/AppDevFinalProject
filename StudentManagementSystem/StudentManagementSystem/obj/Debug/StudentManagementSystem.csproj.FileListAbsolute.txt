@@ -45,3 +45,5 @@ D:\GitAppDevFinalProject\AppDevFinalProject\StudentManagementSystem\StudentManag
 D:\GitAppDevFinalProject\AppDevFinalProject\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.csproj.CoreCompileInputs.cache
 D:\GitAppDevFinalProject\AppDevFinalProject\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.exe
 D:\GitAppDevFinalProject\AppDevFinalProject\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.pdb
+C:\Users\Kukes\OneDrive\Documents\GitHub\AppDevFinalProject\StudentManagementSystem\StudentManagementSystem\bin\Debug\Database\StudentDB.mdf
+C:\Users\Kukes\OneDrive\Documents\GitHub\AppDevFinalProject\StudentManagementSystem\StudentManagementSystem\bin\Debug\Database\StudentDB_log.ldf
