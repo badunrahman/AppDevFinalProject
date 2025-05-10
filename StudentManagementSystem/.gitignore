@@ -1,16 +1,24 @@
-# Ignore build and debug output
+# Build artifacts
 bin/
 obj/
 
-# Ignore database files
+# VS-generated files
+.vs/
+*.suo
+*.user
+*.pdb
+*.cache
+
+# Local database files
 *.mdf
 *.ldf
 
-# Ignore Visual Studio temp/project files
-.vs/
-*.user
-*.suo
-*.pdb
-*.cache
-*.dbmdl
+# Logs and backups
+*.log
 *.bak
+
+# Configs you don't want to track
+*.exe
+*.dll
+*.dbmdl
+*.vspscc
