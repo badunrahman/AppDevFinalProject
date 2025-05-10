@@ -16,5 +16,61 @@ namespace StudentManagementSystem.Models
         {
             InitializeComponent();
         }
+
+        private void CircularPictureBox(PictureBox picBox)
+        {
+            System.Drawing.Drawing2D.GraphicsPath gp = new System.Drawing.Drawing2D.GraphicsPath();
+            gp.AddEllipse(0, 0, picBox.Width - 1, picBox.Height - 1);
+            picBox.Region = new Region(gp);
+        }
+
+        private void AdminDashboard_Load(object sender, EventArgs e)
+        {
+            CircularPictureBox(adminPictureBox);
+        }
+
+        private void adminPictureBox_Paint(object sender, PaintEventArgs e)
+        {
+            PictureBox picBox = sender as PictureBox;
+
+            using (Pen pen = new Pen(Color.Black, 4)) // Color + thickness
+            {
+                e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighSpeed;
+                e.Graphics.DrawEllipse(pen, 1, 1, picBox.Width - 3, picBox.Height - 3);
+            }
+        }
+
+        private void adminNameLabel_Click(object sender, EventArgs e)
+        {
+            //this.adminNameLabel.Text = $"Welcome,{User.Username}";
+        }
+
+        private void studentIdTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void studentIdTextBox_Enter(object sender, EventArgs e)
+        {
+            if (studentIdTextBox.Text == "Enter Student ID")
+            {
+                studentIdTextBox.Text = "";
+                studentIdTextBox.ForeColor = Color.Black;
+
+            }
+        }
+
+        private void studentIdTextBox_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(studentIdTextBox.Text))
+            {
+                studentIdTextBox.Text = "Enter Student ID";
+                studentIdTextBox.ForeColor = Color.Gray;
+            }
+        }
+
+
+
     }
-}
+
+    }

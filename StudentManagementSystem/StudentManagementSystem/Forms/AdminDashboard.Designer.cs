@@ -28,12 +28,206 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.adminPictureBox = new System.Windows.Forms.PictureBox();
+            this.adminNameLabel = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.studnetManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.teacherManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.academicTrackingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.createStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.manageStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.athletesStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.createTeacherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.partTimeStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fullTimeStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.grpQuickSearchGroupBox = new System.Windows.Forms.GroupBox();
+            this.studentIdTextBox = new System.Windows.Forms.TextBox();
+            this.searchButton = new System.Windows.Forms.Button();
+            this.panelVerticalLine = new System.Windows.Forms.FlowLayoutPanel();
+            ((System.ComponentModel.ISupportInitialize)(this.adminPictureBox)).BeginInit();
+            this.menuStrip1.SuspendLayout();
+            this.grpQuickSearchGroupBox.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // adminPictureBox
+            // 
+            this.adminPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.adminPictureBox.Location = new System.Drawing.Point(30, 35);
+            this.adminPictureBox.Name = "adminPictureBox";
+            this.adminPictureBox.Size = new System.Drawing.Size(100, 100);
+            this.adminPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.adminPictureBox.TabIndex = 0;
+            this.adminPictureBox.TabStop = false;
+            this.adminPictureBox.Paint += new System.Windows.Forms.PaintEventHandler(this.adminPictureBox_Paint);
+            // 
+            // adminNameLabel
+            // 
+            this.adminNameLabel.AutoSize = true;
+            this.adminNameLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adminNameLabel.Location = new System.Drawing.Point(168, 69);
+            this.adminNameLabel.Name = "adminNameLabel";
+            this.adminNameLabel.Size = new System.Drawing.Size(0, 19);
+            this.adminNameLabel.TabIndex = 1;
+            this.adminNameLabel.Click += new System.EventHandler(this.adminNameLabel_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.studnetManagementToolStripMenuItem,
+            this.teacherManagementToolStripMenuItem,
+            this.academicTrackingToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(864, 24);
+            this.menuStrip1.TabIndex = 2;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // studnetManagementToolStripMenuItem
+            // 
+            this.studnetManagementToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.createStudentToolStripMenuItem,
+            this.manageStudentToolStripMenuItem,
+            this.athletesStudentToolStripMenuItem});
+            this.studnetManagementToolStripMenuItem.Name = "studnetManagementToolStripMenuItem";
+            this.studnetManagementToolStripMenuItem.Size = new System.Drawing.Size(134, 20);
+            this.studnetManagementToolStripMenuItem.Text = "Studnet Management";
+            // 
+            // teacherManagementToolStripMenuItem
+            // 
+            this.teacherManagementToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.createTeacherToolStripMenuItem});
+            this.teacherManagementToolStripMenuItem.Name = "teacherManagementToolStripMenuItem";
+            this.teacherManagementToolStripMenuItem.Size = new System.Drawing.Size(133, 20);
+            this.teacherManagementToolStripMenuItem.Text = "Teacher Management";
+            // 
+            // academicTrackingToolStripMenuItem
+            // 
+            this.academicTrackingToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.partTimeStudentToolStripMenuItem,
+            this.fullTimeStudentToolStripMenuItem});
+            this.academicTrackingToolStripMenuItem.Name = "academicTrackingToolStripMenuItem";
+            this.academicTrackingToolStripMenuItem.Size = new System.Drawing.Size(119, 20);
+            this.academicTrackingToolStripMenuItem.Text = "Academic Tracking";
+            // 
+            // createStudentToolStripMenuItem
+            // 
+            this.createStudentToolStripMenuItem.Name = "createStudentToolStripMenuItem";
+            this.createStudentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.createStudentToolStripMenuItem.Text = "Create Student";
+            // 
+            // manageStudentToolStripMenuItem
+            // 
+            this.manageStudentToolStripMenuItem.Name = "manageStudentToolStripMenuItem";
+            this.manageStudentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.manageStudentToolStripMenuItem.Text = "Manage Student";
+            // 
+            // athletesStudentToolStripMenuItem
+            // 
+            this.athletesStudentToolStripMenuItem.Name = "athletesStudentToolStripMenuItem";
+            this.athletesStudentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.athletesStudentToolStripMenuItem.Text = "Athletes Student";
+            // 
+            // createTeacherToolStripMenuItem
+            // 
+            this.createTeacherToolStripMenuItem.Name = "createTeacherToolStripMenuItem";
+            this.createTeacherToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.createTeacherToolStripMenuItem.Text = "Create Teacher";
+            // 
+            // partTimeStudentToolStripMenuItem
+            // 
+            this.partTimeStudentToolStripMenuItem.Name = "partTimeStudentToolStripMenuItem";
+            this.partTimeStudentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.partTimeStudentToolStripMenuItem.Text = "PartTime Student";
+            // 
+            // fullTimeStudentToolStripMenuItem
+            // 
+            this.fullTimeStudentToolStripMenuItem.Name = "fullTimeStudentToolStripMenuItem";
+            this.fullTimeStudentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fullTimeStudentToolStripMenuItem.Text = "FullTime Student";
+            // 
+            // grpQuickSearchGroupBox
+            // 
+            this.grpQuickSearchGroupBox.Controls.Add(this.panelVerticalLine);
+            this.grpQuickSearchGroupBox.Controls.Add(this.searchButton);
+            this.grpQuickSearchGroupBox.Controls.Add(this.studentIdTextBox);
+            this.grpQuickSearchGroupBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.grpQuickSearchGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpQuickSearchGroupBox.Location = new System.Drawing.Point(30, 173);
+            this.grpQuickSearchGroupBox.Name = "grpQuickSearchGroupBox";
+            this.grpQuickSearchGroupBox.Size = new System.Drawing.Size(810, 403);
+            this.grpQuickSearchGroupBox.TabIndex = 3;
+            this.grpQuickSearchGroupBox.TabStop = false;
+            this.grpQuickSearchGroupBox.Text = "Quick Search";
+            // 
+            // studentIdTextBox
+            // 
+            this.studentIdTextBox.Location = new System.Drawing.Point(30, 163);
+            this.studentIdTextBox.Multiline = true;
+            this.studentIdTextBox.Name = "studentIdTextBox";
+            this.studentIdTextBox.Size = new System.Drawing.Size(223, 30);
+            this.studentIdTextBox.TabIndex = 0;
+            this.studentIdTextBox.TextChanged += new System.EventHandler(this.studentIdTextBox_TextChanged);
+            this.studentIdTextBox.Enter += new System.EventHandler(this.studentIdTextBox_Enter);
+            this.studentIdTextBox.Leave += new System.EventHandler(this.studentIdTextBox_Leave);
+            // 
+            // searchButton
+            // 
+            this.searchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchButton.Location = new System.Drawing.Point(94, 226);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(75, 23);
+            this.searchButton.TabIndex = 1;
+            this.searchButton.Text = "Search";
+            this.searchButton.UseVisualStyleBackColor = true;
+            // 
+            // panelVerticalLine
+            // 
+            this.panelVerticalLine.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panelVerticalLine.Location = new System.Drawing.Point(298, 32);
+            this.panelVerticalLine.Name = "panelVerticalLine";
+            this.panelVerticalLine.Size = new System.Drawing.Size(5, 337);
+            this.panelVerticalLine.TabIndex = 2;
+            // 
+            // AdminDashboard
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(864, 601);
+            this.Controls.Add(this.grpQuickSearchGroupBox);
+            this.Controls.Add(this.adminNameLabel);
+            this.Controls.Add(this.adminPictureBox);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "AdminDashboard";
             this.Text = "AdminDashboard";
+            this.Load += new System.EventHandler(this.AdminDashboard_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.adminPictureBox)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.grpQuickSearchGroupBox.ResumeLayout(false);
+            this.grpQuickSearchGroupBox.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.PictureBox adminPictureBox;
+        private System.Windows.Forms.Label adminNameLabel;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem studnetManagementToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem createStudentToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem manageStudentToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem athletesStudentToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem teacherManagementToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem createTeacherToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem academicTrackingToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem partTimeStudentToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fullTimeStudentToolStripMenuItem;
+        private System.Windows.Forms.GroupBox grpQuickSearchGroupBox;
+        private System.Windows.Forms.TextBox studentIdTextBox;
+        private System.Windows.Forms.Button searchButton;
+        private System.Windows.Forms.FlowLayoutPanel panelVerticalLine;
     }
 }

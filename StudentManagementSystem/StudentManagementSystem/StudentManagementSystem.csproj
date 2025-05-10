@@ -125,6 +125,9 @@
     <Compile Include="Utils\PasswordHasher.cs" />
     <Compile Include="Utils\ThemeManager.cs" />
     <Compile Include="Utils\ValidationHelper.cs" />
+    <EmbeddedResource Include="Forms\AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>

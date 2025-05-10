@@ -47,3 +47,4 @@ D:\GitAppDevFinalProject\AppDevFinalProject\StudentManagementSystem\StudentManag
 D:\GitAppDevFinalProject\AppDevFinalProject\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.pdb
 C:\Users\Kukes\OneDrive\Documents\GitHub\AppDevFinalProject\StudentManagementSystem\StudentManagementSystem\bin\Debug\Database\StudentDB.mdf
 C:\Users\Kukes\OneDrive\Documents\GitHub\AppDevFinalProject\StudentManagementSystem\StudentManagementSystem\bin\Debug\Database\StudentDB_log.ldf
+D:\GitAppDevFinalProject\AppDevFinalProject\StudentManagementSystem\StudentManagementSystem\obj\Debug\StudentManagementSystem.Models.AdminDashboard.resources
