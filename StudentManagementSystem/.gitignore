@@ -1,1 +1,16 @@
+# Ignore build and debug output
+bin/
+obj/
+
+# Ignore database files
+*.mdf
+*.ldf
+
+# Ignore Visual Studio temp/project files
 .vs/
+*.user
+*.suo
+*.pdb
+*.cache
+*.dbmdl
+*.bak

@@ -7,23 +7,23 @@
       "RelativeMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|d:\\gitappdevfinalproject\\appdevfinalproject\\studentmanagementsystem\\studentmanagementsystem\\forms\\admindashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|D:\\GitAppDevFinalProject\\AppDevFinalProject\\StudentManagementSystem\\studentmanagementsystem\\forms\\admindashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\admindashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|d:\\gitappdevfinalproject\\appdevfinalproject\\studentmanagementsystem\\studentmanagementsystem\\forms\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|D:\\GitAppDevFinalProject\\AppDevFinalProject\\StudentManagementSystem\\studentmanagementsystem\\forms\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|d:\\gitappdevfinalproject\\appdevfinalproject\\studentmanagementsystem\\studentmanagementsystem\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|D:\\GitAppDevFinalProject\\AppDevFinalProject\\StudentManagementSystem\\studentmanagementsystem\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|d:\\gitappdevfinalproject\\appdevfinalproject\\studentmanagementsystem\\studentmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|D:\\GitAppDevFinalProject\\AppDevFinalProject\\StudentManagementSystem\\studentmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|d:\\gitappdevfinalproject\\appdevfinalproject\\studentmanagementsystem\\studentmanagementsystem\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|D:\\GitAppDevFinalProject\\AppDevFinalProject\\StudentManagementSystem\\studentmanagementsystem\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E09D0DE0-1D8A-4BF4-957F-F8E1AC24EBD2}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -50,8 +50,7 @@
               "RelativeToolTip": "StudentManagementSystem\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T19:02:43.513Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T19:02:43.513Z"
             },
             {
               "$type": "Document",
@@ -59,9 +58,9 @@
               "Title": "AdminDashboard.Designer.cs",
               "DocumentMoniker": "D:\\GitAppDevFinalProject\\AppDevFinalProject\\StudentManagementSystem\\StudentManagementSystem\\Forms\\AdminDashboard.Designer.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\AdminDashboard.Designer.cs",
-              "ToolTip": "D:\\GitAppDevFinalProject\\AppDevFinalProject\\StudentManagementSystem\\StudentManagementSystem\\Forms\\AdminDashboard.Designer.cs*",
-              "RelativeToolTip": "StudentManagementSystem\\Forms\\AdminDashboard.Designer.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOcAAAABAAAAAAAAAA==",
+              "ToolTip": "D:\\GitAppDevFinalProject\\AppDevFinalProject\\StudentManagementSystem\\StudentManagementSystem\\Forms\\AdminDashboard.Designer.cs",
+              "RelativeToolTip": "StudentManagementSystem\\Forms\\AdminDashboard.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-10T19:00:13.081Z",
               "EditorCaption": ""
@@ -72,8 +71,8 @@
               "Title": "AdminDashboard.cs",
               "DocumentMoniker": "D:\\GitAppDevFinalProject\\AppDevFinalProject\\StudentManagementSystem\\StudentManagementSystem\\Forms\\AdminDashboard.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\AdminDashboard.cs",
-              "ToolTip": "D:\\GitAppDevFinalProject\\AppDevFinalProject\\StudentManagementSystem\\StudentManagementSystem\\Forms\\AdminDashboard.cs*",
-              "RelativeToolTip": "StudentManagementSystem\\Forms\\AdminDashboard.cs*",
+              "ToolTip": "D:\\GitAppDevFinalProject\\AppDevFinalProject\\StudentManagementSystem\\StudentManagementSystem\\Forms\\AdminDashboard.cs",
+              "RelativeToolTip": "StudentManagementSystem\\Forms\\AdminDashboard.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAawEoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-10T18:54:35.042Z",
@@ -85,8 +84,8 @@
               "Title": "AdminDashboard.cs [Design]",
               "DocumentMoniker": "D:\\GitAppDevFinalProject\\AppDevFinalProject\\StudentManagementSystem\\StudentManagementSystem\\Forms\\AdminDashboard.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Forms\\AdminDashboard.cs",
-              "ToolTip": "D:\\GitAppDevFinalProject\\AppDevFinalProject\\StudentManagementSystem\\StudentManagementSystem\\Forms\\AdminDashboard.cs [Design]*",
-              "RelativeToolTip": "StudentManagementSystem\\Forms\\AdminDashboard.cs [Design]*",
+              "ToolTip": "D:\\GitAppDevFinalProject\\AppDevFinalProject\\StudentManagementSystem\\StudentManagementSystem\\Forms\\AdminDashboard.cs [Design]",
+              "RelativeToolTip": "StudentManagementSystem\\Forms\\AdminDashboard.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-10T18:21:53.233Z",
               "EditorCaption": " [Design]"
@@ -101,8 +100,7 @@
               "RelativeToolTip": "StudentManagementSystem\\Services\\AuthenticationService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T18:12:14.248Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T18:12:14.248Z"
             },
             {
               "$type": "Document",
@@ -114,8 +112,7 @@
               "RelativeToolTip": "StudentManagementSystem\\Forms\\LoginForm.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T16:25:53.494Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T16:25:53.494Z"
             },
             {
               "$type": "Document",
@@ -126,8 +123,7 @@
               "ToolTip": "D:\\GitAppDevFinalProject\\AppDevFinalProject\\StudentManagementSystem\\StudentManagementSystem\\Forms\\LoginForm.cs [Design]",
               "RelativeToolTip": "StudentManagementSystem\\Forms\\LoginForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T16:14:39.222Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-08T16:14:39.222Z"
             }
           ]
         }
