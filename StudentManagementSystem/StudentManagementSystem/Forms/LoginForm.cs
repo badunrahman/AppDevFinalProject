@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
+using System.Resources;
+using System.Threading;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,9 +19,31 @@ namespace StudentManagementSystem
 {
     public partial class loginPageForm : Form
     {
+        private ResourceManager rm = new ResourceManager("StudentManagementSystem.Strings", typeof(loginPageForm).Assembly);
+
         public loginPageForm()
         {
             InitializeComponent();
+            this.Load += new EventHandler(loginPageForm_Load);
+        }
+
+        private void loginPageForm_Load(object sender, EventArgs e)
+        {
+            SetLanguage("en"); // default language
+        }
+
+        private void SetLanguage(string langCode)
+        {
+            CultureInfo ci = new CultureInfo(langCode);
+            Thread.CurrentThread.CurrentUICulture = ci;
+
+            logInButton.Text = rm.GetString("LoginBtn", ci);
+            incorrectInfoLabel.Text = rm.GetString("LoginWelcome", ci);
+        }
+
+        private void frenchButton_Click(object sender, EventArgs e)
+        {
+            SetLanguage("fr");
         }
 
         private void usernameTextBox_TextChanged(object sender, EventArgs e)
@@ -64,7 +89,7 @@ namespace StudentManagementSystem
                 MessageBoxButtons button = MessageBoxButtons.OK;
                 MessageBoxIcon icon = MessageBoxIcon.Error;
                 incorrectInfoLabel.Visible = true;
-                MessageBox.Show("Incorrect username or password!", "Error", button, icon);
+                MessageBox.Show(rm.GetString("LoginError", CultureInfo.CurrentUICulture), "Error", button, icon);
             }
         }
     }
