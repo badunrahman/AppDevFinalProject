@@ -93,7 +93,8 @@ namespace StudentManagementSystem.Models
 
         private void athletesStudentToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            athleteStudentView athleteStudent = new athleteStudentView();
+            athleteStudent.Show();
         }
 
         private void teacherManagementToolStripMenuItem_Click(object sender, EventArgs e)

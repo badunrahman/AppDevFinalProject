@@ -316,6 +316,30 @@ namespace StudentManagementSystem.Database
             }
         }
 
+        public static List<Course> getStudentCourses(int studentid)
+        {
+            List<Course> courses = new List<Course>();
+
+            using (SqlConnection connection = GetConnection())
+            {
+                string query = "SELECT * FROM Courses WHERE CourseID IN (SELECT CourseID FROM Enrollments WHERE StudentID = @studentid)";
+                SqlCommand cmd = new SqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@studentid", studentid);
+                
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        string courseName = reader.GetString(1);
+                        int courseId = reader.GetInt32(0);
+                        courses.Add(new Course(courseName, courseId));
+                    }
+                }
+            }
+
+            return courses;
+        }
+
         public static List<Student> getCourseStudents(int courseID)
         {
             List<Student> students = new List<Student>();
@@ -342,6 +366,33 @@ namespace StudentManagementSystem.Database
 
                 return students;
             }
+        }
+
+        public static List<Student> getAthleteStudents()
+        {
+            List<Student> students = new List<Student>();
+
+            using (SqlConnection connection = GetConnection())
+            {
+                string query = "SELECT * FROM Students WHERE StudentType = @type";
+                SqlCommand cmd = new SqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@type", "Athlete");
+
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        int studentID = reader.GetInt32(0);
+                        string name = reader.GetString(1);
+                        string address = reader.GetString(2);
+                        string contact = reader.GetString(3);
+                        string type = reader.GetString(4);
+                        students.Add(new Student(studentID, name, address, contact, type));
+                    }
+                }
+            }
+
+            return students;
         }
 
         public static string getUserRole(int userId)
