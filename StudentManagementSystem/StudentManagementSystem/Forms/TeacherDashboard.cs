@@ -101,5 +101,32 @@ namespace StudentManagementSystem.Forms
                 }
             }
         }
+
+        private void sendFeedbackButton_Click(object sender, EventArgs e)
+        {
+            string feedback = feedbackTextBox.Text;
+            if (!feedback.Equals(""))
+            {
+                DataGridViewRow selectedRow = studentDataGridView.SelectedRows[0];
+                int studentId = int.Parse(selectedRow.Cells["StudentID"].Value.ToString());
+                int enrollmentId = DatabaseConnection.getEnrollmentID(studentId, currentCourse.CourseID);
+                int feedbackId = DatabaseConnection.getFeedbackID(enrollmentId);
+
+                if (feedbackId != 0)
+                {
+                    //MessageBox.Show(DatabaseConnection.getFeedbackComment(feedbackId));
+                    DatabaseConnection.updateFeedback(feedbackId, feedback);
+                }
+                else
+                {
+                    MessageBox.Show("Doesn't exist");
+                    DatabaseConnection.createFeedback(enrollmentId, feedback);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Nothing provided in feedback!");
+            }
+        }
     }
 }

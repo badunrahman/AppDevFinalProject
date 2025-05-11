@@ -6,6 +6,7 @@ using System.Configuration;
 using StudentManagementSystem.Models;
 using StudentManagementSystem.Models.StudentManagementSystem.Models;
 using System.Windows.Forms;
+using System.Web;
 
 namespace StudentManagementSystem.Database
 {
@@ -379,6 +380,73 @@ namespace StudentManagementSystem.Database
 
                 cmd.ExecuteNonQuery();
             }
+        }
+
+        public static int getFeedbackID(int enrollmentid)
+        {
+            using (SqlConnection connection = GetConnection())
+            {
+                string query = "SELECT FeedbackID FROM Feedback WHERE EnrollmentID = @enrollid";
+                SqlCommand cmd = new SqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("enrollid", enrollmentid);
+
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        return reader.GetInt32(0);
+                    }
+                }
+            }
+
+            return 0;
+        }
+
+        public static void updateFeedback(int feedbackid, string feedback)
+        {
+            using (SqlConnection connection = GetConnection())
+            {
+                string query = "UPDATE Feedback SET Comment = @comment WHERE FeedbackID = @feedbackid";
+                SqlCommand cmd = new SqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@comment", feedback);
+                cmd.Parameters.AddWithValue("@feedbackid", feedbackid);
+
+                cmd.ExecuteNonQuery();
+            }
+        }
+
+        public static void createFeedback(int enrollmentid, string feedback)
+        {
+            using (SqlConnection connection = GetConnection())
+            {
+                string query = "INSERT INTO Feedback (EnrollmentID, Comment, DateAdded) VALUES (@enrollmentid, @comment, @date)";
+                SqlCommand cmd = new SqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@enrollmentid", enrollmentid);
+                cmd.Parameters.AddWithValue("@comment", feedback);
+                cmd.Parameters.AddWithValue("@date", DateTime.Now);
+
+                cmd.ExecuteNonQuery();
+            }
+        }
+
+        public static string getFeedbackComment(int feedbackid)
+        {
+            using (SqlConnection connection = GetConnection())
+            {
+                string query = "SELECT Comment FROM Feedback WHERE FeedbackID = @feedbackid";
+                SqlCommand cmd = new SqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@feedbackid", feedbackid);
+                
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        return reader.GetString(0);
+                    }
+                }
+            }
+
+            return "";
         }
     }
 }

@@ -94,7 +94,9 @@
             this.studentDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Grade});
             this.studentDataGridView.Location = new System.Drawing.Point(14, 62);
+            this.studentDataGridView.MultiSelect = false;
             this.studentDataGridView.Name = "studentDataGridView";
+            this.studentDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.studentDataGridView.Size = new System.Drawing.Size(605, 293);
             this.studentDataGridView.TabIndex = 9;
             // 
@@ -176,6 +178,7 @@
             this.sendFeedbackButton.TabIndex = 5;
             this.sendFeedbackButton.Text = "Send feedback";
             this.sendFeedbackButton.UseVisualStyleBackColor = true;
+            this.sendFeedbackButton.Click += new System.EventHandler(this.sendFeedbackButton_Click);
             // 
             // label2
             // 
