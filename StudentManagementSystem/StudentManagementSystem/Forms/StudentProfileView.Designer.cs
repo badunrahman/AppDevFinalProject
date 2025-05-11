@@ -30,24 +30,24 @@
         {
             this.studentProfilePictureBox = new System.Windows.Forms.PictureBox();
             this.studentInfoGroupBox = new System.Windows.Forms.GroupBox();
+            this.studentTypeTextBox = new System.Windows.Forms.TextBox();
+            this.contactTextBox = new System.Windows.Forms.TextBox();
+            this.addressTextBox = new System.Windows.Forms.TextBox();
+            this.studentTypeLabel = new System.Windows.Forms.Label();
+            this.contactLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.teachAndCoursesGroupBox = new System.Windows.Forms.GroupBox();
+            this.chooseCoursesComboBox = new System.Windows.Forms.ComboBox();
+            this.teacherIdComboBox = new System.Windows.Forms.ComboBox();
+            this.teachersNameComboBox = new System.Windows.Forms.ComboBox();
+            this.feedBackForEachCourseTextBox = new System.Windows.Forms.TextBox();
+            this.coursesLabel = new System.Windows.Forms.Label();
+            this.teacherIdLabel = new System.Windows.Forms.Label();
+            this.teacherLabel = new System.Windows.Forms.Label();
             this.gradesInfoGroupBox = new System.Windows.Forms.GroupBox();
             this.feedBackTextBox = new System.Windows.Forms.TextBox();
             this.nameLabel = new System.Windows.Forms.Label();
             this.nameTextBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.contactLabel = new System.Windows.Forms.Label();
-            this.studentTypeLabel = new System.Windows.Forms.Label();
-            this.addressTextBox = new System.Windows.Forms.TextBox();
-            this.contactTextBox = new System.Windows.Forms.TextBox();
-            this.studentTypeTextBox = new System.Windows.Forms.TextBox();
-            this.teacherLabel = new System.Windows.Forms.Label();
-            this.teacherIdLabel = new System.Windows.Forms.Label();
-            this.coursesLabel = new System.Windows.Forms.Label();
-            this.feedBackForEachCourseTextBox = new System.Windows.Forms.TextBox();
-            this.teachersNameComboBox = new System.Windows.Forms.ComboBox();
-            this.teacherIdComboBox = new System.Windows.Forms.ComboBox();
-            this.chooseCoursesComboBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.studentProfilePictureBox)).BeginInit();
             this.studentInfoGroupBox.SuspendLayout();
             this.teachAndCoursesGroupBox.SuspendLayout();
@@ -80,6 +80,57 @@
             this.studentInfoGroupBox.Text = "StudentInfo";
             this.studentInfoGroupBox.Enter += new System.EventHandler(this.studentInfoGroupBox_Enter);
             // 
+            // studentTypeTextBox
+            // 
+            this.studentTypeTextBox.Location = new System.Drawing.Point(188, 198);
+            this.studentTypeTextBox.Name = "studentTypeTextBox";
+            this.studentTypeTextBox.Size = new System.Drawing.Size(259, 23);
+            this.studentTypeTextBox.TabIndex = 8;
+            this.studentTypeTextBox.TextChanged += new System.EventHandler(this.studentTypeTextBox_TextChanged);
+            // 
+            // contactTextBox
+            // 
+            this.contactTextBox.Location = new System.Drawing.Point(188, 131);
+            this.contactTextBox.Name = "contactTextBox";
+            this.contactTextBox.Size = new System.Drawing.Size(259, 23);
+            this.contactTextBox.TabIndex = 7;
+            this.contactTextBox.TextChanged += new System.EventHandler(this.contactTextBox_TextChanged);
+            // 
+            // addressTextBox
+            // 
+            this.addressTextBox.Location = new System.Drawing.Point(188, 67);
+            this.addressTextBox.Name = "addressTextBox";
+            this.addressTextBox.Size = new System.Drawing.Size(259, 23);
+            this.addressTextBox.TabIndex = 6;
+            this.addressTextBox.TextChanged += new System.EventHandler(this.addressTextBox_TextChanged);
+            // 
+            // studentTypeLabel
+            // 
+            this.studentTypeLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentTypeLabel.Location = new System.Drawing.Point(6, 199);
+            this.studentTypeLabel.Name = "studentTypeLabel";
+            this.studentTypeLabel.Size = new System.Drawing.Size(94, 24);
+            this.studentTypeLabel.TabIndex = 2;
+            this.studentTypeLabel.Text = "Student Type";
+            // 
+            // contactLabel
+            // 
+            this.contactLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contactLabel.Location = new System.Drawing.Point(6, 131);
+            this.contactLabel.Name = "contactLabel";
+            this.contactLabel.Size = new System.Drawing.Size(54, 19);
+            this.contactLabel.TabIndex = 1;
+            this.contactLabel.Text = "Contact";
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(6, 68);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(54, 19);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Address";
+            // 
             // teachAndCoursesGroupBox
             // 
             this.teachAndCoursesGroupBox.Controls.Add(this.chooseCoursesComboBox);
@@ -97,6 +148,69 @@
             this.teachAndCoursesGroupBox.TabStop = false;
             this.teachAndCoursesGroupBox.Text = "TeacherCoursesInfo";
             this.teachAndCoursesGroupBox.Enter += new System.EventHandler(this.teachAndCoursesGroupBox_Enter);
+            // 
+            // chooseCoursesComboBox
+            // 
+            this.chooseCoursesComboBox.FormattingEnabled = true;
+            this.chooseCoursesComboBox.Location = new System.Drawing.Point(101, 127);
+            this.chooseCoursesComboBox.Name = "chooseCoursesComboBox";
+            this.chooseCoursesComboBox.Size = new System.Drawing.Size(299, 23);
+            this.chooseCoursesComboBox.TabIndex = 14;
+            this.chooseCoursesComboBox.SelectedIndexChanged += new System.EventHandler(this.chooseCoursesComboBox_SelectedIndexChanged);
+            // 
+            // teacherIdComboBox
+            // 
+            this.teacherIdComboBox.FormattingEnabled = true;
+            this.teacherIdComboBox.Location = new System.Drawing.Point(101, 77);
+            this.teacherIdComboBox.Name = "teacherIdComboBox";
+            this.teacherIdComboBox.Size = new System.Drawing.Size(299, 23);
+            this.teacherIdComboBox.TabIndex = 13;
+            this.teacherIdComboBox.SelectedIndexChanged += new System.EventHandler(this.teacherIdComboBox_SelectedIndexChanged);
+            // 
+            // teachersNameComboBox
+            // 
+            this.teachersNameComboBox.FormattingEnabled = true;
+            this.teachersNameComboBox.Location = new System.Drawing.Point(101, 30);
+            this.teachersNameComboBox.Name = "teachersNameComboBox";
+            this.teachersNameComboBox.Size = new System.Drawing.Size(299, 23);
+            this.teachersNameComboBox.TabIndex = 12;
+            this.teachersNameComboBox.SelectedIndexChanged += new System.EventHandler(this.teachersNameComboBox_SelectedIndexChanged);
+            // 
+            // feedBackForEachCourseTextBox
+            // 
+            this.feedBackForEachCourseTextBox.Location = new System.Drawing.Point(9, 157);
+            this.feedBackForEachCourseTextBox.Multiline = true;
+            this.feedBackForEachCourseTextBox.Name = "feedBackForEachCourseTextBox";
+            this.feedBackForEachCourseTextBox.Size = new System.Drawing.Size(438, 98);
+            this.feedBackForEachCourseTextBox.TabIndex = 6;
+            this.feedBackForEachCourseTextBox.TextChanged += new System.EventHandler(this.feedBackForEachCourseTextBox_TextChanged);
+            // 
+            // coursesLabel
+            // 
+            this.coursesLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.coursesLabel.Location = new System.Drawing.Point(6, 131);
+            this.coursesLabel.Name = "coursesLabel";
+            this.coursesLabel.Size = new System.Drawing.Size(54, 19);
+            this.coursesLabel.TabIndex = 11;
+            this.coursesLabel.Text = "Course";
+            // 
+            // teacherIdLabel
+            // 
+            this.teacherIdLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.teacherIdLabel.Location = new System.Drawing.Point(6, 79);
+            this.teacherIdLabel.Name = "teacherIdLabel";
+            this.teacherIdLabel.Size = new System.Drawing.Size(80, 21);
+            this.teacherIdLabel.TabIndex = 10;
+            this.teacherIdLabel.Text = "Teacher ID";
+            // 
+            // teacherLabel
+            // 
+            this.teacherLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.teacherLabel.Location = new System.Drawing.Point(6, 30);
+            this.teacherLabel.Name = "teacherLabel";
+            this.teacherLabel.Size = new System.Drawing.Size(54, 19);
+            this.teacherLabel.TabIndex = 9;
+            this.teacherLabel.Text = "Name";
             // 
             // gradesInfoGroupBox
             // 
@@ -135,120 +249,6 @@
             this.nameTextBox.Size = new System.Drawing.Size(161, 20);
             this.nameTextBox.TabIndex = 5;
             this.nameTextBox.TextChanged += new System.EventHandler(this.nameTextBox_TextChanged);
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 68);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 19);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Address";
-            // 
-            // contactLabel
-            // 
-            this.contactLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contactLabel.Location = new System.Drawing.Point(6, 131);
-            this.contactLabel.Name = "contactLabel";
-            this.contactLabel.Size = new System.Drawing.Size(54, 19);
-            this.contactLabel.TabIndex = 1;
-            this.contactLabel.Text = "Contact";
-            // 
-            // studentTypeLabel
-            // 
-            this.studentTypeLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.studentTypeLabel.Location = new System.Drawing.Point(6, 199);
-            this.studentTypeLabel.Name = "studentTypeLabel";
-            this.studentTypeLabel.Size = new System.Drawing.Size(94, 24);
-            this.studentTypeLabel.TabIndex = 2;
-            this.studentTypeLabel.Text = "Student Type";
-            // 
-            // addressTextBox
-            // 
-            this.addressTextBox.Location = new System.Drawing.Point(188, 67);
-            this.addressTextBox.Name = "addressTextBox";
-            this.addressTextBox.Size = new System.Drawing.Size(259, 23);
-            this.addressTextBox.TabIndex = 6;
-            this.addressTextBox.TextChanged += new System.EventHandler(this.addressTextBox_TextChanged);
-            // 
-            // contactTextBox
-            // 
-            this.contactTextBox.Location = new System.Drawing.Point(188, 131);
-            this.contactTextBox.Name = "contactTextBox";
-            this.contactTextBox.Size = new System.Drawing.Size(259, 23);
-            this.contactTextBox.TabIndex = 7;
-            this.contactTextBox.TextChanged += new System.EventHandler(this.contactTextBox_TextChanged);
-            // 
-            // studentTypeTextBox
-            // 
-            this.studentTypeTextBox.Location = new System.Drawing.Point(188, 198);
-            this.studentTypeTextBox.Name = "studentTypeTextBox";
-            this.studentTypeTextBox.Size = new System.Drawing.Size(259, 23);
-            this.studentTypeTextBox.TabIndex = 8;
-            this.studentTypeTextBox.TextChanged += new System.EventHandler(this.studentTypeTextBox_TextChanged);
-            // 
-            // teacherLabel
-            // 
-            this.teacherLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.teacherLabel.Location = new System.Drawing.Point(6, 30);
-            this.teacherLabel.Name = "teacherLabel";
-            this.teacherLabel.Size = new System.Drawing.Size(54, 19);
-            this.teacherLabel.TabIndex = 9;
-            this.teacherLabel.Text = "Name";
-            // 
-            // teacherIdLabel
-            // 
-            this.teacherIdLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.teacherIdLabel.Location = new System.Drawing.Point(6, 79);
-            this.teacherIdLabel.Name = "teacherIdLabel";
-            this.teacherIdLabel.Size = new System.Drawing.Size(80, 21);
-            this.teacherIdLabel.TabIndex = 10;
-            this.teacherIdLabel.Text = "Teacher ID";
-            // 
-            // coursesLabel
-            // 
-            this.coursesLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.coursesLabel.Location = new System.Drawing.Point(6, 131);
-            this.coursesLabel.Name = "coursesLabel";
-            this.coursesLabel.Size = new System.Drawing.Size(54, 19);
-            this.coursesLabel.TabIndex = 11;
-            this.coursesLabel.Text = "Course";
-            // 
-            // feedBackForEachCourseTextBox
-            // 
-            this.feedBackForEachCourseTextBox.Location = new System.Drawing.Point(9, 157);
-            this.feedBackForEachCourseTextBox.Multiline = true;
-            this.feedBackForEachCourseTextBox.Name = "feedBackForEachCourseTextBox";
-            this.feedBackForEachCourseTextBox.Size = new System.Drawing.Size(438, 98);
-            this.feedBackForEachCourseTextBox.TabIndex = 6;
-            this.feedBackForEachCourseTextBox.TextChanged += new System.EventHandler(this.feedBackForEachCourseTextBox_TextChanged);
-            // 
-            // teachersNameComboBox
-            // 
-            this.teachersNameComboBox.FormattingEnabled = true;
-            this.teachersNameComboBox.Location = new System.Drawing.Point(101, 30);
-            this.teachersNameComboBox.Name = "teachersNameComboBox";
-            this.teachersNameComboBox.Size = new System.Drawing.Size(299, 23);
-            this.teachersNameComboBox.TabIndex = 12;
-            this.teachersNameComboBox.SelectedIndexChanged += new System.EventHandler(this.teachersNameComboBox_SelectedIndexChanged);
-            // 
-            // teacherIdComboBox
-            // 
-            this.teacherIdComboBox.FormattingEnabled = true;
-            this.teacherIdComboBox.Location = new System.Drawing.Point(101, 77);
-            this.teacherIdComboBox.Name = "teacherIdComboBox";
-            this.teacherIdComboBox.Size = new System.Drawing.Size(299, 23);
-            this.teacherIdComboBox.TabIndex = 13;
-            this.teacherIdComboBox.SelectedIndexChanged += new System.EventHandler(this.teacherIdComboBox_SelectedIndexChanged);
-            // 
-            // chooseCoursesComboBox
-            // 
-            this.chooseCoursesComboBox.FormattingEnabled = true;
-            this.chooseCoursesComboBox.Location = new System.Drawing.Point(101, 127);
-            this.chooseCoursesComboBox.Name = "chooseCoursesComboBox";
-            this.chooseCoursesComboBox.Size = new System.Drawing.Size(299, 23);
-            this.chooseCoursesComboBox.TabIndex = 14;
-            this.chooseCoursesComboBox.SelectedIndexChanged += new System.EventHandler(this.chooseCoursesComboBox_SelectedIndexChanged);
             // 
             // StudentProfileView
             // 
