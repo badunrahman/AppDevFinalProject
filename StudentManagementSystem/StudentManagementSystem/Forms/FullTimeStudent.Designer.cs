@@ -43,9 +43,7 @@
             // 
             // fullTimeDataGridView
             // 
-            this.fullTimeDataGridView.AutoGenerateColumns = false;
             this.fullTimeDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            //this.fullTimeDataGridView.DataSource = this.studentDBDataSet;
             this.fullTimeDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.fullTimeDataGridView.Location = new System.Drawing.Point(3, 16);
             this.fullTimeDataGridView.Name = "fullTimeDataGridView";

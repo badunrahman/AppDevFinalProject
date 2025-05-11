@@ -12,14 +12,14 @@ using System.Windows.Forms;
 
 namespace StudentManagementSystem.Forms
 {
-    public partial class partTimeStudentView: Form
+    public partial class PartTimeStudentView: Form
     {
-        public partTimeStudentView()
+        public PartTimeStudentView()
         {
             InitializeComponent();
         }
 
-        private void partTimeStudentView_Load(object sender, EventArgs e)
+        private void PartTimeStudentView_Load(object sender, EventArgs e)
         {
             List<Student> partTimeStudents = DatabaseConnection.getPartTimeStudents();
             partTimeDataGridView.DataSource = null;

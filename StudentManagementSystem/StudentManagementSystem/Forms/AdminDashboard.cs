@@ -115,7 +115,8 @@ namespace StudentManagementSystem.Models
 
         private void partTimeStudentToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            PartTimeStudentView view = new PartTimeStudentView();
+            view.Show();
         }
 
         private void fullTimeStudentToolStripMenuItem_Click(object sender, EventArgs e)

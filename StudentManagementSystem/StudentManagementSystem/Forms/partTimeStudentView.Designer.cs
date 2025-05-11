@@ -1,6 +1,6 @@
 ﻿namespace StudentManagementSystem.Forms
 {
-    partial class partTimeStudentView
+    partial class PartTimeStudentView
     {
         /// <summary>
         /// Required designer variable.
@@ -28,21 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.titleLabel = new System.Windows.Forms.Label();
             this.partTimeDataGridView = new System.Windows.Forms.DataGridView();
             this.Courses = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.partTimeDataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // titleLabel
-            // 
-            this.titleLabel.AutoSize = true;
-            this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLabel.Location = new System.Drawing.Point(219, 17);
-            this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(260, 20);
-            this.titleLabel.TabIndex = 3;
-            this.titleLabel.Text = "Part Time Students Information";
             // 
             // partTimeDataGridView
             // 
@@ -50,11 +40,11 @@
             this.partTimeDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.partTimeDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Courses});
-            this.partTimeDataGridView.Location = new System.Drawing.Point(12, 58);
+            this.partTimeDataGridView.Location = new System.Drawing.Point(12, 42);
             this.partTimeDataGridView.Name = "partTimeDataGridView";
             this.partTimeDataGridView.ReadOnly = true;
             this.partTimeDataGridView.Size = new System.Drawing.Size(653, 318);
-            this.partTimeDataGridView.TabIndex = 2;
+            this.partTimeDataGridView.TabIndex = 3;
             // 
             // Courses
             // 
@@ -64,16 +54,26 @@
             this.Courses.ReadOnly = true;
             this.Courses.Width = 70;
             // 
-            // partTimeStudentView
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(223, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(260, 20);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Part Time Students Information";
+            // 
+            // PartTimeStudentView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(686, 398);
-            this.Controls.Add(this.titleLabel);
+            this.ClientSize = new System.Drawing.Size(682, 375);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.partTimeDataGridView);
-            this.Name = "partTimeStudentView";
-            this.Text = "Part Time Students";
-            this.Load += new System.EventHandler(this.partTimeStudentView_Load);
+            this.Name = "PartTimeStudentView";
+            this.Text = "PartTimeStudentView";
+            this.Load += new System.EventHandler(this.PartTimeStudentView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.partTimeDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -82,8 +82,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Label titleLabel;
         private System.Windows.Forms.DataGridView partTimeDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn Courses;
+        private System.Windows.Forms.Label label1;
     }
 }
