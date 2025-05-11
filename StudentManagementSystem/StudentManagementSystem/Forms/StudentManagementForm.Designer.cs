@@ -33,8 +33,6 @@
             this.athleteRadioButton = new System.Windows.Forms.RadioButton();
             this.partTimeRadioButton = new System.Windows.Forms.RadioButton();
             this.fullTimeRadioButton = new System.Windows.Forms.RadioButton();
-            this.teacherTextBox = new System.Windows.Forms.TextBox();
-            this.coursesTextBox = new System.Windows.Forms.TextBox();
             this.contactTextBox = new System.Windows.Forms.TextBox();
             this.addressTextBox = new System.Windows.Forms.TextBox();
             this.nameTextBox = new System.Windows.Forms.TextBox();
@@ -46,17 +44,19 @@
             this.contactLabel = new System.Windows.Forms.Label();
             this.addressLabel = new System.Windows.Forms.Label();
             this.nameLabel = new System.Windows.Forms.Label();
+            this.coursesCheckedListBox = new System.Windows.Forms.CheckedListBox();
+            this.teachersListBox = new System.Windows.Forms.ListBox();
             this.createStudentGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // createStudentGroupBox
             // 
+            this.createStudentGroupBox.Controls.Add(this.teachersListBox);
+            this.createStudentGroupBox.Controls.Add(this.coursesCheckedListBox);
             this.createStudentGroupBox.Controls.Add(this.creatStudnetTitleLabel);
             this.createStudentGroupBox.Controls.Add(this.athleteRadioButton);
             this.createStudentGroupBox.Controls.Add(this.partTimeRadioButton);
             this.createStudentGroupBox.Controls.Add(this.fullTimeRadioButton);
-            this.createStudentGroupBox.Controls.Add(this.teacherTextBox);
-            this.createStudentGroupBox.Controls.Add(this.coursesTextBox);
             this.createStudentGroupBox.Controls.Add(this.contactTextBox);
             this.createStudentGroupBox.Controls.Add(this.addressTextBox);
             this.createStudentGroupBox.Controls.Add(this.nameTextBox);
@@ -122,26 +122,6 @@
             this.fullTimeRadioButton.Text = "Full-Time";
             this.fullTimeRadioButton.UseVisualStyleBackColor = true;
             this.fullTimeRadioButton.CheckedChanged += new System.EventHandler(this.fullTimeRadioButton_CheckedChanged);
-            // 
-            // teacherTextBox
-            // 
-            this.teacherTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.teacherTextBox.Location = new System.Drawing.Point(310, 381);
-            this.teacherTextBox.Multiline = true;
-            this.teacherTextBox.Name = "teacherTextBox";
-            this.teacherTextBox.Size = new System.Drawing.Size(526, 27);
-            this.teacherTextBox.TabIndex = 14;
-            this.teacherTextBox.TextChanged += new System.EventHandler(this.teacherTextBox_TextChanged);
-            // 
-            // coursesTextBox
-            // 
-            this.coursesTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.coursesTextBox.Location = new System.Drawing.Point(310, 314);
-            this.coursesTextBox.Multiline = true;
-            this.coursesTextBox.Name = "coursesTextBox";
-            this.coursesTextBox.Size = new System.Drawing.Size(526, 27);
-            this.coursesTextBox.TabIndex = 13;
-            this.coursesTextBox.TextChanged += new System.EventHandler(this.coursesTextBox_TextChanged);
             // 
             // contactTextBox
             // 
@@ -247,6 +227,25 @@
             this.nameLabel.TabIndex = 0;
             this.nameLabel.Text = "Name:";
             // 
+            // coursesCheckedListBox
+            // 
+            this.coursesCheckedListBox.FormattingEnabled = true;
+            this.coursesCheckedListBox.Location = new System.Drawing.Point(310, 312);
+            this.coursesCheckedListBox.Name = "coursesCheckedListBox";
+            this.coursesCheckedListBox.Size = new System.Drawing.Size(526, 28);
+            this.coursesCheckedListBox.TabIndex = 21;
+            this.coursesCheckedListBox.SelectedIndexChanged += new System.EventHandler(this.coursesCheckedListBox_SelectedIndexChanged);
+            // 
+            // teachersListBox
+            // 
+            this.teachersListBox.FormattingEnabled = true;
+            this.teachersListBox.ItemHeight = 21;
+            this.teachersListBox.Location = new System.Drawing.Point(310, 367);
+            this.teachersListBox.Name = "teachersListBox";
+            this.teachersListBox.Size = new System.Drawing.Size(526, 25);
+            this.teachersListBox.TabIndex = 22;
+            this.teachersListBox.SelectedIndexChanged += new System.EventHandler(this.teachersListBox_SelectedIndexChanged);
+            // 
             // StudentManagementForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -274,13 +273,13 @@
         private System.Windows.Forms.Label coursesLabel;
         private System.Windows.Forms.Label studentTypeLabel;
         private System.Windows.Forms.Label contactLabel;
-        private System.Windows.Forms.TextBox teacherTextBox;
-        private System.Windows.Forms.TextBox coursesTextBox;
         private System.Windows.Forms.TextBox contactTextBox;
         private System.Windows.Forms.TextBox addressTextBox;
         private System.Windows.Forms.RadioButton athleteRadioButton;
         private System.Windows.Forms.RadioButton partTimeRadioButton;
         private System.Windows.Forms.RadioButton fullTimeRadioButton;
         private System.Windows.Forms.Label creatStudnetTitleLabel;
+        private System.Windows.Forms.ListBox teachersListBox;
+        private System.Windows.Forms.CheckedListBox coursesCheckedListBox;
     }
 }

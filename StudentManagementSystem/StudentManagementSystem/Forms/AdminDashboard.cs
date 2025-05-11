@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using StudentManagementSystem.Forms;
 using StudentManagementSystem.Services;
 
 namespace StudentManagementSystem.Models
@@ -81,7 +82,8 @@ namespace StudentManagementSystem.Models
 
         private void createStudentToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            var studentForm = new StudentManagementForm();
+            studentForm.ShowDialog();
         }
 
         private void manageStudentToolStripMenuItem_Click(object sender, EventArgs e)

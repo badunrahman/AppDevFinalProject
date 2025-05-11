@@ -106,21 +106,21 @@
             // createStudentToolStripMenuItem
             // 
             this.createStudentToolStripMenuItem.Name = "createStudentToolStripMenuItem";
-            this.createStudentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.createStudentToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.createStudentToolStripMenuItem.Text = "Create Student";
             this.createStudentToolStripMenuItem.Click += new System.EventHandler(this.createStudentToolStripMenuItem_Click);
             // 
             // manageStudentToolStripMenuItem
             // 
             this.manageStudentToolStripMenuItem.Name = "manageStudentToolStripMenuItem";
-            this.manageStudentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.manageStudentToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.manageStudentToolStripMenuItem.Text = "Manage Student";
             this.manageStudentToolStripMenuItem.Click += new System.EventHandler(this.manageStudentToolStripMenuItem_Click);
             // 
             // athletesStudentToolStripMenuItem
             // 
             this.athletesStudentToolStripMenuItem.Name = "athletesStudentToolStripMenuItem";
-            this.athletesStudentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.athletesStudentToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.athletesStudentToolStripMenuItem.Text = "Athletes Student";
             this.athletesStudentToolStripMenuItem.Click += new System.EventHandler(this.athletesStudentToolStripMenuItem_Click);
             // 
@@ -136,7 +136,7 @@
             // createTeacherToolStripMenuItem
             // 
             this.createTeacherToolStripMenuItem.Name = "createTeacherToolStripMenuItem";
-            this.createTeacherToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.createTeacherToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.createTeacherToolStripMenuItem.Text = "Create Teacher";
             this.createTeacherToolStripMenuItem.Click += new System.EventHandler(this.createTeacherToolStripMenuItem_Click);
             // 
@@ -153,14 +153,14 @@
             // partTimeStudentToolStripMenuItem
             // 
             this.partTimeStudentToolStripMenuItem.Name = "partTimeStudentToolStripMenuItem";
-            this.partTimeStudentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.partTimeStudentToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.partTimeStudentToolStripMenuItem.Text = "PartTime Student";
             this.partTimeStudentToolStripMenuItem.Click += new System.EventHandler(this.partTimeStudentToolStripMenuItem_Click);
             // 
             // fullTimeStudentToolStripMenuItem
             // 
             this.fullTimeStudentToolStripMenuItem.Name = "fullTimeStudentToolStripMenuItem";
-            this.fullTimeStudentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fullTimeStudentToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.fullTimeStudentToolStripMenuItem.Text = "FullTime Student";
             this.fullTimeStudentToolStripMenuItem.Click += new System.EventHandler(this.fullTimeStudentToolStripMenuItem_Click);
             // 
@@ -191,6 +191,7 @@
             // 
             // contactTextBox
             // 
+            this.contactTextBox.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contactTextBox.Location = new System.Drawing.Point(483, 313);
             this.contactTextBox.Multiline = true;
             this.contactTextBox.Name = "contactTextBox";
@@ -201,6 +202,7 @@
             // 
             // coursesTextBox
             // 
+            this.coursesTextBox.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.coursesTextBox.Location = new System.Drawing.Point(483, 254);
             this.coursesTextBox.Multiline = true;
             this.coursesTextBox.Name = "coursesTextBox";
@@ -210,6 +212,7 @@
             // 
             // gpaTextBox
             // 
+            this.gpaTextBox.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gpaTextBox.Location = new System.Drawing.Point(483, 181);
             this.gpaTextBox.Multiline = true;
             this.gpaTextBox.Name = "gpaTextBox";
@@ -219,6 +222,7 @@
             // 
             // lNameTextBox
             // 
+            this.lNameTextBox.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lNameTextBox.Location = new System.Drawing.Point(483, 112);
             this.lNameTextBox.Multiline = true;
             this.lNameTextBox.Name = "lNameTextBox";
@@ -228,6 +232,7 @@
             // 
             // fNameTextBoxt
             // 
+            this.fNameTextBoxt.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fNameTextBoxt.Location = new System.Drawing.Point(483, 55);
             this.fNameTextBoxt.Multiline = true;
             this.fNameTextBoxt.Name = "fNameTextBoxt";
@@ -237,46 +242,51 @@
             // 
             // contactLabel
             // 
+            this.contactLabel.AutoSize = true;
             this.contactLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contactLabel.Location = new System.Drawing.Point(328, 322);
             this.contactLabel.Name = "contactLabel";
-            this.contactLabel.Size = new System.Drawing.Size(108, 24);
+            this.contactLabel.Size = new System.Drawing.Size(77, 20);
             this.contactLabel.TabIndex = 7;
             this.contactLabel.Text = "Contact:";
             // 
             // coursesLabel
             // 
+            this.coursesLabel.AutoSize = true;
             this.coursesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.coursesLabel.Location = new System.Drawing.Point(328, 263);
             this.coursesLabel.Name = "coursesLabel";
-            this.coursesLabel.Size = new System.Drawing.Size(108, 24);
+            this.coursesLabel.Size = new System.Drawing.Size(80, 20);
             this.coursesLabel.TabIndex = 6;
             this.coursesLabel.Text = "Courses:";
             // 
             // gpaLabel
             // 
+            this.gpaLabel.AutoSize = true;
             this.gpaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gpaLabel.Location = new System.Drawing.Point(328, 190);
             this.gpaLabel.Name = "gpaLabel";
-            this.gpaLabel.Size = new System.Drawing.Size(108, 24);
+            this.gpaLabel.Size = new System.Drawing.Size(51, 20);
             this.gpaLabel.TabIndex = 5;
             this.gpaLabel.Text = "GPA:";
             // 
             // lastNameLabel
             // 
+            this.lastNameLabel.AutoSize = true;
             this.lastNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lastNameLabel.Location = new System.Drawing.Point(328, 121);
             this.lastNameLabel.Name = "lastNameLabel";
-            this.lastNameLabel.Size = new System.Drawing.Size(108, 24);
+            this.lastNameLabel.Size = new System.Drawing.Size(95, 20);
             this.lastNameLabel.TabIndex = 4;
             this.lastNameLabel.Text = "LastName:";
             // 
             // firstNameLabel
             // 
+            this.firstNameLabel.AutoSize = true;
             this.firstNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.firstNameLabel.Location = new System.Drawing.Point(328, 64);
             this.firstNameLabel.Name = "firstNameLabel";
-            this.firstNameLabel.Size = new System.Drawing.Size(108, 24);
+            this.firstNameLabel.Size = new System.Drawing.Size(96, 20);
             this.firstNameLabel.TabIndex = 3;
             this.firstNameLabel.Text = "FirstName:";
             // 
@@ -290,6 +300,7 @@
             // 
             // searchButton
             // 
+            this.searchButton.AutoSize = true;
             this.searchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchButton.Location = new System.Drawing.Point(94, 226);
             this.searchButton.Name = "searchButton";
