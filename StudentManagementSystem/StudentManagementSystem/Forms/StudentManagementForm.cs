@@ -4,8 +4,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
+using System.Resources;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using StudentManagementSystem.Database;
@@ -15,6 +18,8 @@ namespace StudentManagementSystem.Forms
     public partial class StudentManagementForm : Form
     {
         private bool isDarkTheme = false;
+        private ResourceManager rm = new ResourceManager("StudentManagementSystem.Strings", typeof(StudentManagementForm).Assembly);
+
         public StudentManagementForm()
         {
             InitializeComponent();
@@ -33,13 +38,10 @@ namespace StudentManagementSystem.Forms
                 TeacherName = teacher;
             }
 
-            // so the CheckedListBox will show CourseName
             public override string ToString() => CourseName;
         }
 
-        // will hold all courses once we load them
         private List<CourseItem> _courseItems;
-
 
         private void creatStudnetTitleLabel_Click(object sender, EventArgs e)
         {
@@ -81,8 +83,6 @@ namespace StudentManagementSystem.Forms
 
         }
 
-
-
         private void savebutton_Click(object sender, EventArgs e)
         {
             string name = nameTextBox.Text.Trim();
@@ -95,13 +95,13 @@ namespace StudentManagementSystem.Forms
 
             if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(studentType))
             {
-                MessageBox.Show("Please fill in Name and select a Student Type.");
+                MessageBox.Show(rm.GetString("FillFields", CultureInfo.CurrentUICulture));
                 return;
             }
 
             if (coursesCheckedListBox.CheckedItems.Count == 0)
             {
-                MessageBox.Show("Please select at least one course.");
+                MessageBox.Show(rm.GetString("SelectCourse", CultureInfo.CurrentUICulture));
                 return;
             }
 
@@ -109,11 +109,10 @@ namespace StudentManagementSystem.Forms
 
             using (var conn = DatabaseConnection.GetConnection())
             {
-                // 1) Insert student and grab new ID
                 using (var insertCmd = new SqlCommand(@"
-            INSERT INTO Students(Name,Address,EmergencyContact,StudentType)
-            OUTPUT INSERTED.StudentID
-            VALUES(@n,@a,@c,@t)", conn))
+                INSERT INTO Students(Name,Address,EmergencyContact,StudentType)
+                OUTPUT INSERTED.StudentID
+                VALUES(@n,@a,@c,@t)", conn))
                 {
                     insertCmd.Parameters.AddWithValue("@n", name);
                     insertCmd.Parameters.AddWithValue("@a", address);
@@ -122,7 +121,6 @@ namespace StudentManagementSystem.Forms
                     newStudentId = (int)insertCmd.ExecuteScalar();
                 }
 
-                // 2) Enroll in each checked course
                 using (var enrollCmd = new SqlCommand(
                     "INSERT INTO Enrollments(StudentID,CourseID) VALUES(@sid,@cid)", conn))
                 {
@@ -137,9 +135,8 @@ namespace StudentManagementSystem.Forms
                 }
             }
 
-            MessageBox.Show("✅ Student created and enrolled successfully.");
+            MessageBox.Show(rm.GetString("StudentSaved", CultureInfo.CurrentUICulture));
 
-            // clear form
             nameTextBox.Clear();
             addressTextBox.Clear();
             contactTextBox.Clear();
@@ -150,8 +147,6 @@ namespace StudentManagementSystem.Forms
             teachersListBox.Items.Clear();
         }
 
-
-
         private void clearButton_Click(object sender, EventArgs e)
         {
 
@@ -159,14 +154,14 @@ namespace StudentManagementSystem.Forms
 
         private void StudentManagementForm_Load(object sender, EventArgs e)
         {
-            // ─── LOAD COURSES & WIRE UP ────────────────────────────────────
+            SetLanguage("en"); // ← Change to "fr" to default to French
+
             _courseItems = new List<CourseItem>();
             using (var conn = DatabaseConnection.GetConnection())
             using (var cmd = new SqlCommand(@"
-        SELECT c.CourseID, c.CourseName, t.Name AS TeacherName
-          FROM Courses c
-          JOIN Teachers t ON c.TeacherID = t.TeacherID
-    ", conn))
+                SELECT c.CourseID, c.CourseName, t.Name AS TeacherName
+                FROM Courses c
+                JOIN Teachers t ON c.TeacherID = t.TeacherID", conn))
             using (var rdr = cmd.ExecuteReader())
             {
                 while (rdr.Read())
@@ -179,20 +174,33 @@ namespace StudentManagementSystem.Forms
                 }
             }
 
-            // bind to CheckedListBox
             coursesCheckedListBox.DataSource = _courseItems;
             coursesCheckedListBox.DisplayMember = nameof(CourseItem.CourseName);
-
-            // update teacher list whenever a course is checked/unchecked
             coursesCheckedListBox.ItemCheck += coursesCheckedListBox_ItemCheck;
         }
 
+        private void SetLanguage(string langCode)
+        {
+            CultureInfo ci = new CultureInfo(langCode);
+            Thread.CurrentThread.CurrentUICulture = ci;
 
-
+            createStudentTitleLabel.Text = rm.GetString("CreateStudentTitle", ci);
+            btnToggleTheme.Text = rm.GetString("ThemeBtn", ci);
+            nameLabel.Text = rm.GetString("LabelName", ci);
+            addressLabel.Text = rm.GetString("LabelAddress", ci);
+            contactLabel.Text = rm.GetString("LabelContact", ci);
+            studentTypeLabel.Text = rm.GetString("LabelStudentType", ci);
+            fullTimeRadioButton.Text = rm.GetString("RadioFullTime", ci);
+            partTimeRadioButton.Text = rm.GetString("RadioPartTime", ci);
+            athleteRadioButton.Text = rm.GetString("RadioAthletes", ci);
+            coursesLabel.Text = rm.GetString("LabelCourses", ci);
+            teacherLabel.Text = rm.GetString("LabelTeacher", ci);
+            savebutton.Text = rm.GetString("SaveBtn", ci);
+            clearButton.Text = rm.GetString("ClearBtn", ci);
+        }
 
         private void coursesCheckedListBox_ItemCheck(object sender, ItemCheckEventArgs e)
         {
-            // CheckedItems is updated *after* this event, so defer:
             BeginInvoke((MethodInvoker)UpdateTeachersList);
         }
 
@@ -229,7 +237,6 @@ namespace StudentManagementSystem.Forms
                 ctrl.ForeColor = Color.Black;
             }
         }
-
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {

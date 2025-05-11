@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
+using System.Resources;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using StudentManagementSystem.Forms;
@@ -15,10 +18,31 @@ namespace StudentManagementSystem.Models
     public partial class AdminDashboard : Form
     {
         private User _loggedInAdmin;
+        private ResourceManager rm = new ResourceManager("StudentManagementSystem.Strings", typeof(AdminDashboard).Assembly);
+
         public AdminDashboard(User admin)
         {
             InitializeComponent();
             _loggedInAdmin = admin;
+        }
+
+        public void SwitchLanguage(string langCode)
+        {
+            SetLanguage(langCode);
+        }
+
+        private void SetLanguage(string langCode)
+        {
+            CultureInfo ci = new CultureInfo(langCode);
+            Thread.CurrentThread.CurrentUICulture = ci;
+
+            firstNameLabel.Text = rm.GetString("firstNameLabel", ci);
+            lastNameLabel.Text = rm.GetString("lastNameLabel", ci);
+            gpaLabel.Text = rm.GetString("gpaLabel", ci);
+            coursesLabel.Text = rm.GetString("coursesLabel", ci);
+            contactLabel.Text = rm.GetString("contactLabel", ci);
+            grpQuickSearchGroupBox.Text = rm.GetString("grpQuickSearchGroupBox", ci);
+            searchButton.Text = rm.GetString("searchButton", ci);
         }
 
         private void CircularPictureBox(PictureBox picBox)
@@ -32,14 +56,14 @@ namespace StudentManagementSystem.Models
         {
             CircularPictureBox(adminPictureBox);
             adminNameLabel.Text = $"Welcome, {_loggedInAdmin.Username}";
-
+            SetLanguage("fr"); // ← Change to "fr" to start in French
         }
 
         private void adminPictureBox_Paint(object sender, PaintEventArgs e)
         {
             PictureBox picBox = sender as PictureBox;
 
-            using (Pen pen = new Pen(Color.Black, 4)) // Color + thickness
+            using (Pen pen = new Pen(Color.Black, 4))
             {
                 e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighSpeed;
                 e.Graphics.DrawEllipse(pen, 1, 1, picBox.Width - 3, picBox.Height - 3);
@@ -48,7 +72,7 @@ namespace StudentManagementSystem.Models
 
         private void adminNameLabel_Click(object sender, EventArgs e)
         {
-            //this.adminNameLabel.Text = $"Welcome,{User.Username}";
+
         }
 
         private void studentIdTextBox_TextChanged(object sender, EventArgs e)
@@ -62,7 +86,6 @@ namespace StudentManagementSystem.Models
             {
                 studentIdTextBox.Text = "";
                 studentIdTextBox.ForeColor = Color.Black;
-
             }
         }
 
@@ -77,7 +100,7 @@ namespace StudentManagementSystem.Models
 
         private void studnetManagementToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void createStudentToolStripMenuItem_Click(object sender, EventArgs e)
@@ -133,7 +156,7 @@ namespace StudentManagementSystem.Models
         {
             if (!int.TryParse(studentIdTextBox.Text, out int studentId))
             {
-                MessageBox.Show("Please enter a valid Student ID.");
+                MessageBox.Show(rm.GetString("InvalidID", CultureInfo.CurrentUICulture));
                 return;
             }
 
@@ -141,15 +164,15 @@ namespace StudentManagementSystem.Models
 
             if (student == null)
             {
-                MessageBox.Show("Student not found.");
+                MessageBox.Show(rm.GetString("StudentNotFound", CultureInfo.CurrentUICulture));
                 return;
             }
 
             string[] nameParts = student.Name.Split(' ');
-            fNameTextBoxt.Text = nameParts[0];// for the first name
+            fNameTextBoxt.Text = nameParts[0];
             lNameTextBox.Text = nameParts.Length > 1 ? string.Join(" ", nameParts.Skip(1)) : "";
             contactTextBox.Text = student.EmergencyContact;
-            gpaTextBox.Text = "N/A";            // Only if GPA is available later
+            gpaTextBox.Text = "N/A";
             coursesTextBox.Text = string.Join(", ", CourseService.GetCoursesByStudentId(studentId));
         }
 
@@ -178,5 +201,4 @@ namespace StudentManagementSystem.Models
 
         }
     }
-
-    }
+}

@@ -46,6 +46,11 @@ namespace StudentManagementSystem
             SetLanguage("fr");
         }
 
+        private void englishButton_Click(object sender, EventArgs e)
+        {
+            SetLanguage("en");
+        }
+
         private void usernameTextBox_TextChanged(object sender, EventArgs e)
         {
             incorrectInfoLabel.Visible = false;

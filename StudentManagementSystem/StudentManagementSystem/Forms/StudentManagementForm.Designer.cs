@@ -31,7 +31,7 @@
             this.createStudentGroupBox = new System.Windows.Forms.GroupBox();
             this.teachersListBox = new System.Windows.Forms.ListBox();
             this.coursesCheckedListBox = new System.Windows.Forms.CheckedListBox();
-            this.creatStudnetTitleLabel = new System.Windows.Forms.Label();
+            this.createStudentTitleLabel = new System.Windows.Forms.Label();
             this.athleteRadioButton = new System.Windows.Forms.RadioButton();
             this.partTimeRadioButton = new System.Windows.Forms.RadioButton();
             this.fullTimeRadioButton = new System.Windows.Forms.RadioButton();
@@ -54,7 +54,7 @@
             // 
             this.createStudentGroupBox.Controls.Add(this.teachersListBox);
             this.createStudentGroupBox.Controls.Add(this.coursesCheckedListBox);
-            this.createStudentGroupBox.Controls.Add(this.creatStudnetTitleLabel);
+            this.createStudentGroupBox.Controls.Add(this.createStudentTitleLabel);
             this.createStudentGroupBox.Controls.Add(this.athleteRadioButton);
             this.createStudentGroupBox.Controls.Add(this.partTimeRadioButton);
             this.createStudentGroupBox.Controls.Add(this.fullTimeRadioButton);
@@ -97,15 +97,15 @@
             this.coursesCheckedListBox.TabIndex = 21;
             this.coursesCheckedListBox.SelectedIndexChanged += new System.EventHandler(this.coursesCheckedListBox_SelectedIndexChanged);
             // 
-            // creatStudnetTitleLabel
+            // createStudentTitleLabel
             // 
-            this.creatStudnetTitleLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.creatStudnetTitleLabel.Location = new System.Drawing.Point(347, 0);
-            this.creatStudnetTitleLabel.Name = "creatStudnetTitleLabel";
-            this.creatStudnetTitleLabel.Size = new System.Drawing.Size(216, 43);
-            this.creatStudnetTitleLabel.TabIndex = 18;
-            this.creatStudnetTitleLabel.Text = "Create student";
-            this.creatStudnetTitleLabel.Click += new System.EventHandler(this.creatStudnetTitleLabel_Click);
+            this.createStudentTitleLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.createStudentTitleLabel.Location = new System.Drawing.Point(347, 0);
+            this.createStudentTitleLabel.Name = "createStudentTitleLabel";
+            this.createStudentTitleLabel.Size = new System.Drawing.Size(216, 43);
+            this.createStudentTitleLabel.TabIndex = 18;
+            this.createStudentTitleLabel.Text = "Create student";
+            this.createStudentTitleLabel.Click += new System.EventHandler(this.creatStudnetTitleLabel_Click);
             // 
             // athleteRadioButton
             // 
@@ -265,7 +265,6 @@
             this.Controls.Add(this.btnToggleTheme);
             this.Controls.Add(this.createStudentGroupBox);
             this.Name = "StudentManagementForm";
-            this.Text = "StudentManagementForm";
             this.Load += new System.EventHandler(this.StudentManagementForm_Load);
             this.createStudentGroupBox.ResumeLayout(false);
             this.createStudentGroupBox.PerformLayout();
@@ -290,7 +289,7 @@
         private System.Windows.Forms.RadioButton athleteRadioButton;
         private System.Windows.Forms.RadioButton partTimeRadioButton;
         private System.Windows.Forms.RadioButton fullTimeRadioButton;
-        private System.Windows.Forms.Label creatStudnetTitleLabel;
+        private System.Windows.Forms.Label createStudentTitleLabel;
         private System.Windows.Forms.ListBox teachersListBox;
         private System.Windows.Forms.CheckedListBox coursesCheckedListBox;
         private System.Windows.Forms.Button btnToggleTheme;

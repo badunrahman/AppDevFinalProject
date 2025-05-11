@@ -110,4 +110,26 @@
 	<data name="LoginSuccess" xml:space="preserve">
   <value>Connexion réussie !</value>
 </data>
+	<data name="ThemeBtn" xml:space="preserve"><value>Thème</value></data>
+	<data name="CreateStudentTitle" xml:space="preserve"><value>Créer un étudiant</value></data>
+	<data name="LabelName" xml:space="preserve"><value>Nom :</value></data>
+	<data name="LabelAddress" xml:space="preserve"><value>Adresse :</value></data>
+	<data name="LabelContact" xml:space="preserve"><value>Contact :</value></data>
+	<data name="LabelStudentType" xml:space="preserve"><value>Type d'étudiant :</value></data>
+	<data name="RadioFullTime" xml:space="preserve"><value>Temps plein</value></data>
+	<data name="RadioPartTime" xml:space="preserve"><value>Temps partiel</value></data>
+	<data name="RadioAthletes" xml:space="preserve"><value>Sportifs</value></data>
+	<data name="LabelCourses" xml:space="preserve"><value>Cours :</value></data>
+	<data name="LabelTeacher" xml:space="preserve"><value>Enseignant :</value></data>
+	<data name="SaveBtn" xml:space="preserve"><value>Enregistrer</value></data>
+	<data name="ClearBtn" xml:space="preserve"><value>Effacer</value></data>
+
+	<data name="firstNameLabel" xml:space="preserve"><value>Prénom :</value></data>
+	<data name="lastNameLabel" xml:space="preserve"><value>Nom :</value></data>
+	<data name="gpaLabel" xml:space="preserve"><value>Note moyenne :</value></data>
+	<data name="coursesLabel" xml:space="preserve"><value>Cours :</value></data>
+	<data name="contactLabel" xml:space="preserve"><value>Contact :</value></data>
+	<data name="grpQuickSearchGroupBox" xml:space="preserve"><value>Recherche rapide</value></data>
+	<data name="searchButton" xml:space="preserve"><value>Rechercher</value></data>
+
 </root>

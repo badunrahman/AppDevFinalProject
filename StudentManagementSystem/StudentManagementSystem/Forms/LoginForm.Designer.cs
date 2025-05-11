@@ -40,7 +40,9 @@
             this.loginLabel = new System.Windows.Forms.Label();
             this.frenchButton = new System.Windows.Forms.Button();
             this.lightModeButton = new System.Windows.Forms.Button();
+            this.englishButton = new System.Windows.Forms.PictureBox();
             this.loginBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.englishButton)).BeginInit();
             this.SuspendLayout();
             // 
             // titleLabel
@@ -171,12 +173,22 @@
             this.lightModeButton.TabIndex = 3;
             this.lightModeButton.UseVisualStyleBackColor = true;
             // 
+            // englishButton
+            // 
+            this.englishButton.Location = new System.Drawing.Point(315, 13);
+            this.englishButton.Name = "englishButton";
+            this.englishButton.Size = new System.Drawing.Size(39, 29);
+            this.englishButton.TabIndex = 4;
+            this.englishButton.TabStop = false;
+            this.englishButton.Click += new System.EventHandler(this.englishButton_Click);
+            // 
             // loginPageForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(453, 300);
+            this.Controls.Add(this.englishButton);
             this.Controls.Add(this.lightModeButton);
             this.Controls.Add(this.frenchButton);
             this.Controls.Add(this.loginBox);
@@ -185,6 +197,7 @@
             this.Text = " ";
             this.loginBox.ResumeLayout(false);
             this.loginBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.englishButton)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -202,6 +215,7 @@
         private System.Windows.Forms.Button frenchButton;
         private System.Windows.Forms.Button lightModeButton;
         private System.Windows.Forms.Label incorrectInfoLabel;
+        private System.Windows.Forms.PictureBox englishButton;
     }
 }
 
