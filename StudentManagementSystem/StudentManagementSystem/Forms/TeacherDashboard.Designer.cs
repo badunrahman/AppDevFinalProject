@@ -99,6 +99,7 @@
             this.studentDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.studentDataGridView.Size = new System.Drawing.Size(605, 293);
             this.studentDataGridView.TabIndex = 9;
+            this.studentDataGridView.SelectionChanged += new System.EventHandler(this.studentDataGridView_SelectionChanged);
             // 
             // Grade
             // 
