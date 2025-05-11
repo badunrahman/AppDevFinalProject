@@ -120,18 +120,6 @@
   <metadata name="Grade.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="Grade.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="studentDBDataSetBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>736, 17</value>
-  </metadata>
-  <metadata name="studentDBDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="studentDBDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lightModeButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -462,7 +450,7 @@
   <data name="frenchButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAAAeZJREFUSEvtlstKw0AUhg8IuvbyFG7UeunFNFHcuLIJIupWfQEX6st4Qap150LS
+        DAAACwwBP0AiyAAAAeZJREFUSEvtlstKw0AUhg8IuvbyFG7UeunFNFHcuLIJIupWfQEX6st4Qap150LS
         4tMorTs12oJuHc80Zxitv9L0giD+8EHI5XxMZiY59J+fopQaiKJG9j6qbz4+N3Y1fLyhz+lrclvvkg+u
         Ug9P9SPmgWUKoa/pe1SeUvJY51nyL0ddv3zhBeEbkiFY/MaUVIZGpEyyuKuVKdcP77ygrDRIgmBpjEM1
         laNJKddeFv1wmmVPRtqROCZSLk1J2Z+TWbsecYPw9qO0C3E8co/GpPz3cYNyqVXalTiWn0l5nIWVMK0X
@@ -473,13 +461,4 @@
         pKN6fZ1lzYa+eczn+tLQ/6EQvQOvfhbCmhAR1QAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="studentDBDataSetBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>166, 17</value>
-  </metadata>
-  <metadata name="studentsBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>392, 17</value>
-  </metadata>
-  <metadata name="studentsTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>568, 17</value>
-  </metadata>
 </root>

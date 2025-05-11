@@ -17,6 +17,7 @@ namespace StudentManagementSystem.Forms
     {
         private int userId;
         private int teacherId;
+        private Course currentCourse;
         public TeacherDashboard(int id)
         {
             InitializeComponent();
@@ -49,6 +50,7 @@ namespace StudentManagementSystem.Forms
         private void courseComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             Course course = courseComboBox.SelectedItem as Course;
+            currentCourse = course;
 
             if (course != null)
             {
@@ -62,12 +64,38 @@ namespace StudentManagementSystem.Forms
                     int courseid = course.CourseID;
                     int enrollmentid = DatabaseConnection.getEnrollmentID(studentid, courseid);
 
-                    if (enrollmentid != -1)
+                    if (enrollmentid != 0)
                     {
                         int grade = DatabaseConnection.getStudentGrade(enrollmentid);
-                        if (grade != - 1)
+                        if (grade != 0)
                         {
                            studentDataGridView.Rows[i].Cells["Grade"].Value = grade; 
+                        }
+                    }
+                }
+            }
+        }
+
+        private void updateGradesButton_Click(object sender, EventArgs e)
+        {
+            if (studentDataGridView.DataSource != null)
+            {
+                foreach (DataGridViewRow row in studentDataGridView.Rows)
+                {
+                    var cellVal = row.Cells["Grade"].Value;
+                    if (cellVal != null)
+                    {
+                        int grade;
+                        if (int.TryParse(cellVal.ToString(), out grade))
+                        {
+                            var studentidVal = row.Cells["StudentID"].Value;
+                            int studentid = int.Parse(studentidVal.ToString());
+                            int enrollmentid = DatabaseConnection.getEnrollmentID(studentid, currentCourse.CourseID);
+                            DatabaseConnection.updateStudentGrade(enrollmentid, grade);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Invalid grade value");
                         }
                     }
                 }
