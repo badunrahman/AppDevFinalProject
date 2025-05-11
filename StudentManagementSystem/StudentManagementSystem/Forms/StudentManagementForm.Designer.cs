@@ -253,7 +253,7 @@
             this.btnToggleTheme.Name = "btnToggleTheme";
             this.btnToggleTheme.Size = new System.Drawing.Size(93, 30);
             this.btnToggleTheme.TabIndex = 23;
-            this.btnToggleTheme.Text = "button1";
+            this.btnToggleTheme.Text = "Theme";
             this.btnToggleTheme.UseVisualStyleBackColor = true;
             this.btnToggleTheme.Click += new System.EventHandler(this.btnToggleTheme_Click);
             // 

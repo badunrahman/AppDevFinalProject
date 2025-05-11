@@ -156,6 +156,7 @@
             this.frenchButton.Size = new System.Drawing.Size(31, 30);
             this.frenchButton.TabIndex = 2;
             this.frenchButton.UseVisualStyleBackColor = true;
+            this.frenchButton.Click += new System.EventHandler(this.frenchButton_Click);
             // 
             // lightModeButton
             // 
@@ -167,6 +168,7 @@
             this.lightModeButton.Size = new System.Drawing.Size(31, 30);
             this.lightModeButton.TabIndex = 3;
             this.lightModeButton.UseVisualStyleBackColor = true;
+//            this.lightModeButton.Click += new System.EventHandler(this.lightModeButton_Click);
             // 
             // loginPageForm
             // 
