@@ -180,7 +180,6 @@
             this.Controls.Add(this.titleLabel);
             this.Name = "loginPageForm";
             this.Text = " ";
-            this.Load += new System.EventHandler(this.loginPageForm_Load);
             this.loginBox.ResumeLayout(false);
             this.loginBox.PerformLayout();
             this.ResumeLayout(false);

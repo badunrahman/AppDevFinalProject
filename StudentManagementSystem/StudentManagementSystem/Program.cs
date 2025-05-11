@@ -24,7 +24,7 @@ namespace StudentManagementSystem
             {
                 UserID = 1
             };
-            Application.Run(new AdminDashboard(testAdmin)); // continue to login screen
+            Application.Run(new loginPageForm()); // continue to login screen
 
 
         }

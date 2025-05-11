@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using StudentManagementSystem.Database;
 using StudentManagementSystem.Forms;
+using StudentManagementSystem.Models;
 using StudentManagementSystem.StudentDBDataSetTableAdapters;
 
 namespace StudentManagementSystem
@@ -40,8 +41,23 @@ namespace StudentManagementSystem
             {
                 MessageBox.Show("Successfull login!");
                 int userID = DatabaseConnection.getUserIdByLogin(username, password);
-                TeacherDashboard teacherDashboard = new TeacherDashboard(userID);
-                teacherDashboard.Show();
+                string role = DatabaseConnection.getUserRole(userID);
+
+                if (role == "Teacher")
+                {
+                    TeacherDashboard teacherDashboard = new TeacherDashboard(userID);
+                    teacherDashboard.Show();
+                }
+                else if (role == "Admin")
+                {
+                    User admin = new User(username, password, role);
+                    AdminDashboard adminDashboard = new AdminDashboard(admin);
+                    adminDashboard.Show();
+                }
+                else
+                {
+                    MessageBox.Show("An error occurred while logging in");
+                }
             }
             else
             {
@@ -50,11 +66,6 @@ namespace StudentManagementSystem
                 incorrectInfoLabel.Visible = true;
                 MessageBox.Show("Incorrect username or password!", "Error", button, icon);
             }
-        }
-
-        private void loginPageForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

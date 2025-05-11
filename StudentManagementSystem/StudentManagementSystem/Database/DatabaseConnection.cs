@@ -203,6 +203,25 @@ namespace StudentManagementSystem.Database
             }
         }
 
+        public static string getUserRole(int userId)
+        {
+            using (SqlConnection connection = GetConnection()){
+                string query = "SELECT Role FROM Users WHERE UserID = @userId";
+                SqlCommand cmd = new SqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@userId", userId);
+
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        return reader.GetString(0);
+                    }
+                }
+            }
+
+            return null;
+        }
+
         /// <summary>
         /// Executes a SQL query and returns a DataTable
         /// </summary>

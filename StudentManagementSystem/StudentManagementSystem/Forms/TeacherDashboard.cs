@@ -55,6 +55,12 @@ namespace StudentManagementSystem.Forms
                 List<Student> students = DatabaseConnection.getCourseStudents(course.CourseID);
                 studentDataGridView.DataSource = null;
                 studentDataGridView.DataSource = students;
+
+                for (int i = 0; i < students.Count; i++)
+                {
+                    var gradeCell = studentDataGridView.Rows[0].Cells["Grade"].Value;
+
+                }
             }
         }
     }
