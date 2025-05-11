@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.athleteDataGridView = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.Courses = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.athleteDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,6 +46,14 @@
             this.athleteDataGridView.Size = new System.Drawing.Size(653, 318);
             this.athleteDataGridView.TabIndex = 0;
             // 
+            // Courses
+            // 
+            this.Courses.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Courses.HeaderText = "Courses";
+            this.Courses.Name = "Courses";
+            this.Courses.ReadOnly = true;
+            this.Courses.Width = 70;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -55,14 +63,6 @@
             this.label1.Size = new System.Drawing.Size(242, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Athlete Students Information";
-            // 
-            // Courses
-            // 
-            this.Courses.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Courses.HeaderText = "Courses";
-            this.Courses.Name = "Courses";
-            this.Courses.ReadOnly = true;
-            this.Courses.Width = 70;
             // 
             // athleteStudentView
             // 

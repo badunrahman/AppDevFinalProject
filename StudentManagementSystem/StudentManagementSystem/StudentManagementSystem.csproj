@@ -70,6 +70,12 @@
     <Compile Include="Forms\athleteStudentView.Designer.cs">
       <DependentUpon>athleteStudentView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FullTimeStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FullTimeStudent.Designer.cs">
+      <DependentUpon>FullTimeStudent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,12 +93,6 @@
     </Compile>
     <Compile Include="Forms\AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\partTimeStudentView.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\partTimeStudentView.Designer.cs">
-      <DependentUpon>partTimeStudentView.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\StudentManagementForm.cs">
       <SubType>Form</SubType>
@@ -143,14 +143,14 @@
     <EmbeddedResource Include="Forms\athleteStudentView.resx">
       <DependentUpon>athleteStudentView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FullTimeStudent.resx">
+      <DependentUpon>FullTimeStudent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CreateTeachers.resx">
       <DependentUpon>CreateTeachers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\partTimeStudentView.resx">
-      <DependentUpon>partTimeStudentView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\StudentManagementForm.resx">
       <DependentUpon>StudentManagementForm.cs</DependentUpon>
