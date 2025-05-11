@@ -101,24 +101,28 @@
             this.studnetManagementToolStripMenuItem.Name = "studnetManagementToolStripMenuItem";
             this.studnetManagementToolStripMenuItem.Size = new System.Drawing.Size(134, 20);
             this.studnetManagementToolStripMenuItem.Text = "Studnet Management";
+            this.studnetManagementToolStripMenuItem.Click += new System.EventHandler(this.studnetManagementToolStripMenuItem_Click);
             // 
             // createStudentToolStripMenuItem
             // 
             this.createStudentToolStripMenuItem.Name = "createStudentToolStripMenuItem";
-            this.createStudentToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.createStudentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.createStudentToolStripMenuItem.Text = "Create Student";
+            this.createStudentToolStripMenuItem.Click += new System.EventHandler(this.createStudentToolStripMenuItem_Click);
             // 
             // manageStudentToolStripMenuItem
             // 
             this.manageStudentToolStripMenuItem.Name = "manageStudentToolStripMenuItem";
-            this.manageStudentToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.manageStudentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.manageStudentToolStripMenuItem.Text = "Manage Student";
+            this.manageStudentToolStripMenuItem.Click += new System.EventHandler(this.manageStudentToolStripMenuItem_Click);
             // 
             // athletesStudentToolStripMenuItem
             // 
             this.athletesStudentToolStripMenuItem.Name = "athletesStudentToolStripMenuItem";
-            this.athletesStudentToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.athletesStudentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.athletesStudentToolStripMenuItem.Text = "Athletes Student";
+            this.athletesStudentToolStripMenuItem.Click += new System.EventHandler(this.athletesStudentToolStripMenuItem_Click);
             // 
             // teacherManagementToolStripMenuItem
             // 
@@ -127,12 +131,14 @@
             this.teacherManagementToolStripMenuItem.Name = "teacherManagementToolStripMenuItem";
             this.teacherManagementToolStripMenuItem.Size = new System.Drawing.Size(133, 20);
             this.teacherManagementToolStripMenuItem.Text = "Teacher Management";
+            this.teacherManagementToolStripMenuItem.Click += new System.EventHandler(this.teacherManagementToolStripMenuItem_Click);
             // 
             // createTeacherToolStripMenuItem
             // 
             this.createTeacherToolStripMenuItem.Name = "createTeacherToolStripMenuItem";
-            this.createTeacherToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.createTeacherToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.createTeacherToolStripMenuItem.Text = "Create Teacher";
+            this.createTeacherToolStripMenuItem.Click += new System.EventHandler(this.createTeacherToolStripMenuItem_Click);
             // 
             // academicTrackingToolStripMenuItem
             // 
@@ -142,18 +148,21 @@
             this.academicTrackingToolStripMenuItem.Name = "academicTrackingToolStripMenuItem";
             this.academicTrackingToolStripMenuItem.Size = new System.Drawing.Size(119, 20);
             this.academicTrackingToolStripMenuItem.Text = "Academic Tracking";
+            this.academicTrackingToolStripMenuItem.Click += new System.EventHandler(this.academicTrackingToolStripMenuItem_Click);
             // 
             // partTimeStudentToolStripMenuItem
             // 
             this.partTimeStudentToolStripMenuItem.Name = "partTimeStudentToolStripMenuItem";
-            this.partTimeStudentToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.partTimeStudentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.partTimeStudentToolStripMenuItem.Text = "PartTime Student";
+            this.partTimeStudentToolStripMenuItem.Click += new System.EventHandler(this.partTimeStudentToolStripMenuItem_Click);
             // 
             // fullTimeStudentToolStripMenuItem
             // 
             this.fullTimeStudentToolStripMenuItem.Name = "fullTimeStudentToolStripMenuItem";
-            this.fullTimeStudentToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.fullTimeStudentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.fullTimeStudentToolStripMenuItem.Text = "FullTime Student";
+            this.fullTimeStudentToolStripMenuItem.Click += new System.EventHandler(this.fullTimeStudentToolStripMenuItem_Click);
             // 
             // grpQuickSearchGroupBox
             // 
@@ -178,6 +187,7 @@
             this.grpQuickSearchGroupBox.TabIndex = 3;
             this.grpQuickSearchGroupBox.TabStop = false;
             this.grpQuickSearchGroupBox.Text = "Quick Search";
+            this.grpQuickSearchGroupBox.Enter += new System.EventHandler(this.grpQuickSearchGroupBox_Enter);
             // 
             // contactTextBox
             // 
@@ -186,6 +196,8 @@
             this.contactTextBox.Name = "contactTextBox";
             this.contactTextBox.Size = new System.Drawing.Size(298, 33);
             this.contactTextBox.TabIndex = 12;
+            this.contactTextBox.Text = " ";
+            this.contactTextBox.TextChanged += new System.EventHandler(this.contactTextBox_TextChanged);
             // 
             // coursesTextBox
             // 
@@ -194,6 +206,7 @@
             this.coursesTextBox.Name = "coursesTextBox";
             this.coursesTextBox.Size = new System.Drawing.Size(298, 33);
             this.coursesTextBox.TabIndex = 11;
+            this.coursesTextBox.TextChanged += new System.EventHandler(this.coursesTextBox_TextChanged);
             // 
             // gpaTextBox
             // 
@@ -202,6 +215,7 @@
             this.gpaTextBox.Name = "gpaTextBox";
             this.gpaTextBox.Size = new System.Drawing.Size(298, 33);
             this.gpaTextBox.TabIndex = 10;
+            this.gpaTextBox.TextChanged += new System.EventHandler(this.gpaTextBox_TextChanged);
             // 
             // lNameTextBox
             // 
@@ -210,6 +224,7 @@
             this.lNameTextBox.Name = "lNameTextBox";
             this.lNameTextBox.Size = new System.Drawing.Size(298, 33);
             this.lNameTextBox.TabIndex = 9;
+            this.lNameTextBox.TextChanged += new System.EventHandler(this.lNameTextBox_TextChanged);
             // 
             // fNameTextBoxt
             // 
@@ -218,6 +233,7 @@
             this.fNameTextBoxt.Name = "fNameTextBoxt";
             this.fNameTextBoxt.Size = new System.Drawing.Size(298, 33);
             this.fNameTextBoxt.TabIndex = 8;
+            this.fNameTextBoxt.TextChanged += new System.EventHandler(this.fNameTextBoxt_TextChanged);
             // 
             // contactLabel
             // 
@@ -281,6 +297,7 @@
             this.searchButton.TabIndex = 1;
             this.searchButton.Text = "Search";
             this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
             // studentIdTextBox
             // 

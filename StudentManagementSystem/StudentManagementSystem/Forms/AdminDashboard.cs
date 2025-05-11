@@ -69,8 +69,85 @@ namespace StudentManagementSystem.Models
             }
         }
 
+        private void studnetManagementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
 
+        }
 
+        private void createStudentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void manageStudentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void athletesStudentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void teacherManagementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void createTeacherToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void academicTrackingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void partTimeStudentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fullTimeStudentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grpQuickSearchGroupBox_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void searchButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fNameTextBoxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lNameTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gpaTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void coursesTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void contactTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
     }
