@@ -130,7 +130,7 @@ namespace StudentManagementSystem.Forms
             using (SqlCommand cmd = new SqlCommand(@"
                 SELECT
                     c.CourseName AS Course,
-                    g.Value      AS Grade
+                    g.Grade      AS Grade
                   FROM Grades g
                   JOIN Enrollments e ON g.EnrollmentID = e.EnrollmentID
                   JOIN Courses     c ON e.CourseID     = c.CourseID
