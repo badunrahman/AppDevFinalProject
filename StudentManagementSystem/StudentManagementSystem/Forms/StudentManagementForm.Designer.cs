@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.createStudentGroupBox = new System.Windows.Forms.GroupBox();
+            this.teachersListBox = new System.Windows.Forms.ListBox();
+            this.coursesCheckedListBox = new System.Windows.Forms.CheckedListBox();
             this.creatStudnetTitleLabel = new System.Windows.Forms.Label();
             this.athleteRadioButton = new System.Windows.Forms.RadioButton();
             this.partTimeRadioButton = new System.Windows.Forms.RadioButton();
@@ -44,8 +46,7 @@
             this.contactLabel = new System.Windows.Forms.Label();
             this.addressLabel = new System.Windows.Forms.Label();
             this.nameLabel = new System.Windows.Forms.Label();
-            this.coursesCheckedListBox = new System.Windows.Forms.CheckedListBox();
-            this.teachersListBox = new System.Windows.Forms.ListBox();
+            this.btnToggleTheme = new System.Windows.Forms.Button();
             this.createStudentGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,6 +77,25 @@
             this.createStudentGroupBox.TabStop = false;
             this.createStudentGroupBox.Text = "\'";
             this.createStudentGroupBox.Enter += new System.EventHandler(this.createStudentGroupBox_Enter);
+            // 
+            // teachersListBox
+            // 
+            this.teachersListBox.FormattingEnabled = true;
+            this.teachersListBox.ItemHeight = 21;
+            this.teachersListBox.Location = new System.Drawing.Point(310, 367);
+            this.teachersListBox.Name = "teachersListBox";
+            this.teachersListBox.Size = new System.Drawing.Size(526, 25);
+            this.teachersListBox.TabIndex = 22;
+            this.teachersListBox.SelectedIndexChanged += new System.EventHandler(this.teachersListBox_SelectedIndexChanged);
+            // 
+            // coursesCheckedListBox
+            // 
+            this.coursesCheckedListBox.FormattingEnabled = true;
+            this.coursesCheckedListBox.Location = new System.Drawing.Point(310, 312);
+            this.coursesCheckedListBox.Name = "coursesCheckedListBox";
+            this.coursesCheckedListBox.Size = new System.Drawing.Size(526, 28);
+            this.coursesCheckedListBox.TabIndex = 21;
+            this.coursesCheckedListBox.SelectedIndexChanged += new System.EventHandler(this.coursesCheckedListBox_SelectedIndexChanged);
             // 
             // creatStudnetTitleLabel
             // 
@@ -227,30 +247,22 @@
             this.nameLabel.TabIndex = 0;
             this.nameLabel.Text = "Name:";
             // 
-            // coursesCheckedListBox
+            // btnToggleTheme
             // 
-            this.coursesCheckedListBox.FormattingEnabled = true;
-            this.coursesCheckedListBox.Location = new System.Drawing.Point(310, 312);
-            this.coursesCheckedListBox.Name = "coursesCheckedListBox";
-            this.coursesCheckedListBox.Size = new System.Drawing.Size(526, 28);
-            this.coursesCheckedListBox.TabIndex = 21;
-            this.coursesCheckedListBox.SelectedIndexChanged += new System.EventHandler(this.coursesCheckedListBox_SelectedIndexChanged);
-            // 
-            // teachersListBox
-            // 
-            this.teachersListBox.FormattingEnabled = true;
-            this.teachersListBox.ItemHeight = 21;
-            this.teachersListBox.Location = new System.Drawing.Point(310, 367);
-            this.teachersListBox.Name = "teachersListBox";
-            this.teachersListBox.Size = new System.Drawing.Size(526, 25);
-            this.teachersListBox.TabIndex = 22;
-            this.teachersListBox.SelectedIndexChanged += new System.EventHandler(this.teachersListBox_SelectedIndexChanged);
+            this.btnToggleTheme.Location = new System.Drawing.Point(641, 12);
+            this.btnToggleTheme.Name = "btnToggleTheme";
+            this.btnToggleTheme.Size = new System.Drawing.Size(93, 30);
+            this.btnToggleTheme.TabIndex = 23;
+            this.btnToggleTheme.Text = "button1";
+            this.btnToggleTheme.UseVisualStyleBackColor = true;
+            this.btnToggleTheme.Click += new System.EventHandler(this.btnToggleTheme_Click);
             // 
             // StudentManagementForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(902, 552);
+            this.Controls.Add(this.btnToggleTheme);
             this.Controls.Add(this.createStudentGroupBox);
             this.Name = "StudentManagementForm";
             this.Text = "StudentManagementForm";
@@ -281,5 +293,6 @@
         private System.Windows.Forms.Label creatStudnetTitleLabel;
         private System.Windows.Forms.ListBox teachersListBox;
         private System.Windows.Forms.CheckedListBox coursesCheckedListBox;
+        private System.Windows.Forms.Button btnToggleTheme;
     }
 }

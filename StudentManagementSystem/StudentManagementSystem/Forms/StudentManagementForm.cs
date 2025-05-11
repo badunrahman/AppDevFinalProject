@@ -14,6 +14,7 @@ namespace StudentManagementSystem.Forms
 {
     public partial class StudentManagementForm : Form
     {
+        private bool isDarkTheme = false;
         public StudentManagementForm()
         {
             InitializeComponent();
@@ -205,6 +206,29 @@ namespace StudentManagementSystem.Forms
                     teachersListBox.Items.Add(ci.TeacherName);
         }
 
+        private void ApplyDarkTheme()
+        {
+            this.BackColor = Color.FromArgb(30, 30, 30);
+            this.ForeColor = Color.White;
+
+            foreach (Control ctrl in this.Controls)
+            {
+                ctrl.BackColor = Color.FromArgb(45, 45, 45);
+                ctrl.ForeColor = Color.White;
+            }
+        }
+
+        private void ApplyLightTheme()
+        {
+            this.BackColor = Color.White;
+            this.ForeColor = Color.Black;
+
+            foreach (Control ctrl in this.Controls)
+            {
+                ctrl.BackColor = Color.White;
+                ctrl.ForeColor = Color.Black;
+            }
+        }
 
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -225,6 +249,19 @@ namespace StudentManagementSystem.Forms
         private void teachersListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnToggleTheme_Click(object sender, EventArgs e)
+        {
+            if (isDarkTheme)
+            {
+                ApplyLightTheme();
+            }
+            else
+            {
+                ApplyDarkTheme();
+            }
+            isDarkTheme = !isDarkTheme;
         }
     }
 }
