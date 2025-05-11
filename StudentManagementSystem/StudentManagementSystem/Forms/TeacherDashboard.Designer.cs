@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TeacherDashboard));
             this.titleLabel = new System.Windows.Forms.Label();
             this.dashboardPanel = new System.Windows.Forms.Panel();
+            this.updateGradesButton = new System.Windows.Forms.Button();
             this.studentDataGridView = new System.Windows.Forms.DataGridView();
             this.Grade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.teacherProfileGroupBox = new System.Windows.Forms.GroupBox();
@@ -45,20 +45,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.courseComboBox = new System.Windows.Forms.ComboBox();
             this.chooseCourseLabel = new System.Windows.Forms.Label();
-            this.studentDBDataSetBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.studentDBDataSet = new StudentManagementSystem.StudentDBDataSet();
             this.lightModeButton = new System.Windows.Forms.Button();
             this.frenchButton = new System.Windows.Forms.Button();
-            this.studentDBDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.studentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.studentsTableAdapter = new StudentManagementSystem.StudentDBDataSetTableAdapters.StudentsTableAdapter();
             this.dashboardPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.studentDataGridView)).BeginInit();
             this.teacherProfileGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.studentDBDataSetBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentDBDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentDBDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // titleLabel
@@ -73,6 +64,7 @@
             // 
             // dashboardPanel
             // 
+            this.dashboardPanel.Controls.Add(this.updateGradesButton);
             this.dashboardPanel.Controls.Add(this.studentDataGridView);
             this.dashboardPanel.Controls.Add(this.teacherProfileGroupBox);
             this.dashboardPanel.Controls.Add(this.feedbackLabel);
@@ -86,6 +78,16 @@
             this.dashboardPanel.Size = new System.Drawing.Size(983, 410);
             this.dashboardPanel.TabIndex = 2;
             // 
+            // updateGradesButton
+            // 
+            this.updateGradesButton.Location = new System.Drawing.Point(498, 361);
+            this.updateGradesButton.Name = "updateGradesButton";
+            this.updateGradesButton.Size = new System.Drawing.Size(121, 33);
+            this.updateGradesButton.TabIndex = 10;
+            this.updateGradesButton.Text = "Update grades";
+            this.updateGradesButton.UseVisualStyleBackColor = true;
+            this.updateGradesButton.Click += new System.EventHandler(this.updateGradesButton_Click);
+            // 
             // studentDataGridView
             // 
             this.studentDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -93,7 +95,7 @@
             this.Grade});
             this.studentDataGridView.Location = new System.Drawing.Point(14, 62);
             this.studentDataGridView.Name = "studentDataGridView";
-            this.studentDataGridView.Size = new System.Drawing.Size(602, 332);
+            this.studentDataGridView.Size = new System.Drawing.Size(605, 293);
             this.studentDataGridView.TabIndex = 9;
             // 
             // Grade
@@ -201,16 +203,6 @@
             this.chooseCourseLabel.TabIndex = 0;
             this.chooseCourseLabel.Text = "Choose course to view:";
             // 
-            // studentDBDataSetBindingSource1
-            // 
-            this.studentDBDataSetBindingSource1.DataSource = this.studentDBDataSet;
-            this.studentDBDataSetBindingSource1.Position = 0;
-            // 
-            // studentDBDataSet
-            // 
-            this.studentDBDataSet.DataSetName = "StudentDBDataSet";
-            this.studentDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // lightModeButton
             // 
             this.lightModeButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lightModeButton.BackgroundImage")));
@@ -233,20 +225,6 @@
             this.frenchButton.TabIndex = 4;
             this.frenchButton.UseVisualStyleBackColor = true;
             // 
-            // studentDBDataSetBindingSource
-            // 
-            this.studentDBDataSetBindingSource.DataSource = this.studentDBDataSet;
-            this.studentDBDataSetBindingSource.Position = 0;
-            // 
-            // studentsBindingSource
-            // 
-            this.studentsBindingSource.DataMember = "Students";
-            this.studentsBindingSource.DataSource = this.studentDBDataSet;
-            // 
-            // studentsTableAdapter
-            // 
-            this.studentsTableAdapter.ClearBeforeFill = true;
-            // 
             // TeacherDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -264,10 +242,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.studentDataGridView)).EndInit();
             this.teacherProfileGroupBox.ResumeLayout(false);
             this.teacherProfileGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.studentDBDataSetBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentDBDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentDBDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -281,10 +255,6 @@
         private System.Windows.Forms.ComboBox courseComboBox;
         private System.Windows.Forms.Label chooseCourseLabel;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.BindingSource studentDBDataSetBindingSource;
-        private StudentDBDataSet studentDBDataSet;
-        private System.Windows.Forms.BindingSource studentsBindingSource;
-        private StudentDBDataSetTableAdapters.StudentsTableAdapter studentsTableAdapter;
         private System.Windows.Forms.GroupBox teacherProfileGroupBox;
         private System.Windows.Forms.Label feedbackLabel;
         private System.Windows.Forms.TextBox feedbackTextBox;
@@ -294,7 +264,7 @@
         private System.Windows.Forms.Label nameLabel;
         private System.Windows.Forms.Label IdLabel;
         private System.Windows.Forms.DataGridView studentDataGridView;
-        private System.Windows.Forms.BindingSource studentDBDataSetBindingSource1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Grade;
+        private System.Windows.Forms.Button updateGradesButton;
     }
 }
