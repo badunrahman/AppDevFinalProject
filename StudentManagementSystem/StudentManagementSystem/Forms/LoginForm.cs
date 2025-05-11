@@ -29,7 +29,7 @@ namespace StudentManagementSystem
 
         private void loginPageForm_Load(object sender, EventArgs e)
         {
-            // Set languageComboBox items (should already be set in designer)
+            // Populate comboBox if not already done
             if (languageComboBox.Items.Count == 0)
             {
                 languageComboBox.Items.Add("En");
@@ -37,7 +37,7 @@ namespace StudentManagementSystem
                 languageComboBox.Items.Add("Es");
             }
 
-            // Select item based on current global language
+            // Set default selection based on global language
             switch (AppSettings.CurrentLanguage)
             {
                 case "fr":
@@ -61,6 +61,7 @@ namespace StudentManagementSystem
 
             logInButton.Text = rm.GetString("LoginBtn", ci);
             incorrectInfoLabel.Text = rm.GetString("LoginWelcome", ci);
+            // Optional: Update other UI elements here if needed
         }
 
         private void languageComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -95,7 +96,7 @@ namespace StudentManagementSystem
             bool isValid = DatabaseConnection.isValidLogin(username, password);
             if (isValid)
             {
-                MessageBox.Show(rm.GetString("LoginSuccess", CultureInfo.CurrentUICulture)); // ✅ Localized
+                MessageBox.Show(rm.GetString("LoginSuccess", CultureInfo.CurrentUICulture));
                 int userID = DatabaseConnection.getUserIdByLogin(username, password);
                 string role = DatabaseConnection.getUserRole(userID);
 

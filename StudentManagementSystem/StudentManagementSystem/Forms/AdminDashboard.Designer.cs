@@ -198,7 +198,7 @@
             this.contactTextBox.Size = new System.Drawing.Size(298, 33);
             this.contactTextBox.TabIndex = 12;
             this.contactTextBox.Text = " ";
-            this.contactTextBox.TextChanged += new System.EventHandler(this.contactTextBox_TextChanged);
+         //   this.contactTextBox.TextChanged += new System.EventHandler(this.contactTextBox_TextChanged);
             // 
             // coursesTextBox
             // 
@@ -208,7 +208,7 @@
             this.coursesTextBox.Name = "coursesTextBox";
             this.coursesTextBox.Size = new System.Drawing.Size(298, 33);
             this.coursesTextBox.TabIndex = 11;
-            this.coursesTextBox.TextChanged += new System.EventHandler(this.coursesTextBox_TextChanged);
+          //  this.coursesTextBox.TextChanged += new System.EventHandler(this.coursesTextBox_TextChanged);
             // 
             // gpaTextBox
             // 
@@ -218,7 +218,7 @@
             this.gpaTextBox.Name = "gpaTextBox";
             this.gpaTextBox.Size = new System.Drawing.Size(298, 33);
             this.gpaTextBox.TabIndex = 10;
-            this.gpaTextBox.TextChanged += new System.EventHandler(this.gpaTextBox_TextChanged);
+         //   this.gpaTextBox.TextChanged += new System.EventHandler(this.gpaTextBox_TextChanged);
             // 
             // lNameTextBox
             // 
@@ -228,7 +228,7 @@
             this.lNameTextBox.Name = "lNameTextBox";
             this.lNameTextBox.Size = new System.Drawing.Size(298, 33);
             this.lNameTextBox.TabIndex = 9;
-            this.lNameTextBox.TextChanged += new System.EventHandler(this.lNameTextBox_TextChanged);
+            //this.lNameTextBox.TextChanged += new System.EventHandler(this.lNameTextBox_TextChanged);
             // 
             // fNameTextBoxt
             // 
@@ -238,7 +238,7 @@
             this.fNameTextBoxt.Name = "fNameTextBoxt";
             this.fNameTextBoxt.Size = new System.Drawing.Size(298, 33);
             this.fNameTextBoxt.TabIndex = 8;
-            this.fNameTextBoxt.TextChanged += new System.EventHandler(this.fNameTextBoxt_TextChanged);
+            //this.fNameTextBoxt.TextChanged += new System.EventHandler(this.fNameTextBoxt_TextChanged);
             // 
             // contactLabel
             // 

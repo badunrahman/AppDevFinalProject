@@ -8,6 +8,12 @@ namespace StudentManagementSystem
 {
     public static class AppSettings
     {
-        public static string CurrentLanguage { get; set; } = "en";
+        private static string _currentLanguage = "en"; // Default to English
+
+        public static string CurrentLanguage
+        {
+            get => _currentLanguage;
+            set => _currentLanguage = value;
+        }
     }
 }

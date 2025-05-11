@@ -55,8 +55,8 @@ namespace StudentManagementSystem.Models
         private void AdminDashboard_Load(object sender, EventArgs e)
         {
             CircularPictureBox(adminPictureBox);
-            adminNameLabel.Text = $"Welcome, {_loggedInAdmin.Username}";
-            SetLanguage("fr"); // ← Change to "fr" to start in French
+            SetLanguage(AppSettings.CurrentLanguage);
+            adminNameLabel.Text = $"{rm.GetString("WelcomeLabel", Thread.CurrentThread.CurrentUICulture)}, {_loggedInAdmin.Username}";
         }
 
         private void adminPictureBox_Paint(object sender, PaintEventArgs e)
@@ -70,15 +70,9 @@ namespace StudentManagementSystem.Models
             }
         }
 
-        private void adminNameLabel_Click(object sender, EventArgs e)
-        {
+        private void adminNameLabel_Click(object sender, EventArgs e) { }
 
-        }
-
-        private void studentIdTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        private void studentIdTextBox_TextChanged(object sender, EventArgs e) { }
 
         private void studentIdTextBox_Enter(object sender, EventArgs e)
         {
@@ -98,10 +92,7 @@ namespace StudentManagementSystem.Models
             }
         }
 
-        private void studnetManagementToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
+        private void studnetManagementToolStripMenuItem_Click(object sender, EventArgs e) { }
 
         private void createStudentToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -120,10 +111,7 @@ namespace StudentManagementSystem.Models
             athleteStudent.Show();
         }
 
-        private void teacherManagementToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
+        private void teacherManagementToolStripMenuItem_Click(object sender, EventArgs e) { }
 
         private void createTeacherToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -131,10 +119,7 @@ namespace StudentManagementSystem.Models
             createAccount.Show();
         }
 
-        private void academicTrackingToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
+        private void academicTrackingToolStripMenuItem_Click(object sender, EventArgs e) { }
 
         private void partTimeStudentToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -148,10 +133,7 @@ namespace StudentManagementSystem.Models
             fullTime.Show();
         }
 
-        private void grpQuickSearchGroupBox_Enter(object sender, EventArgs e)
-        {
-
-        }
+        private void grpQuickSearchGroupBox_Enter(object sender, EventArgs e) { }
 
         private void searchButton_Click(object sender, EventArgs e)
         {
@@ -177,29 +159,6 @@ namespace StudentManagementSystem.Models
             coursesTextBox.Text = string.Join(", ", CourseService.GetCoursesByStudentId(studentId));
         }
 
-        private void fNameTextBoxt_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lNameTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gpaTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void coursesTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void contactTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+     
     }
 }
