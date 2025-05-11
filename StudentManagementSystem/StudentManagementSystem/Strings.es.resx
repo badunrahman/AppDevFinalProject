@@ -103,4 +103,8 @@
 	<data name="LoginSuccess" xml:space="preserve"><value>Inicio de sesión exitoso</value></data>
 	<data name="LoginError" xml:space="preserve"><value>¡Nombre de usuario o contraseña incorrectos!</value></data>
 
+	<data name="WelcomeText" xml:space="preserve">
+    <value>Bienvenido, {0}</value>
+    </data>
+
 </root>

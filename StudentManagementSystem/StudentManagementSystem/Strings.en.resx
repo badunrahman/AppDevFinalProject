@@ -132,4 +132,11 @@
 	<data name="grpQuickSearchGroupBox" xml:space="preserve"><value>Quick Search</value></data>
 	<data name="searchButton" xml:space="preserve"><value>Search</value></data>
 
+
+	<data name="WelcomeText" xml:space="preserve">
+    <value>Welcome, {0}</value>
+    </data>
+	
+	
+	
 </root>
