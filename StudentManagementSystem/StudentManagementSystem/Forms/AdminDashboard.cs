@@ -7,14 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using StudentManagementSystem.Services;
 
 namespace StudentManagementSystem.Models
 {
     public partial class AdminDashboard : Form
     {
-        public AdminDashboard()
+        private User _loggedInAdmin;
+        public AdminDashboard(User admin)
         {
             InitializeComponent();
+            _loggedInAdmin = admin;
         }
 
         private void CircularPictureBox(PictureBox picBox)
@@ -27,6 +30,8 @@ namespace StudentManagementSystem.Models
         private void AdminDashboard_Load(object sender, EventArgs e)
         {
             CircularPictureBox(adminPictureBox);
+            adminNameLabel.Text = $"Welcome, {_loggedInAdmin.Username}";
+
         }
 
         private void adminPictureBox_Paint(object sender, PaintEventArgs e)
@@ -121,7 +126,26 @@ namespace StudentManagementSystem.Models
 
         private void searchButton_Click(object sender, EventArgs e)
         {
+            if (!int.TryParse(studentIdTextBox.Text, out int studentId))
+            {
+                MessageBox.Show("Please enter a valid Student ID.");
+                return;
+            }
 
+            Student student = StudentService.GetStudentById(studentId);
+
+            if (student == null)
+            {
+                MessageBox.Show("Student not found.");
+                return;
+            }
+
+            string[] nameParts = student.Name.Split(' ');
+            fNameTextBoxt.Text = nameParts[0];// for the first name
+            lNameTextBox.Text = nameParts.Length > 1 ? string.Join(" ", nameParts.Skip(1)) : "";
+            contactTextBox.Text = student.EmergencyContact;
+            gpaTextBox.Text = "N/A";            // Only if GPA is available later
+            coursesTextBox.Text = string.Join(", ", CourseService.GetCoursesByStudentId(studentId));
         }
 
         private void fNameTextBoxt_TextChanged(object sender, EventArgs e)

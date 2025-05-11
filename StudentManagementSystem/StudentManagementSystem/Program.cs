@@ -20,7 +20,13 @@ namespace StudentManagementSystem
             // 🔍 Test DB connection before starting app
             TestDatabaseConnection();
 
-            Application.Run(new StudentProfileView()); // continue to login screen
+            var testAdmin = new User("admin", "password", "Admin")
+            {
+                UserID = 1
+            };
+            Application.Run(new AdminDashboard(testAdmin)); // continue to login screen
+
+
         }
 
         /// <summary>

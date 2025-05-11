@@ -39,5 +39,70 @@ namespace StudentManagementSystem.Forms
                 e.Graphics.DrawEllipse(pen, 1, 1, picBox.Width - 3, picBox.Height - 3);
             }
         }
+
+        private void studentProfilePictureBox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nameTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void studentInfoGroupBox_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addressTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void contactTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void studentTypeTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void teachAndCoursesGroupBox_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void teachersNameComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void teacherIdComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chooseCoursesComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void feedBackForEachCourseTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gradesInfoGroupBox_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void feedBackTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
