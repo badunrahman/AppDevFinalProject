@@ -28,8 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.studentProfilePictureBox = new System.Windows.Forms.PictureBox();
             this.studentInfoGroupBox = new System.Windows.Forms.GroupBox();
+            this.nameTextBox = new System.Windows.Forms.TextBox();
+            this.nameLabel = new System.Windows.Forms.Label();
             this.studentTypeTextBox = new System.Windows.Forms.TextBox();
             this.contactTextBox = new System.Windows.Forms.TextBox();
             this.addressTextBox = new System.Windows.Forms.TextBox();
@@ -45,12 +48,27 @@
             this.teacherIdLabel = new System.Windows.Forms.Label();
             this.teacherLabel = new System.Windows.Forms.Label();
             this.gradesInfoGroupBox = new System.Windows.Forms.GroupBox();
+            this.gradesDataGridView = new System.Windows.Forms.DataGridView();
+            this.allGradeInputLabel = new System.Windows.Forms.Label();
             this.feedBackTextBox = new System.Windows.Forms.TextBox();
-            this.nameLabel = new System.Windows.Forms.Label();
-            this.nameTextBox = new System.Windows.Forms.TextBox();
+            this.searchIdLabel = new System.Windows.Forms.Label();
+            this.idTextBox = new System.Windows.Forms.TextBox();
+            this.searchButton = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.studentDBDataSet = new StudentManagementSystem.StudentDBDataSet();
+            this.studentDBDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.studentDBDataSetBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.gradesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gradesTableAdapter = new StudentManagementSystem.StudentDBDataSetTableAdapters.GradesTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.studentProfilePictureBox)).BeginInit();
             this.studentInfoGroupBox.SuspendLayout();
             this.teachAndCoursesGroupBox.SuspendLayout();
+            this.gradesInfoGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gradesDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentDBDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentDBDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentDBDataSetBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gradesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // studentProfilePictureBox
@@ -60,11 +78,12 @@
             this.studentProfilePictureBox.Size = new System.Drawing.Size(100, 100);
             this.studentProfilePictureBox.TabIndex = 0;
             this.studentProfilePictureBox.TabStop = false;
-            this.studentProfilePictureBox.Click += new System.EventHandler(this.studentProfilePictureBox_Click);
             this.studentProfilePictureBox.Paint += new System.Windows.Forms.PaintEventHandler(this.studentProfilePictureBox_Paint);
             // 
             // studentInfoGroupBox
             // 
+            this.studentInfoGroupBox.Controls.Add(this.nameTextBox);
+            this.studentInfoGroupBox.Controls.Add(this.nameLabel);
             this.studentInfoGroupBox.Controls.Add(this.studentTypeTextBox);
             this.studentInfoGroupBox.Controls.Add(this.contactTextBox);
             this.studentInfoGroupBox.Controls.Add(this.addressTextBox);
@@ -78,7 +97,22 @@
             this.studentInfoGroupBox.TabIndex = 1;
             this.studentInfoGroupBox.TabStop = false;
             this.studentInfoGroupBox.Text = "StudentInfo";
-            this.studentInfoGroupBox.Enter += new System.EventHandler(this.studentInfoGroupBox_Enter);
+            // 
+            // nameTextBox
+            // 
+            this.nameTextBox.Location = new System.Drawing.Point(188, 26);
+            this.nameTextBox.Name = "nameTextBox";
+            this.nameTextBox.Size = new System.Drawing.Size(259, 23);
+            this.nameTextBox.TabIndex = 10;
+            // 
+            // nameLabel
+            // 
+            this.nameLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameLabel.Location = new System.Drawing.Point(6, 30);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(54, 19);
+            this.nameLabel.TabIndex = 9;
+            this.nameLabel.Text = "Name";
             // 
             // studentTypeTextBox
             // 
@@ -86,7 +120,6 @@
             this.studentTypeTextBox.Name = "studentTypeTextBox";
             this.studentTypeTextBox.Size = new System.Drawing.Size(259, 23);
             this.studentTypeTextBox.TabIndex = 8;
-            this.studentTypeTextBox.TextChanged += new System.EventHandler(this.studentTypeTextBox_TextChanged);
             // 
             // contactTextBox
             // 
@@ -94,7 +127,6 @@
             this.contactTextBox.Name = "contactTextBox";
             this.contactTextBox.Size = new System.Drawing.Size(259, 23);
             this.contactTextBox.TabIndex = 7;
-            this.contactTextBox.TextChanged += new System.EventHandler(this.contactTextBox_TextChanged);
             // 
             // addressTextBox
             // 
@@ -102,7 +134,6 @@
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.Size = new System.Drawing.Size(259, 23);
             this.addressTextBox.TabIndex = 6;
-            this.addressTextBox.TextChanged += new System.EventHandler(this.addressTextBox_TextChanged);
             // 
             // studentTypeLabel
             // 
@@ -147,7 +178,6 @@
             this.teachAndCoursesGroupBox.TabIndex = 2;
             this.teachAndCoursesGroupBox.TabStop = false;
             this.teachAndCoursesGroupBox.Text = "TeacherCoursesInfo";
-            this.teachAndCoursesGroupBox.Enter += new System.EventHandler(this.teachAndCoursesGroupBox_Enter);
             // 
             // chooseCoursesComboBox
             // 
@@ -183,7 +213,6 @@
             this.feedBackForEachCourseTextBox.Name = "feedBackForEachCourseTextBox";
             this.feedBackForEachCourseTextBox.Size = new System.Drawing.Size(438, 98);
             this.feedBackForEachCourseTextBox.TabIndex = 6;
-            this.feedBackForEachCourseTextBox.TextChanged += new System.EventHandler(this.feedBackForEachCourseTextBox_TextChanged);
             // 
             // coursesLabel
             // 
@@ -214,6 +243,8 @@
             // 
             // gradesInfoGroupBox
             // 
+            this.gradesInfoGroupBox.Controls.Add(this.gradesDataGridView);
+            this.gradesInfoGroupBox.Controls.Add(this.allGradeInputLabel);
             this.gradesInfoGroupBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gradesInfoGroupBox.Location = new System.Drawing.Point(1000, 183);
             this.gradesInfoGroupBox.Name = "gradesInfoGroupBox";
@@ -221,7 +252,24 @@
             this.gradesInfoGroupBox.TabIndex = 2;
             this.gradesInfoGroupBox.TabStop = false;
             this.gradesInfoGroupBox.Text = "GradesInfo";
-            this.gradesInfoGroupBox.Enter += new System.EventHandler(this.gradesInfoGroupBox_Enter);
+            // 
+            // gradesDataGridView
+            // 
+            this.gradesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gradesDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gradesDataGridView.Location = new System.Drawing.Point(3, 19);
+            this.gradesDataGridView.Name = "gradesDataGridView";
+            this.gradesDataGridView.Size = new System.Drawing.Size(332, 257);
+            this.gradesDataGridView.TabIndex = 2;
+            // 
+            // allGradeInputLabel
+            // 
+            this.allGradeInputLabel.AutoSize = true;
+            this.allGradeInputLabel.Location = new System.Drawing.Point(139, 35);
+            this.allGradeInputLabel.Name = "allGradeInputLabel";
+            this.allGradeInputLabel.Size = new System.Drawing.Size(55, 15);
+            this.allGradeInputLabel.TabIndex = 1;
+            this.allGradeInputLabel.Text = "All Grade";
             // 
             // feedBackTextBox
             // 
@@ -231,32 +279,64 @@
             this.feedBackTextBox.Name = "feedBackTextBox";
             this.feedBackTextBox.Size = new System.Drawing.Size(1308, 180);
             this.feedBackTextBox.TabIndex = 3;
-            this.feedBackTextBox.TextChanged += new System.EventHandler(this.feedBackTextBox_TextChanged);
             // 
-            // nameLabel
+            // searchIdLabel
             // 
-            this.nameLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameLabel.Location = new System.Drawing.Point(145, 62);
-            this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(52, 25);
-            this.nameLabel.TabIndex = 4;
-            this.nameLabel.Text = "Name:";
+            this.searchIdLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchIdLabel.Location = new System.Drawing.Point(145, 62);
+            this.searchIdLabel.Name = "searchIdLabel";
+            this.searchIdLabel.Size = new System.Drawing.Size(52, 25);
+            this.searchIdLabel.TabIndex = 4;
+            this.searchIdLabel.Text = "ID";
             // 
-            // nameTextBox
+            // idTextBox
             // 
-            this.nameTextBox.Location = new System.Drawing.Point(218, 62);
-            this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.Size = new System.Drawing.Size(161, 20);
-            this.nameTextBox.TabIndex = 5;
-            this.nameTextBox.TextChanged += new System.EventHandler(this.nameTextBox_TextChanged);
+            this.idTextBox.Location = new System.Drawing.Point(218, 62);
+            this.idTextBox.Name = "idTextBox";
+            this.idTextBox.Size = new System.Drawing.Size(161, 20);
+            this.idTextBox.TabIndex = 5;
+            // 
+            // searchButton
+            // 
+            this.searchButton.Location = new System.Drawing.Point(249, 100);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(75, 23);
+            this.searchButton.TabIndex = 6;
+            this.searchButton.Text = "Search";
+            this.searchButton.UseVisualStyleBackColor = true;
+            // 
+            // studentDBDataSet
+            // 
+            this.studentDBDataSet.DataSetName = "StudentDBDataSet";
+            this.studentDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // studentDBDataSetBindingSource
+            // 
+            this.studentDBDataSetBindingSource.DataSource = this.studentDBDataSet;
+            this.studentDBDataSetBindingSource.Position = 0;
+            // 
+            // studentDBDataSetBindingSource1
+            // 
+            this.studentDBDataSetBindingSource1.DataSource = this.studentDBDataSet;
+            this.studentDBDataSetBindingSource1.Position = 0;
+            // 
+            // gradesBindingSource
+            // 
+            this.gradesBindingSource.DataMember = "Grades";
+            this.gradesBindingSource.DataSource = this.studentDBDataSetBindingSource1;
+            // 
+            // gradesTableAdapter
+            // 
+            this.gradesTableAdapter.ClearBeforeFill = true;
             // 
             // StudentProfileView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1350, 781);
-            this.Controls.Add(this.nameTextBox);
-            this.Controls.Add(this.nameLabel);
+            this.Controls.Add(this.searchButton);
+            this.Controls.Add(this.idTextBox);
+            this.Controls.Add(this.searchIdLabel);
             this.Controls.Add(this.feedBackTextBox);
             this.Controls.Add(this.gradesInfoGroupBox);
             this.Controls.Add(this.teachAndCoursesGroupBox);
@@ -270,6 +350,13 @@
             this.studentInfoGroupBox.PerformLayout();
             this.teachAndCoursesGroupBox.ResumeLayout(false);
             this.teachAndCoursesGroupBox.PerformLayout();
+            this.gradesInfoGroupBox.ResumeLayout(false);
+            this.gradesInfoGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gradesDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentDBDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentDBDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentDBDataSetBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gradesBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -283,8 +370,8 @@
         private System.Windows.Forms.GroupBox gradesInfoGroupBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox feedBackTextBox;
-        private System.Windows.Forms.Label nameLabel;
-        private System.Windows.Forms.TextBox nameTextBox;
+        private System.Windows.Forms.Label searchIdLabel;
+        private System.Windows.Forms.TextBox idTextBox;
         private System.Windows.Forms.TextBox studentTypeTextBox;
         private System.Windows.Forms.TextBox contactTextBox;
         private System.Windows.Forms.TextBox addressTextBox;
@@ -297,5 +384,16 @@
         private System.Windows.Forms.Label coursesLabel;
         private System.Windows.Forms.Label teacherIdLabel;
         private System.Windows.Forms.ComboBox chooseCoursesComboBox;
+        private System.Windows.Forms.TextBox nameTextBox;
+        private System.Windows.Forms.Label nameLabel;
+        private System.Windows.Forms.Button searchButton;
+        private System.Windows.Forms.Label allGradeInputLabel;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.BindingSource studentDBDataSetBindingSource;
+        private StudentDBDataSet studentDBDataSet;
+        private System.Windows.Forms.DataGridView gradesDataGridView;
+        private System.Windows.Forms.BindingSource studentDBDataSetBindingSource1;
+        private System.Windows.Forms.BindingSource gradesBindingSource;
+        private StudentDBDataSetTableAdapters.GradesTableAdapter gradesTableAdapter;
     }
 }
