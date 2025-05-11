@@ -107,4 +107,7 @@
 	<data name="LoginWelcome" xml:space="preserve">
   <value>Bon retour !</value>
 </data>
+	<data name="LoginSuccess" xml:space="preserve">
+  <value>Connexion réussie !</value>
+</data>
 </root>

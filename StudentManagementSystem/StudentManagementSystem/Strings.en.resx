@@ -107,5 +107,7 @@
 	<data name="LoginWelcome" xml:space="preserve">
   <value>Welcome back!</value>
 </data>
-
+	<data name="LoginSuccess" xml:space="preserve">
+  <value>Successful login!</value>
+</data>
 </root>
