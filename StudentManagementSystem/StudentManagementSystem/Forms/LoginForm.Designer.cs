@@ -84,10 +84,12 @@
             // 
             // logInButton
             // 
+            this.logInButton.AutoSize = true;
+            this.logInButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.logInButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logInButton.Location = new System.Drawing.Point(236, 164);
             this.logInButton.Name = "logInButton";
-            this.logInButton.Size = new System.Drawing.Size(75, 36);
+            this.logInButton.Size = new System.Drawing.Size(64, 28);
             this.logInButton.TabIndex = 7;
             this.logInButton.Text = "Log In";
             this.logInButton.UseVisualStyleBackColor = true;
@@ -168,7 +170,6 @@
             this.lightModeButton.Size = new System.Drawing.Size(31, 30);
             this.lightModeButton.TabIndex = 3;
             this.lightModeButton.UseVisualStyleBackColor = true;
-//            this.lightModeButton.Click += new System.EventHandler(this.lightModeButton_Click);
             // 
             // loginPageForm
             // 

@@ -64,7 +64,7 @@ namespace StudentManagementSystem
             bool isValid = DatabaseConnection.isValidLogin(username, password);
             if (isValid)
             {
-                MessageBox.Show("Successfull login!");
+                MessageBox.Show(rm.GetString("LoginSuccess", CultureInfo.CurrentUICulture)); // ✅ Localized
                 int userID = DatabaseConnection.getUserIdByLogin(username, password);
                 string role = DatabaseConnection.getUserRole(userID);
 
