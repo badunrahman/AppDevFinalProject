@@ -23,6 +23,7 @@ namespace StudentManagementSystem.Forms
         private void athleteStudentView_Load(object sender, EventArgs e)
         {
             List<Student> athletes = DatabaseConnection.getAthleteStudents();
+            athleteDataGridView.DataSource = null;
             athleteDataGridView.DataSource = athletes;
 
             for (int i = 0; i < athletes.Count; i++)
