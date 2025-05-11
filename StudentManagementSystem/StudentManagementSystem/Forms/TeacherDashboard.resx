@@ -117,15 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="studentIDCol.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="studentNameCol.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="studentGradeCol.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="studentDBDataSetBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>736, 17</value>
   </metadata>
@@ -462,7 +453,7 @@
   <data name="frenchButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAAeZJREFUSEvtlstKw0AUhg8IuvbyFG7UeunFNFHcuLIJIupWfQEX6st4Qap150LS
+        DgAACw4BQL7hQQAAAeZJREFUSEvtlstKw0AUhg8IuvbyFG7UeunFNFHcuLIJIupWfQEX6st4Qap150LS
         4tMorTs12oJuHc80Zxitv9L0giD+8EHI5XxMZiY59J+fopQaiKJG9j6qbz4+N3Y1fLyhz+lrclvvkg+u
         Ug9P9SPmgWUKoa/pe1SeUvJY51nyL0ddv3zhBeEbkiFY/MaUVIZGpEyyuKuVKdcP77ygrDRIgmBpjEM1
         laNJKddeFv1wmmVPRtqROCZSLk1J2Z+TWbsecYPw9qO0C3E8co/GpPz3cYNyqVXalTiWn0l5nIWVMK0X

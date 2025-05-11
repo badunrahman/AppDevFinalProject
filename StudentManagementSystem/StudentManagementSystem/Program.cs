@@ -19,7 +19,7 @@ namespace StudentManagementSystem
             // 🔍 Test DB connection before starting app
             TestDatabaseConnection();
 
-            Application.Run(new AdminDashboard()); // continue to login screen
+            Application.Run(new loginPageForm()); // continue to login screen
         }
 
         /// <summary>

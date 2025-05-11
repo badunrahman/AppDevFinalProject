@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(loginPageForm));
             this.titleLabel = new System.Windows.Forms.Label();
             this.loginBox = new System.Windows.Forms.GroupBox();
+            this.incorrectInfoLabel = new System.Windows.Forms.Label();
             this.logInButton = new System.Windows.Forms.Button();
             this.createAccountLinkLabel = new System.Windows.Forms.LinkLabel();
             this.noAccountInfoLabel = new System.Windows.Forms.Label();
@@ -39,7 +40,6 @@
             this.loginLabel = new System.Windows.Forms.Label();
             this.frenchButton = new System.Windows.Forms.Button();
             this.lightModeButton = new System.Windows.Forms.Button();
-            this.incorrectInfoLabel = new System.Windows.Forms.Label();
             this.loginBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,6 +68,19 @@
             this.loginBox.Size = new System.Drawing.Size(403, 206);
             this.loginBox.TabIndex = 1;
             this.loginBox.TabStop = false;
+            // 
+            // incorrectInfoLabel
+            // 
+            this.incorrectInfoLabel.BackColor = System.Drawing.Color.White;
+            this.incorrectInfoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.incorrectInfoLabel.ForeColor = System.Drawing.Color.Red;
+            this.incorrectInfoLabel.Location = new System.Drawing.Point(88, 39);
+            this.incorrectInfoLabel.Name = "incorrectInfoLabel";
+            this.incorrectInfoLabel.Size = new System.Drawing.Size(223, 39);
+            this.incorrectInfoLabel.TabIndex = 8;
+            this.incorrectInfoLabel.Text = "Incorrect username or password! Try Again!";
+            this.incorrectInfoLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.incorrectInfoLabel.Visible = false;
             // 
             // logInButton
             // 
@@ -155,19 +168,6 @@
             this.lightModeButton.TabIndex = 3;
             this.lightModeButton.UseVisualStyleBackColor = true;
             // 
-            // incorrectInfoLabel
-            // 
-            this.incorrectInfoLabel.BackColor = System.Drawing.Color.White;
-            this.incorrectInfoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.incorrectInfoLabel.ForeColor = System.Drawing.Color.Red;
-            this.incorrectInfoLabel.Location = new System.Drawing.Point(88, 39);
-            this.incorrectInfoLabel.Name = "incorrectInfoLabel";
-            this.incorrectInfoLabel.Size = new System.Drawing.Size(223, 39);
-            this.incorrectInfoLabel.TabIndex = 8;
-            this.incorrectInfoLabel.Text = "Incorrect username or password! Try Again!";
-            this.incorrectInfoLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.incorrectInfoLabel.Visible = false;
-            // 
             // loginPageForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -180,6 +180,7 @@
             this.Controls.Add(this.titleLabel);
             this.Name = "loginPageForm";
             this.Text = "Login Page";
+            this.Load += new System.EventHandler(this.loginPageForm_Load);
             this.loginBox.ResumeLayout(false);
             this.loginBox.PerformLayout();
             this.ResumeLayout(false);

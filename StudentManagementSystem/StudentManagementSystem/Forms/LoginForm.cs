@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using StudentManagementSystem.Database;
+using StudentManagementSystem.Forms;
 using StudentManagementSystem.StudentDBDataSetTableAdapters;
 
 namespace StudentManagementSystem
@@ -30,23 +32,29 @@ namespace StudentManagementSystem
 
         private void logInButton_Click(object sender, EventArgs e)
         {
-            StudentDBDataSet db = new StudentDBDataSet();
-            var adapter = new StudentDBDataSetTableAdapters.UsersTableAdapter();
-            adapter.Fill(db.Users);
+            string username = usernameTextBox.Text;
+            string password = passwordTextBox.Text;
 
-            int count = db.Users.Count(row => row.Username == usernameTextBox.Text && row.Password == passwordTextBox.Text);
-
-            if (count > 0)
+            bool isValid = DatabaseConnection.isValidLogin(username, password);
+            if (isValid)
             {
-                MessageBox.Show("Succesfull login");
+                MessageBox.Show("Successfull login!");
+                int userID = DatabaseConnection.getUserIdByLogin(username, password);
+                TeacherDashboard teacherDashboard = new TeacherDashboard(userID);
+                teacherDashboard.Show();
             }
-            else if (true)
+            else
             {
                 MessageBoxButtons button = MessageBoxButtons.OK;
                 MessageBoxIcon icon = MessageBoxIcon.Error;
                 incorrectInfoLabel.Visible = true;
                 MessageBox.Show("Incorrect username or password!", "Error", button, icon);
             }
+        }
+
+        private void loginPageForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

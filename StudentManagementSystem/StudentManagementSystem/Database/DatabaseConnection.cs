@@ -3,6 +3,9 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Collections.Generic;
 using System.Configuration;
+using StudentManagementSystem.Models;
+using StudentManagementSystem.Models.StudentManagementSystem.Models;
+using System.Windows.Forms;
 
 namespace StudentManagementSystem.Database
 {
@@ -76,6 +79,127 @@ namespace StudentManagementSystem.Database
 
                     return command.ExecuteScalar();
                 }
+            }
+        }
+
+        // Login Validation
+        public static Boolean isValidLogin(string username, string password)
+        {
+            using (SqlConnection connnection = GetConnection())
+            {
+                string query = "SELECT COUNT(*) FROM Users WHERE Username = @username AND Password = @password";
+                using (SqlCommand cmd = new SqlCommand(query, connnection))
+                {
+                    cmd.Parameters.AddWithValue("@username", username);
+                    cmd.Parameters.AddWithValue("@password", password);
+
+                    int count = (int)cmd.ExecuteScalar();
+                    return count > 0;
+                }
+            }
+        }
+
+        // Get UserID by login username and password
+        public static int getUserIdByLogin(string username, string password)
+        {
+            using (SqlConnection connnection = GetConnection())
+            {
+                string query = "SELECT UserID FROM Users WHERE Username = @username AND Password = @password";
+                using (SqlCommand cmd = new SqlCommand(query, connnection))
+                {
+                    cmd.Parameters.AddWithValue("@username", username);
+                    cmd.Parameters.AddWithValue("@password", password);
+
+                    int id = (int)cmd.ExecuteScalar();
+                    return id;
+                }
+            }
+        }
+
+        // Get TeacherID by UserID
+        public static int getTeacherIdByUserId(int userId)
+        {
+            using (SqlConnection connection = GetConnection())
+            {
+                string query = "SELECT TeacherID FROM Teachers WHERE UserID = " + userId;
+                using (SqlCommand cmd = new SqlCommand(query, connection))
+                {
+                    int id = (int)cmd.ExecuteScalar();
+                    return id;
+                }
+
+            }
+        }
+
+        public static Teacher getTeacherByID(int teacherId)
+        {
+            using (SqlConnection connection = GetConnection())
+            {
+                string query = "SELECT * FROM Teachers WHERE TeacherID = " + teacherId;
+                SqlCommand cmd = new SqlCommand(query, connection);
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        int userId = reader.GetInt32(1);
+                        string name = reader.GetString(2);
+
+                        return new Teacher(name, userId);
+                    }
+                }
+            }
+
+            return null;
+        }
+
+        public static List<Course> getTeacherCourses(int teacherId)
+        {
+            List<Course> courses = new List<Course>();
+
+            using (SqlConnection connection = GetConnection())
+            {
+                string query = "SELECT * FROM Courses WHERE TeacherID = " + teacherId;
+                SqlCommand cmd = new SqlCommand(query, connection);
+
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        string courseName = reader.GetString(1);
+                        int courseId = reader.GetInt32(0);
+                        courses.Add(new Course(courseName, courseId));
+                    }
+                }
+
+                return courses;
+            }
+        }
+
+        public static List<Student> getCourseStudents(int courseID)
+        {
+            List<Student> students = new List<Student>();
+
+            using (SqlConnection connection = GetConnection())
+            {
+                string query = "SELECT * FROM Students WHERE StudentID IN " +
+                    "(SELECT StudentID FROM Enrollments WHERE CourseID = @CourseID)";
+                SqlCommand cmd = new SqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@CourseID", courseID);
+
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        int studentID = reader.GetInt32(0);
+                        string name = reader.GetString(1);
+                        string address = reader.GetString(2);
+                        string contact = reader.GetString(3);
+                        string type = reader.GetString(4);
+                        students.Add(new Student(studentID, name, address, contact, type));
+                    }
+                }
+
+                return students;
             }
         }
 

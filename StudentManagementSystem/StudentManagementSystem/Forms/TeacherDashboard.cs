@@ -1,4 +1,7 @@
-﻿using System;
+﻿using StudentManagementSystem.Database;
+using StudentManagementSystem.Models;
+using StudentManagementSystem.Models.StudentManagementSystem.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,36 +15,47 @@ namespace StudentManagementSystem.Forms
 {
     public partial class TeacherDashboard : Form
     {
-        public TeacherDashboard()
+        private int userId;
+        private int teacherId;
+        public TeacherDashboard(int id)
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
+            userId = id;
         }
 
         private void TeacherDashboard_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'studentDBDataSet.Students' table. You can move, or remove it, as needed.
-            this.studentsTableAdapter.Fill(this.studentDBDataSet.Students);
+            //this.studentsTableAdapter.Fill(this.studentDBDataSet.Students);
+            int teachID = DatabaseConnection.getTeacherIdByUserId(userId);
+            teacherId = teachID;
+            Teacher teacher = DatabaseConnection.getTeacherByID(teacherId);
 
+            if (teacher  == null)
+            {
+                MessageBox.Show("No teacher found");
+            }
+
+            IdLabel.Text = "User ID: " + teacher.UserID;
+            nameLabel.Text = "Name: " + teacher.Name;
+
+            List<Course> courses = DatabaseConnection.getTeacherCourses(teacherId);
+            foreach (var course in courses)
+            {
+                coursesListBox.Items.Add(course);
+                courseComboBox.Items.Add(course);
+            }
         }
 
-        private void frenchButton_Click(object sender, EventArgs e)
+        private void courseComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            Course course = courseComboBox.SelectedItem as Course;
 
-        }
-
-        private void lightModeButton_Click(object sender, EventArgs e)
-        {
-
+            if (course != null)
+            {
+                List<Student> students = DatabaseConnection.getCourseStudents(course.CourseID);
+                studentDataGridView.DataSource = null;
+                studentDataGridView.DataSource = students;
+            }
         }
     }
 }

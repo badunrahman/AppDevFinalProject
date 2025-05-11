@@ -20,9 +20,10 @@ namespace StudentManagementSystem.Models
         // Constructors
         public Course() { }
 
-        public Course(string courseName)
+        public Course(string courseName, int courseId)
         {
             CourseName = courseName;
+            CourseID = courseId;
         }
 
         // Helper methods

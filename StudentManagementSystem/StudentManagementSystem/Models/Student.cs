@@ -27,8 +27,9 @@ namespace StudentManagementSystem.Models
         // Constructors
         public Student() { }
 
-        public Student(string name, string address, string emergencyContact, string studentType)
+        public Student(int studentID, string name, string address, string emergencyContact, string studentType)
         {
+            StudentID = studentID;
             Name = name;
             Address = address;
             EmergencyContact = emergencyContact;
