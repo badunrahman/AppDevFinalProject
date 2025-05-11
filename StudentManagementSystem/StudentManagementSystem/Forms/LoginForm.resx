@@ -118,19 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="frenchButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAAAb5JREFUSEvt1stKw0AYBeAfBF17eQo32nrpdWYUN65sBhF1q76AC/VlvCD1snMh
-        M8WnUdRd27QJ6LYj02ixxyqJGRHEAz+UJJ2PXNocov98EWPMkO+HhbofbDbb4a6duh9s2G12Hx6fOkxe
-        Zxut4KjRChrNdmgGjd1njzGMsvj9xFnyrsa5py+FVB2EPhvDqGMYXZg8jeF6scJXaxnuqUchtbGDwGdj
-        GEVTpgdTpGlc98ssempGSN16Q78FR+MbThlcf2DyazdjXKq792gKODpzQRPofAiX+gLRVHCEn6HTl4UV
-        lbMPEqKpYfvAFWkWvV641FUEHcH2rE/Q62Z5uTYipH5G0CH8ZCZpGF1iFVVEzCkc4Tl0SUi9g5hzuERb
-        6BKX6gAx53CZ9tElXtH7iDmHGe2ha+/xNmLO4YGX2rsuIOYcZjSP7u/9nGyEp04RdAYzOkavFy5rcz/2
-        l1mmGfT6Ijx1jqgDuIrOh9jXopD61iF8H+u1aGM7lrMikLSFiIqaFlI9pIDvTYmmcN1Y6V727j1PXPaq
-        pkyjuF7ivNbbwxj19jB2x0oSW9qbYZjzg2D9rdB3P4dh7kcK/Z/KC69+FsIGEjFjAAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="lightModeButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         R0lGODlhKAAoAPcAAAD/ALqbSLucSbueTLydS7yfTr2fTb2fTr2gT76gT76gUL+gUL+hUL+hUr+iUL+i

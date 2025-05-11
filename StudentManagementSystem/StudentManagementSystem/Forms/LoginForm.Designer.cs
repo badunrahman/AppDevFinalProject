@@ -38,11 +38,9 @@
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.usernameTextBox = new System.Windows.Forms.TextBox();
             this.loginLabel = new System.Windows.Forms.Label();
-            this.frenchButton = new System.Windows.Forms.Button();
             this.lightModeButton = new System.Windows.Forms.Button();
-            this.englishButton = new System.Windows.Forms.PictureBox();
+            this.languageComboBox = new System.Windows.Forms.ComboBox();
             this.loginBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.englishButton)).BeginInit();
             this.SuspendLayout();
             // 
             // titleLabel
@@ -150,18 +148,6 @@
             this.loginLabel.Text = "Login";
             this.loginLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // frenchButton
-            // 
-            this.frenchButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("frenchButton.BackgroundImage")));
-            this.frenchButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.frenchButton.ForeColor = System.Drawing.Color.Silver;
-            this.frenchButton.Location = new System.Drawing.Point(360, 12);
-            this.frenchButton.Name = "frenchButton";
-            this.frenchButton.Size = new System.Drawing.Size(31, 30);
-            this.frenchButton.TabIndex = 2;
-            this.frenchButton.UseVisualStyleBackColor = true;
-            this.frenchButton.Click += new System.EventHandler(this.frenchButton_Click);
-            // 
             // lightModeButton
             // 
             this.lightModeButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lightModeButton.BackgroundImage")));
@@ -173,14 +159,18 @@
             this.lightModeButton.TabIndex = 3;
             this.lightModeButton.UseVisualStyleBackColor = true;
             // 
-            // englishButton
+            // languageComboBox
             // 
-            this.englishButton.Location = new System.Drawing.Point(315, 13);
-            this.englishButton.Name = "englishButton";
-            this.englishButton.Size = new System.Drawing.Size(39, 29);
-            this.englishButton.TabIndex = 4;
-            this.englishButton.TabStop = false;
-            this.englishButton.Click += new System.EventHandler(this.englishButton_Click);
+            this.languageComboBox.FormattingEnabled = true;
+            this.languageComboBox.Items.AddRange(new object[] {
+            "En",
+            "Fr",
+            "Es"});
+            this.languageComboBox.Location = new System.Drawing.Point(335, 18);
+            this.languageComboBox.Name = "languageComboBox";
+            this.languageComboBox.Size = new System.Drawing.Size(36, 21);
+            this.languageComboBox.TabIndex = 4;
+            this.languageComboBox.SelectedIndexChanged += new System.EventHandler(this.languageComboBox_SelectedIndexChanged);
             // 
             // loginPageForm
             // 
@@ -188,16 +178,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(453, 300);
-            this.Controls.Add(this.englishButton);
+            this.Controls.Add(this.languageComboBox);
             this.Controls.Add(this.lightModeButton);
-            this.Controls.Add(this.frenchButton);
             this.Controls.Add(this.loginBox);
             this.Controls.Add(this.titleLabel);
             this.Name = "loginPageForm";
             this.Text = " ";
             this.loginBox.ResumeLayout(false);
             this.loginBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.englishButton)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -212,10 +200,9 @@
         private System.Windows.Forms.Button logInButton;
         private System.Windows.Forms.LinkLabel createAccountLinkLabel;
         private System.Windows.Forms.Label noAccountInfoLabel;
-        private System.Windows.Forms.Button frenchButton;
         private System.Windows.Forms.Button lightModeButton;
         private System.Windows.Forms.Label incorrectInfoLabel;
-        private System.Windows.Forms.PictureBox englishButton;
+        private System.Windows.Forms.ComboBox languageComboBox;
     }
 }
 

@@ -185,7 +185,7 @@ namespace StudentManagementSystem.Forms
             Thread.CurrentThread.CurrentUICulture = ci;
 
             createStudentTitleLabel.Text = rm.GetString("CreateStudentTitle", ci);
-            btnToggleTheme.Text = rm.GetString("ThemeBtn", ci);
+            //btnToggleTheme.Text = rm.GetString("ThemeBtn", ci);
             nameLabel.Text = rm.GetString("LabelName", ci);
             addressLabel.Text = rm.GetString("LabelAddress", ci);
             contactLabel.Text = rm.GetString("LabelContact", ci);

@@ -29,7 +29,29 @@ namespace StudentManagementSystem
 
         private void loginPageForm_Load(object sender, EventArgs e)
         {
-            SetLanguage("en"); // default language
+            // Set languageComboBox items (should already be set in designer)
+            if (languageComboBox.Items.Count == 0)
+            {
+                languageComboBox.Items.Add("En");
+                languageComboBox.Items.Add("Fr");
+                languageComboBox.Items.Add("Es");
+            }
+
+            // Select item based on current global language
+            switch (AppSettings.CurrentLanguage)
+            {
+                case "fr":
+                    languageComboBox.SelectedItem = "Fr";
+                    break;
+                case "es":
+                    languageComboBox.SelectedItem = "Es";
+                    break;
+                default:
+                    languageComboBox.SelectedItem = "En";
+                    break;
+            }
+
+            SetLanguage(AppSettings.CurrentLanguage);
         }
 
         private void SetLanguage(string langCode)
@@ -41,14 +63,18 @@ namespace StudentManagementSystem
             incorrectInfoLabel.Text = rm.GetString("LoginWelcome", ci);
         }
 
-        private void frenchButton_Click(object sender, EventArgs e)
+        private void languageComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            SetLanguage("fr");
-        }
+            string selected = languageComboBox.SelectedItem.ToString();
 
-        private void englishButton_Click(object sender, EventArgs e)
-        {
-            SetLanguage("en");
+            if (selected == "Fr")
+                AppSettings.CurrentLanguage = "fr";
+            else if (selected == "Es")
+                AppSettings.CurrentLanguage = "es";
+            else
+                AppSettings.CurrentLanguage = "en";
+
+            SetLanguage(AppSettings.CurrentLanguage);
         }
 
         private void usernameTextBox_TextChanged(object sender, EventArgs e)
