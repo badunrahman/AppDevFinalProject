@@ -218,8 +218,49 @@ namespace StudentManagementSystem.Database
                     }
                 }
             }
-
             return null;
+        }
+
+        public static int getEnrollmentID(int studentId, int courseId)
+        {
+            using (SqlConnection connection = GetConnection())
+            {
+                string query = "SELECT EnrollmentID FROM Enrollments WHERE StudentID = @studentid AND CourseID = @courseid";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@studentid", studentId);
+                command.Parameters.AddWithValue("@courseid", courseId);
+
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        return reader.GetInt32(0);
+                    }
+                }
+            }
+
+            return -1;
+        }
+
+        public static int getStudentGrade(int enrollmentId)
+        {
+            using (SqlConnection connection = GetConnection())
+            {
+                string query = "SELECT Grade FROM Grades WHERE EnrollmentID = @enrollid";
+                SqlCommand cmd = new SqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@enrollid", enrollmentId);
+
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        string gradeText = reader.GetString(0);
+                        return int.Parse(gradeText);
+                    }
+                }
+            }
+
+            return -1;
         }
 
         /// <summary>

@@ -58,8 +58,18 @@ namespace StudentManagementSystem.Forms
 
                 for (int i = 0; i < students.Count; i++)
                 {
-                    var gradeCell = studentDataGridView.Rows[0].Cells["Grade"].Value;
+                    int studentid = students[i].StudentID;
+                    int courseid = course.CourseID;
+                    int enrollmentid = DatabaseConnection.getEnrollmentID(studentid, courseid);
 
+                    if (enrollmentid != -1)
+                    {
+                        int grade = DatabaseConnection.getStudentGrade(enrollmentid);
+                        if (grade != - 1)
+                        {
+                           studentDataGridView.Rows[i].Cells["Grade"].Value = grade; 
+                        }
+                    }
                 }
             }
         }
