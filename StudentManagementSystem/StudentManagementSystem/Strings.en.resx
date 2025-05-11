@@ -132,6 +132,20 @@
 	<data name="grpQuickSearchGroupBox" xml:space="preserve"><value>Quick Search</value></data>
 	<data name="searchButton" xml:space="preserve"><value>Search</value></data>
 
+	<data name="CreateStudentTitle" xml:space="preserve"><value>Create student</value></data>
+	<data name="ThemeBtn" xml:space="preserve"><value>Theme</value></data>
+	<data name="LabelName" xml:space="preserve"><value>Name:</value></data>
+	<data name="LabelAddress" xml:space="preserve"><value>Address:</value></data>
+	<data name="LabelContact" xml:space="preserve"><value>Contact #:</value></data>
+	<data name="LabelStudentType" xml:space="preserve"><value>Student Type:</value></data>
+	<data name="RadioFullTime" xml:space="preserve"><value>Full-Time</value></data>
+	<data name="RadioPartTime" xml:space="preserve"><value>Part-Time</value></data>
+	<data name="RadioAthletes" xml:space="preserve"><value>Athletes</value></data>
+	<data name="LabelCourses" xml:space="preserve"><value>Courses:</value></data>
+	<data name="LabelTeacher" xml:space="preserve"><value>Teacher:</value></data>
+	<data name="SaveBtn" xml:space="preserve"><value>Save</value></data>
+	<data name="ClearBtn" xml:space="preserve"><value>Clear</value></data>
+
 
 	<data name="WelcomeText" xml:space="preserve">
     <value>Welcome, {0}</value>

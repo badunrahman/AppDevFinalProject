@@ -154,7 +154,7 @@ namespace StudentManagementSystem.Forms
 
         private void StudentManagementForm_Load(object sender, EventArgs e)
         {
-            SetLanguage("en"); // ← Change to "fr" to default to French
+            SetLanguage(AppSettings.CurrentLanguage); // ✅ Use global setting
 
             _courseItems = new List<CourseItem>();
             using (var conn = DatabaseConnection.GetConnection())

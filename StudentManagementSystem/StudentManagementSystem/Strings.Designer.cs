@@ -61,6 +61,15 @@ namespace StudentManagementSystem {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Clear.
+        /// </summary>
+        internal static string ClearBtn {
+            get {
+                return ResourceManager.GetString("ClearBtn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Contact.
         /// </summary>
         internal static string contactLabel {
@@ -75,6 +84,15 @@ namespace StudentManagementSystem {
         internal static string coursesLabel {
             get {
                 return ResourceManager.GetString("coursesLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create student.
+        /// </summary>
+        internal static string CreateStudentTitle {
+            get {
+                return ResourceManager.GetString("CreateStudentTitle", resourceCulture);
             }
         }
         
@@ -111,6 +129,60 @@ namespace StudentManagementSystem {
         internal static string InvalidID {
             get {
                 return ResourceManager.GetString("InvalidID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Address:.
+        /// </summary>
+        internal static string LabelAddress {
+            get {
+                return ResourceManager.GetString("LabelAddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contact #:.
+        /// </summary>
+        internal static string LabelContact {
+            get {
+                return ResourceManager.GetString("LabelContact", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Courses:.
+        /// </summary>
+        internal static string LabelCourses {
+            get {
+                return ResourceManager.GetString("LabelCourses", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name:.
+        /// </summary>
+        internal static string LabelName {
+            get {
+                return ResourceManager.GetString("LabelName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Student Type:.
+        /// </summary>
+        internal static string LabelStudentType {
+            get {
+                return ResourceManager.GetString("LabelStudentType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Teacher:.
+        /// </summary>
+        internal static string LabelTeacher {
+            get {
+                return ResourceManager.GetString("LabelTeacher", resourceCulture);
             }
         }
         
@@ -160,6 +232,42 @@ namespace StudentManagementSystem {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Athletes.
+        /// </summary>
+        internal static string RadioAthletes {
+            get {
+                return ResourceManager.GetString("RadioAthletes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Full-Time.
+        /// </summary>
+        internal static string RadioFullTime {
+            get {
+                return ResourceManager.GetString("RadioFullTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Part-Time.
+        /// </summary>
+        internal static string RadioPartTime {
+            get {
+                return ResourceManager.GetString("RadioPartTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save.
+        /// </summary>
+        internal static string SaveBtn {
+            get {
+                return ResourceManager.GetString("SaveBtn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Search.
         /// </summary>
         internal static string searchButton {
@@ -174,6 +282,15 @@ namespace StudentManagementSystem {
         internal static string StudentNotFound {
             get {
                 return ResourceManager.GetString("StudentNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Theme.
+        /// </summary>
+        internal static string ThemeBtn {
+            get {
+                return ResourceManager.GetString("ThemeBtn", resourceCulture);
             }
         }
         

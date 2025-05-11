@@ -30,4 +30,23 @@
 	<data name="searchButton" xml:space="preserve"><value>Buscar</value></data>
 	<data name="InvalidID" xml:space="preserve"><value>ID no válido</value></data>
 	<data name="StudentNotFound" xml:space="preserve"><value>Estudiante no encontrado</value></data>
+
+
+
+
+	<data name="CreateStudentTitle" xml:space="preserve"><value>Crear estudiante</value></data>
+	<data name="ThemeBtn" xml:space="preserve"><value>Tema</value></data>
+	<data name="LabelName" xml:space="preserve"><value>Nombre:</value></data>
+	<data name="LabelAddress" xml:space="preserve"><value>Dirección:</value></data>
+	<data name="LabelContact" xml:space="preserve"><value>Contacto:</value></data>
+	<data name="LabelStudentType" xml:space="preserve"><value>Tipo de estudiante:</value></data>
+	<data name="RadioFullTime" xml:space="preserve"><value>Tiempo completo</value></data>
+	<data name="RadioPartTime" xml:space="preserve"><value>Medio tiempo</value></data>
+	<data name="RadioAthletes" xml:space="preserve"><value>Deportistas</value></data>
+	<data name="LabelCourses" xml:space="preserve"><value>Cursos:</value></data>
+	<data name="LabelTeacher" xml:space="preserve"><value>Profesor:</value></data>
+	<data name="SaveBtn" xml:space="preserve"><value>Guardar</value></data>
+	<data name="ClearBtn" xml:space="preserve"><value>Limpiar</value></data>
+
+
 </root>
