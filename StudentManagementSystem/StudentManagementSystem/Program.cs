@@ -20,7 +20,7 @@ namespace StudentManagementSystem
             // 🔍 Test DB connection before starting app
             TestDatabaseConnection();
 
-            Application.Run(new StudentManagementForm()); // continue to login screen
+            Application.Run(new StudentProfileView()); // continue to login screen
         }
 
         /// <summary>

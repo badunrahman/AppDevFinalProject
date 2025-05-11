@@ -28,12 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.studentProfilePictureBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.studentProfilePictureBox)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // studentProfilePictureBox
+            // 
+            this.studentProfilePictureBox.Location = new System.Drawing.Point(12, 12);
+            this.studentProfilePictureBox.Name = "studentProfilePictureBox";
+            this.studentProfilePictureBox.Size = new System.Drawing.Size(100, 100);
+            this.studentProfilePictureBox.TabIndex = 0;
+            this.studentProfilePictureBox.TabStop = false;
+            this.studentProfilePictureBox.Paint += new System.Windows.Forms.PaintEventHandler(this.studentProfilePictureBox_Paint);
+            // 
+            // StudentProfileView
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1060, 768);
+            this.Controls.Add(this.studentProfilePictureBox);
+            this.Name = "StudentProfileView";
             this.Text = "StudentProfileView";
+            this.Load += new System.EventHandler(this.StudentProfileView_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.studentProfilePictureBox)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.PictureBox studentProfilePictureBox;
     }
 }
