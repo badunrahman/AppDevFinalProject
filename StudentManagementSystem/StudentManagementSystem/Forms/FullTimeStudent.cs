@@ -57,10 +57,9 @@ namespace StudentManagementSystem.Forms
         {
             var students = getFullTimeStudents();
 
-            // allow the grid to build columns automatically
+           
             fullTimeDataGridView.AutoGenerateColumns = true;
 
-            // now bind your list
             fullTimeDataGridView.DataSource = students; ;
         }
     }
