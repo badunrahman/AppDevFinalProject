@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using StudentManagementSystem.Database;
+using StudentManagementSystem.Forms;
 using StudentManagementSystem.Models;
 
 namespace StudentManagementSystem
@@ -19,7 +20,7 @@ namespace StudentManagementSystem
             // 🔍 Test DB connection before starting app
             TestDatabaseConnection();
 
-            Application.Run(new loginPageForm()); // continue to login screen
+            Application.Run(new StudentManagementForm()); // continue to login screen
         }
 
         /// <summary>

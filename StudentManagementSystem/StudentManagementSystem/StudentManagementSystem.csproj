@@ -70,11 +70,11 @@
     <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\CreateAccountForm.cs">
+    <Compile Include="Forms\CreateTeachers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\CreateAccountForm.Designer.cs">
-      <DependentUpon>CreateAccountForm.cs</DependentUpon>
+    <Compile Include="Forms\CreateTeachers.Designer.cs">
+      <DependentUpon>CreateTeachers.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\AdminDashboard.cs">
       <SubType>Form</SubType>
@@ -131,8 +131,11 @@
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\CreateAccountForm.resx">
-      <DependentUpon>CreateAccountForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\CreateTeachers.resx">
+      <DependentUpon>CreateTeachers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StudentManagementForm.resx">
+      <DependentUpon>StudentManagementForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TeacherDashboard.resx">
       <DependentUpon>TeacherDashboard.cs</DependentUpon>

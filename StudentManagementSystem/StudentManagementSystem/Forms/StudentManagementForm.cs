@@ -16,5 +16,10 @@ namespace StudentManagementSystem.Forms
         {
             InitializeComponent();
         }
+
+        private void creatStudnetTitleLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -173,13 +173,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(451, 293);
+            this.ClientSize = new System.Drawing.Size(453, 300);
             this.Controls.Add(this.lightModeButton);
             this.Controls.Add(this.frenchButton);
             this.Controls.Add(this.loginBox);
             this.Controls.Add(this.titleLabel);
             this.Name = "loginPageForm";
-            this.Text = "Login Page";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.loginPageForm_Load);
             this.loginBox.ResumeLayout(false);
             this.loginBox.PerformLayout();
