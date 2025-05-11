@@ -103,7 +103,8 @@ namespace StudentManagementSystem.Models
 
         private void createTeacherToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            createAccountForm createAccount = new createAccountForm();
+            createAccount.Show();
         }
 
         private void academicTrackingToolStripMenuItem_Click(object sender, EventArgs e)
