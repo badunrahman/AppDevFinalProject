@@ -206,6 +206,40 @@ namespace StudentManagementSystem.Database
             }
         }
 
+        public static Boolean checkUsernameExists(string username)
+        {
+            using (SqlConnection connection = GetConnection())
+            {
+                string query = "SELECT COUNT(*) FROM Users WHERE Username = @username";
+                SqlCommand cmd = new SqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@username", username);
+
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        return reader.GetInt32(0) > 0;
+                    }
+                }
+            }
+
+            return false;
+        }
+
+        public static void createUser(string username, string password, string role)
+        {
+            using (SqlConnection connection = GetConnection())
+            {
+                string query = "INSERT INTO Users (Username, Password, Role) VALUES (@username, @password, @role)";
+                SqlCommand cmd = new SqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@username", username);
+                cmd.Parameters.AddWithValue("@password", password);
+                cmd.Parameters.AddWithValue("@role", role);
+
+                cmd.ExecuteNonQuery();
+            }
+        }
+
         // Get UserID by login username and password
         public static int getUserIdByLogin(string username, string password)
         {
@@ -447,6 +481,19 @@ namespace StudentManagementSystem.Database
             }
 
             return "";
+        }
+
+        public static void createTeacher(int userId, string name)
+        {
+            using (SqlConnection connection = GetConnection())
+            {
+                string query = "INSERT INTO Teachers (UserID, Name) VALUES (@userid, @name)";
+                SqlCommand cmd = new SqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@userid", userId);
+                cmd.Parameters.AddWithValue("@name", name);
+
+                cmd.ExecuteNonQuery();
+            }
         }
     }
 }
