@@ -77,7 +77,7 @@ namespace StudentManagementSystem.Models
 
         private void studnetManagementToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void createStudentToolStripMenuItem_Click(object sender, EventArgs e)
@@ -88,7 +88,7 @@ namespace StudentManagementSystem.Models
 
         private void manageStudentToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            new StudentProfileView().ShowDialog();
         }
 
         private void athletesStudentToolStripMenuItem_Click(object sender, EventArgs e)
