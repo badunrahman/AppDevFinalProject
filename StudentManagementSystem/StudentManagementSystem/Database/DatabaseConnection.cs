@@ -395,6 +395,35 @@ namespace StudentManagementSystem.Database
             return students;
         }
 
+
+        public static List<Student> getPartTimeStudents()
+        {
+            List<Student> students = new List<Student>();
+
+            using (SqlConnection connection = GetConnection())
+            {
+                string query = "SELECT * FROM Students WHERE StudentType = @type";
+                SqlCommand cmd = new SqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@type", "PartTime");
+
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        int studentID = reader.GetInt32(0);
+                        string name = reader.GetString(1);
+                        string address = reader.GetString(2);
+                        string contact = reader.GetString(3);
+                        string type = reader.GetString(4);
+                        students.Add(new Student(studentID, name, address, contact, type));
+                    }
+                }
+            }
+
+            return students;
+        }
+
+
         public static string getUserRole(int userId)
         {
             using (SqlConnection connection = GetConnection())
