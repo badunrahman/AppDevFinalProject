@@ -90,7 +90,7 @@ namespace StudentManagementSystem.Models
         private void studentIdTextBox_TextChanged(object sender, EventArgs e) { }
 
         private void studentIdTextBox_Enter(object sender, EventArgs e)
-        {
+         {
             string placeholder = rm.GetString("EnterStudentID", CultureInfo.CurrentUICulture);
             if (studentIdTextBox.Text == placeholder)
             {
