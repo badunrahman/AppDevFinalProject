@@ -31,8 +31,6 @@ namespace StudentManagementSystem.Models
             SetLanguage(langCode);
         }
 
-   
-
         private void SetLanguage(string langCode)
         {
             CultureInfo ci = new CultureInfo(langCode);
@@ -45,6 +43,20 @@ namespace StudentManagementSystem.Models
             contactLabel.Text = rm.GetString("contactLabel", ci);
             grpQuickSearchGroupBox.Text = rm.GetString("grpQuickSearchGroupBox", ci);
             searchButton.Text = rm.GetString("searchButton", ci);
+            studentManagementToolStripMenuItem.Text = rm.GetString("MenuStudentManagement", ci);
+            createStudentToolStripMenuItem.Text = rm.GetString("MenuCreateStudent", ci);
+            manageStudentToolStripMenuItem.Text = rm.GetString("MenuManageStudent", ci);
+            athletesStudentToolStripMenuItem.Text = rm.GetString("MenuAthletesStudent", ci);
+
+            teacherManagementToolStripMenuItem.Text = rm.GetString("MenuTeacherManagement", ci);
+            createTeacherToolStripMenuItem.Text = rm.GetString("MenuCreateTeacher", ci);
+
+            academicTrackingToolStripMenuItem.Text = rm.GetString("MenuAcademicTracking", ci);
+            partTimeStudentToolStripMenuItem.Text = rm.GetString("MenuPartTimeStudent", ci);
+            fullTimeStudentToolStripMenuItem.Text = rm.GetString("MenuFullTimeStudent", ci);
+
+            studentIdTextBox.Text = rm.GetString("EnterStudentID", ci);
+            studentIdTextBox.ForeColor = Color.Gray;
         }
 
         private void CircularPictureBox(PictureBox picBox)
@@ -79,7 +91,8 @@ namespace StudentManagementSystem.Models
 
         private void studentIdTextBox_Enter(object sender, EventArgs e)
         {
-            if (studentIdTextBox.Text == "Enter Student ID")
+            string placeholder = rm.GetString("EnterStudentID", CultureInfo.CurrentUICulture);
+            if (studentIdTextBox.Text == placeholder)
             {
                 studentIdTextBox.Text = "";
                 studentIdTextBox.ForeColor = Color.Black;
@@ -90,7 +103,7 @@ namespace StudentManagementSystem.Models
         {
             if (string.IsNullOrWhiteSpace(studentIdTextBox.Text))
             {
-                studentIdTextBox.Text = "Enter Student ID";
+                studentIdTextBox.Text = rm.GetString("EnterStudentID", CultureInfo.CurrentUICulture);
                 studentIdTextBox.ForeColor = Color.Gray;
             }
         }
@@ -161,7 +174,5 @@ namespace StudentManagementSystem.Models
             gpaTextBox.Text = "N/A";
             coursesTextBox.Text = string.Join(", ", CourseService.GetCoursesByStudentId(studentId));
         }
-
-     
     }
 }

@@ -271,5 +271,53 @@
 		<value>Note</value>
 	</data>
 
+	<data name="NoAccountLabel" xml:space="preserve">
+    <value>Vous n'avez pas de compte ?</value>
+  </data>
+	<data name="CreateAccountLink" xml:space="preserve">
+    <value>Créer un compte</value>
+  </data>
+
+	<data name="MenuStudentManagement" xml:space="preserve">
+    <value>Gestion des étudiants</value>
+  </data>
+	<data name="MenuCreateStudent" xml:space="preserve">
+    <value>Créer un étudiant</value>
+  </data>
+	<data name="MenuManageStudent" xml:space="preserve">
+    <value>Gérer les étudiants</value>
+  </data>
+	<data name="MenuAthletesStudent" xml:space="preserve">
+    <value>Étudiant athlète</value>
+  </data>
+	<data name="MenuTeacherManagement" xml:space="preserve">
+    <value>Gestion des enseignants</value>
+  </data>
+	<data name="MenuCreateTeacher" xml:space="preserve">
+    <value>Créer un enseignant</value>
+  </data>
+	<data name="MenuAcademicTracking" xml:space="preserve">
+    <value>Suivi académique</value>
+  </data>
+	<data name="MenuPartTimeStudent" xml:space="preserve">
+    <value>Étudiant à temps partiel</value>
+  </data>
+	<data name="MenuFullTimeStudent" xml:space="preserve">
+    <value>Étudiant à temps plein</value>
+  </data>
+
+	<data name="FullTimeTitle" xml:space="preserve"><value>Étudiants à temps plein</value></data>
+	<data name="FullTimeGroupBox" xml:space="preserve"><value>Liste des étudiants</value></data>
+	<data name="Header_StudentID" xml:space="preserve"><value>ID Étudiant</value></data>
+	<data name="Header_Name" xml:space="preserve"><value>Nom</value></data>
+	<data name="Header_Address" xml:space="preserve"><value>Adresse</value></data>
+	<data name="Header_Contact" xml:space="preserve"><value>Contact d'urgence</value></data>
+	<data name="Header_StudentType" xml:space="preserve"><value>Type d'étudiant</value></data>
+
+	<data name="EnterStudentID" xml:space="preserve">
+    <value>Entrez l'ID étudiant</value>
+    </data>
+
+
 
 </root>

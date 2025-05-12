@@ -31,7 +31,7 @@
             this.adminPictureBox = new System.Windows.Forms.PictureBox();
             this.adminNameLabel = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.studnetManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.studentManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.createStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manageStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.athletesStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -83,7 +83,7 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.studnetManagementToolStripMenuItem,
+            this.studentManagementToolStripMenuItem,
             this.teacherManagementToolStripMenuItem,
             this.academicTrackingToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -92,16 +92,16 @@
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // studnetManagementToolStripMenuItem
+            // studentManagementToolStripMenuItem
             // 
-            this.studnetManagementToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.studentManagementToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.createStudentToolStripMenuItem,
             this.manageStudentToolStripMenuItem,
             this.athletesStudentToolStripMenuItem});
-            this.studnetManagementToolStripMenuItem.Name = "studnetManagementToolStripMenuItem";
-            this.studnetManagementToolStripMenuItem.Size = new System.Drawing.Size(134, 20);
-            this.studnetManagementToolStripMenuItem.Text = "Student Management";
-            this.studnetManagementToolStripMenuItem.Click += new System.EventHandler(this.studnetManagementToolStripMenuItem_Click);
+            this.studentManagementToolStripMenuItem.Name = "studentManagementToolStripMenuItem";
+            this.studentManagementToolStripMenuItem.Size = new System.Drawing.Size(134, 20);
+            this.studentManagementToolStripMenuItem.Text = "Student Management";
+            this.studentManagementToolStripMenuItem.Click += new System.EventHandler(this.studnetManagementToolStripMenuItem_Click);
             // 
             // createStudentToolStripMenuItem
             // 
@@ -136,7 +136,7 @@
             // createTeacherToolStripMenuItem
             // 
             this.createTeacherToolStripMenuItem.Name = "createTeacherToolStripMenuItem";
-            this.createTeacherToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.createTeacherToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.createTeacherToolStripMenuItem.Text = "Create Teacher";
             this.createTeacherToolStripMenuItem.Click += new System.EventHandler(this.createTeacherToolStripMenuItem_Click);
             // 
@@ -153,14 +153,14 @@
             // partTimeStudentToolStripMenuItem
             // 
             this.partTimeStudentToolStripMenuItem.Name = "partTimeStudentToolStripMenuItem";
-            this.partTimeStudentToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.partTimeStudentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.partTimeStudentToolStripMenuItem.Text = "PartTime Student";
             this.partTimeStudentToolStripMenuItem.Click += new System.EventHandler(this.partTimeStudentToolStripMenuItem_Click);
             // 
             // fullTimeStudentToolStripMenuItem
             // 
             this.fullTimeStudentToolStripMenuItem.Name = "fullTimeStudentToolStripMenuItem";
-            this.fullTimeStudentToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.fullTimeStudentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.fullTimeStudentToolStripMenuItem.Text = "FullTime Student";
             this.fullTimeStudentToolStripMenuItem.Click += new System.EventHandler(this.fullTimeStudentToolStripMenuItem_Click);
             // 
@@ -344,7 +344,7 @@
         private System.Windows.Forms.PictureBox adminPictureBox;
         private System.Windows.Forms.Label adminNameLabel;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem studnetManagementToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem studentManagementToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem createStudentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem manageStudentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem athletesStudentToolStripMenuItem;

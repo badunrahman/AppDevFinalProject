@@ -61,11 +61,13 @@ namespace StudentManagementSystem.Forms
         private void FullTimeStudent_Load(object sender, EventArgs e)
         {
             ThemeManager.ApplyTheme(this);
-            SetLanguage(AppSettings.CurrentLanguage); 
+            SetLanguage(AppSettings.CurrentLanguage);
 
             var students = getFullTimeStudents();
             fullTimeDataGridView.AutoGenerateColumns = true;
             fullTimeDataGridView.DataSource = students;
+
+            SetColumnHeaders();
         }
 
         private void SetLanguage(string langCode)
@@ -75,6 +77,26 @@ namespace StudentManagementSystem.Forms
 
             Title.Text = rm.GetString("FullTimeTitle", ci);
             groupBox1.Text = rm.GetString("FullTimeGroupBox", ci);
+        }
+
+        private void SetColumnHeaders()
+        {
+            CultureInfo ci = Thread.CurrentThread.CurrentUICulture;
+
+            if (fullTimeDataGridView.Columns.Contains("StudentID"))
+                fullTimeDataGridView.Columns["StudentID"].HeaderText = rm.GetString("Header_StudentID", ci);
+
+            if (fullTimeDataGridView.Columns.Contains("Name"))
+                fullTimeDataGridView.Columns["Name"].HeaderText = rm.GetString("Header_Name", ci);
+
+            if (fullTimeDataGridView.Columns.Contains("Address"))
+                fullTimeDataGridView.Columns["Address"].HeaderText = rm.GetString("Header_Address", ci);
+
+            if (fullTimeDataGridView.Columns.Contains("EmergencyContact"))
+                fullTimeDataGridView.Columns["EmergencyContact"].HeaderText = rm.GetString("Header_Contact", ci);
+
+            if (fullTimeDataGridView.Columns.Contains("StudentType"))
+                fullTimeDataGridView.Columns["StudentType"].HeaderText = rm.GetString("Header_StudentType", ci);
         }
     }
 }

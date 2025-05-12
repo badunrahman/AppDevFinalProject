@@ -55,7 +55,8 @@ namespace StudentManagementSystem
 
             logInButton.Text = rm.GetString("LoginBtn", ci);
             incorrectInfoLabel.Text = rm.GetString("LoginWelcome", ci);
-            // Optional: Update other UI elements here if needed
+            noAccountInfoLabel.Text = rm.GetString("NoAccountLabel", ci);
+            createAccountLinkLabel.Text = rm.GetString("CreateAccountLink", ci);
         }
 
         private void lightModeButton_Click(object sender, EventArgs e)
