@@ -49,4 +49,89 @@
 	<data name="ClearBtn" xml:space="preserve"><value>Limpiar</value></data>
 
 
+
+	<data name="StudentInfo" xml:space="preserve"><value>Información del estudiante</value></data>
+	<data name="TeacherCourseInfo" xml:space="preserve"><value>Profesor y cursos</value></data>
+	<data name="GradesInfo" xml:space="preserve"><value>Información de calificaciones</value></data>
+	<data name="LabelName" xml:space="preserve"><value>Nombre</value></data>
+	<data name="LabelAddress" xml:space="preserve"><value>Dirección</value></data>
+	<data name="LabelContact" xml:space="preserve"><value>Contacto</value></data>
+	<data name="LabelStudentType" xml:space="preserve"><value>Tipo de estudiante</value></data>
+	<data name="LabelTeacher" xml:space="preserve"><value>Profesor</value></data>
+	<data name="LabelTeacherID" xml:space="preserve"><value>ID del profesor</value></data>
+	<data name="LabelCourses" xml:space="preserve"><value>Curso</value></data>
+	<data name="AllGradesLabel" xml:space="preserve"><value>Todas las calificaciones</value></data>
+	<data name="SearchID" xml:space="preserve"><value>ID</value></data>
+	<data name="SearchBtn" xml:space="preserve"><value>Buscar</value></data>
+	<data name="NoFeedback" xml:space="preserve"><value>(sin comentarios aún)</value></data>
+	<data name="InvalidID" xml:space="preserve"><value>Por favor ingrese una ID de estudiante válida.</value></data>
+	<data name="StudentNotFound" xml:space="preserve"><value>Estudiante no encontrado.</value></data>
+
+
+	<data name="AthleteInfoHeader" xml:space="preserve">
+  <value>Athlete Students Information</value>
+</data>
+	<data name="CoursesColumn" xml:space="preserve">
+  <value>Courses</value>
+</data>
+
+
+
+	<data name="CreateFormTitle">
+		<value>Crear cuenta</value>
+	</data>
+	<data name="GroupBoxPersonalInfo">
+		<value>Información personal</value>
+	</data>
+	<data name="GroupBoxAccountInfo">
+		<value>Información de la cuenta</value>
+	</data>
+	<data name="FirstNameLabel">
+		<value>Nombre:</value>
+	</data>
+	<data name="LastNameLabel">
+		<value>Apellido:</value>
+	</data>
+	<data name="UsernameLabel">
+		<value>Usuario:</value>
+	</data>
+	<data name="PasswordLabel">
+		<value>Contraseña:</value>
+	</data>
+	<data name="CreateBtn">
+		<value>Crear cuenta</value>
+	</data>
+	<data name="AllFieldsWarning">
+		<value>¡Debe completar todos los campos!</value>
+	</data>
+	<data name="InvalidFieldsTitle">
+		<value>Campos inválidos</value>
+	</data>
+	<data name="UsernameExists">
+		<value>¡El nombre de usuario ya existe!</value>
+	</data>
+	<data name="UsernameExistsTitle">
+		<value>Error - Usuario existe</value>
+	</data>
+	<data name="TeacherCreated">
+		<value>¡Profesor creado exitosamente!</value>
+	</data>
+
+
+
+
+	<data name="PartTimeInfoHeader" xml:space="preserve">
+    <value>Información de estudiantes a tiempo parcial</value>
+  </data>
+	<data name="CoursesColumn" xml:space="preserve">
+    <value>Cursos</value>
+  </data>
+
+
+	<data name="FullTimeTitle" xml:space="preserve">
+    <value>Todos los estudiantes de tiempo completo</value>
+</data>
+	<data name="FullTimeGroupBox" xml:space="preserve">
+    <value>Información del estudiante</value>
+</data>
 </root>

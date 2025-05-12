@@ -4,8 +4,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
+using System.Resources;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using StudentManagementSystem.Database;
@@ -15,6 +18,8 @@ namespace StudentManagementSystem.Forms
 {
     public partial class FullTimeStudent : Form
     {
+        private ResourceManager rm = new ResourceManager("StudentManagementSystem.Strings", typeof(FullTimeStudent).Assembly);
+
         public FullTimeStudent()
         {
             InitializeComponent();
@@ -55,12 +60,20 @@ namespace StudentManagementSystem.Forms
 
         private void FullTimeStudent_Load(object sender, EventArgs e)
         {
+            SetLanguage(AppSettings.CurrentLanguage); // 🌐 Apply language
+
             var students = getFullTimeStudents();
-
-           
             fullTimeDataGridView.AutoGenerateColumns = true;
+            fullTimeDataGridView.DataSource = students;
+        }
 
-            fullTimeDataGridView.DataSource = students; ;
+        private void SetLanguage(string langCode)
+        {
+            CultureInfo ci = new CultureInfo(langCode);
+            Thread.CurrentThread.CurrentUICulture = ci;
+
+            Title.Text = rm.GetString("FullTimeTitle", ci);
+            groupBox1.Text = rm.GetString("FullTimeGroupBox", ci);
         }
     }
 }

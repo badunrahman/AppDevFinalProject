@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
+using System.Resources;
+using System.Threading;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D;
 using StudentManagementSystem.Database;
@@ -12,6 +15,8 @@ namespace StudentManagementSystem.Forms
 {
     public partial class StudentProfileView : Form
     {
+        private ResourceManager rm = new ResourceManager("StudentManagementSystem.Strings", typeof(StudentProfileView).Assembly);
+
         public StudentProfileView()
         {
             InitializeComponent();
@@ -26,10 +31,32 @@ namespace StudentManagementSystem.Forms
 
         private void StudentProfileView_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'studentDBDataSet.Grades' table. You can move, or remove it, as needed.
+            SetLanguage(AppSettings.CurrentLanguage);
             this.gradesTableAdapter.Fill(this.studentDBDataSet.Grades);
-            // make the profile picture circular
             studentProfilePictureBox.Paint += studentProfilePictureBox_Paint;
+        }
+
+        private void SetLanguage(string langCode)
+        {
+            CultureInfo ci = new CultureInfo(langCode);
+            Thread.CurrentThread.CurrentUICulture = ci;
+
+            studentInfoGroupBox.Text = rm.GetString("StudentInfo", ci);
+            teachAndCoursesGroupBox.Text = rm.GetString("TeacherCourseInfo", ci);
+            gradesInfoGroupBox.Text = rm.GetString("GradesInfo", ci);
+
+            nameLabel.Text = rm.GetString("LabelName", ci);
+            label1.Text = rm.GetString("LabelAddress", ci);
+            contactLabel.Text = rm.GetString("LabelContact", ci);
+            studentTypeLabel.Text = rm.GetString("LabelStudentType", ci);
+
+            teacherLabel.Text = rm.GetString("LabelTeacher", ci);
+            teacherIdLabel.Text = rm.GetString("LabelTeacherID", ci);
+            coursesLabel.Text = rm.GetString("LabelCourses", ci);
+
+            allGradeInputLabel.Text = rm.GetString("AllGradesLabel", ci);
+            searchIdLabel.Text = rm.GetString("SearchID", ci);
+            searchButton.Text = rm.GetString("SearchBtn", ci);
         }
 
         private void studentProfilePictureBox_Paint(object sender, PaintEventArgs e)
@@ -48,15 +75,13 @@ namespace StudentManagementSystem.Forms
 
         private void searchButton_Click(object sender, EventArgs e)
         {
-            // 1) parse student ID
             int studentId;
             if (!int.TryParse(idTextBox.Text.Trim(), out studentId))
             {
-                MessageBox.Show("Please enter a valid numeric Student ID.");
+                MessageBox.Show(rm.GetString("InvalidID", CultureInfo.CurrentUICulture));
                 return;
             }
 
-            // 2) load basic student info
             using (SqlConnection conn = DatabaseConnection.GetConnection())
             using (SqlCommand cmd = new SqlCommand(@"
                 SELECT Name, Address, EmergencyContact, StudentType
@@ -68,7 +93,7 @@ namespace StudentManagementSystem.Forms
                 {
                     if (!r.Read())
                     {
-                        MessageBox.Show("Student not found.");
+                        MessageBox.Show(rm.GetString("StudentNotFound", CultureInfo.CurrentUICulture));
                         return;
                     }
 
@@ -79,7 +104,6 @@ namespace StudentManagementSystem.Forms
                 }
             }
 
-            // 3) load distinct teachers for this student
             var teachers = new List<Tuple<int, string>>();
             using (SqlConnection conn = DatabaseConnection.GetConnection())
             using (SqlCommand cmd = new SqlCommand(@"
@@ -91,23 +115,18 @@ namespace StudentManagementSystem.Forms
             {
                 cmd.Parameters.AddWithValue("@sid", studentId);
                 using (SqlDataReader r = cmd.ExecuteReader())
-                {
                     while (r.Read())
                         teachers.Add(Tuple.Create((int)r["TeacherID"], r["Name"].ToString()));
-                }
             }
 
-            // bind teacher-name ComboBox
             teachersNameComboBox.DataSource = teachers;
             teachersNameComboBox.DisplayMember = "Item2";
             teachersNameComboBox.ValueMember = "Item1";
 
-            // bind teacher-ID ComboBox
             teacherIdComboBox.DataSource = teachers;
             teacherIdComboBox.DisplayMember = "Item1";
             teacherIdComboBox.ValueMember = "Item2";
 
-            // 4) load all feedback
             var allFeedback = new List<string>();
             using (SqlConnection conn = DatabaseConnection.GetConnection())
             using (SqlCommand cmd = new SqlCommand(@"
@@ -124,7 +143,6 @@ namespace StudentManagementSystem.Forms
             }
             feedBackTextBox.Lines = allFeedback.ToArray();
 
-            // 5) load all grades into the DataGridView
             DataTable dtGrades = new DataTable();
             using (SqlConnection conn = DatabaseConnection.GetConnection())
             using (SqlCommand cmd = new SqlCommand(@"
@@ -148,7 +166,6 @@ namespace StudentManagementSystem.Forms
 
         private void teachersNameComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // sync the ID ComboBox
             var selected = teachersNameComboBox.SelectedItem as Tuple<int, string>;
             if (selected != null)
                 teacherIdComboBox.SelectedValue = selected.Item1;
@@ -158,7 +175,6 @@ namespace StudentManagementSystem.Forms
 
         private void teacherIdComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // sync the Name ComboBox
             var selected = teacherIdComboBox.SelectedItem as Tuple<int, string>;
             if (selected != null)
                 teachersNameComboBox.SelectedIndex =
@@ -188,10 +204,8 @@ namespace StudentManagementSystem.Forms
                 cmd.Parameters.AddWithValue("@sid", studentId);
                 cmd.Parameters.AddWithValue("@tid", teacherId);
                 using (SqlDataReader r = cmd.ExecuteReader())
-                {
                     while (r.Read())
                         courses.Add(Tuple.Create((int)r["CourseID"], r["CourseName"].ToString()));
-                }
             }
 
             chooseCoursesComboBox.DataSource = courses;
@@ -220,7 +234,7 @@ namespace StudentManagementSystem.Forms
                 cmd.Parameters.AddWithValue("@cid", courseId);
                 object o = cmd.ExecuteScalar();
                 feedBackForEachCourseTextBox.Text =
-                    (o == null ? "(no feedback yet)" : o.ToString());
+                    (o == null ? rm.GetString("NoFeedback", CultureInfo.CurrentUICulture) : o.ToString());
             }
         }
     }
