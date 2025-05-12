@@ -157,6 +157,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>StudentDBDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ThemeManager.cs" />
     <Compile Include="Utils\LanguageManager.cs" />
     <Compile Include="Utils\PasswordHasher.cs" />
     <Compile Include="Utils\ThemeManager.cs" />

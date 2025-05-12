@@ -25,11 +25,11 @@ namespace StudentManagementSystem
         {
             InitializeComponent();
             this.Load += new EventHandler(loginPageForm_Load);
+            lightModeButton.Click += lightModeButton_Click;
         }
 
         private void loginPageForm_Load(object sender, EventArgs e)
         {
-            // Populate comboBox if not already done
             if (languageComboBox.Items.Count == 0)
             {
                 languageComboBox.Items.Add("En");
@@ -37,21 +37,15 @@ namespace StudentManagementSystem
                 languageComboBox.Items.Add("Es");
             }
 
-            // Set default selection based on global language
             switch (AppSettings.CurrentLanguage)
             {
-                case "fr":
-                    languageComboBox.SelectedItem = "Fr";
-                    break;
-                case "es":
-                    languageComboBox.SelectedItem = "Es";
-                    break;
-                default:
-                    languageComboBox.SelectedItem = "En";
-                    break;
+                case "fr": languageComboBox.SelectedItem = "Fr"; break;
+                case "es": languageComboBox.SelectedItem = "Es"; break;
+                default: languageComboBox.SelectedItem = "En"; break;
             }
 
             SetLanguage(AppSettings.CurrentLanguage);
+            ThemeManager.ApplyTheme(this); 
         }
 
         private void SetLanguage(string langCode)
@@ -64,6 +58,10 @@ namespace StudentManagementSystem
             // Optional: Update other UI elements here if needed
         }
 
+        private void lightModeButton_Click(object sender, EventArgs e)
+        {
+            ThemeManager.ToggleTheme(this);
+        }
         private void languageComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             string selected = languageComboBox.SelectedItem.ToString();
