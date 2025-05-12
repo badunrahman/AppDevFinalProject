@@ -46,7 +46,6 @@
             this.courseComboBox = new System.Windows.Forms.ComboBox();
             this.chooseCourseLabel = new System.Windows.Forms.Label();
             this.lightModeButton = new System.Windows.Forms.Button();
-            this.frenchButton = new System.Windows.Forms.Button();
             this.dashboardPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.studentDataGridView)).BeginInit();
             this.teacherProfileGroupBox.SuspendLayout();
@@ -218,24 +217,12 @@
             this.lightModeButton.TabIndex = 5;
             this.lightModeButton.UseVisualStyleBackColor = true;
             // 
-            // frenchButton
-            // 
-            this.frenchButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("frenchButton.BackgroundImage")));
-            this.frenchButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.frenchButton.ForeColor = System.Drawing.Color.Silver;
-            this.frenchButton.Location = new System.Drawing.Point(916, 12);
-            this.frenchButton.Name = "frenchButton";
-            this.frenchButton.Size = new System.Drawing.Size(31, 30);
-            this.frenchButton.TabIndex = 4;
-            this.frenchButton.UseVisualStyleBackColor = true;
-            // 
             // TeacherDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(999, 495);
             this.Controls.Add(this.lightModeButton);
-            this.Controls.Add(this.frenchButton);
             this.Controls.Add(this.dashboardPanel);
             this.Controls.Add(this.titleLabel);
             this.Name = "TeacherDashboard";
@@ -255,7 +242,6 @@
         private System.Windows.Forms.Label titleLabel;
         private System.Windows.Forms.Panel dashboardPanel;
         private System.Windows.Forms.Button lightModeButton;
-        private System.Windows.Forms.Button frenchButton;
         private System.Windows.Forms.ComboBox courseComboBox;
         private System.Windows.Forms.Label chooseCourseLabel;
         private System.Windows.Forms.Label label2;

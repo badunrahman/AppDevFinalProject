@@ -237,4 +237,39 @@
 </data>
 
 
+	<data name="TeacherDashboardTitle">
+		<value>Système de gestion des étudiants</value>
+	</data>
+	<data name="ChooseCourse">
+		<value>Choisir un cours à afficher :</value>
+	</data>
+	<data name="StudentListLabel">
+		<value>Étudiants</value>
+	</data>
+	<data name="TeacherProfile">
+		<value>Profil de l'enseignant</value>
+	</data>
+	<data name="CoursesTaught">
+		<value>Cours enseignés</value>
+	</data>
+	<data name="NameLabel">
+		<value>Nom :</value>
+	</data>
+	<data name="UserIDLabel">
+		<value>ID utilisateur :</value>
+	</data>
+	<data name="FeedbackLabel">
+		<value>Retour d'information</value>
+	</data>
+	<data name="SendFeedbackButton">
+		<value>Envoyer les commentaires</value>
+	</data>
+	<data name="UpdateGradesButton">
+		<value>Mettre à jour les notes</value>
+	</data>
+	<data name="GradeColumn">
+		<value>Note</value>
+	</data>
+
+
 </root>

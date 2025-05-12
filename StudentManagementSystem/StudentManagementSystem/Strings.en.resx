@@ -231,11 +231,46 @@
 
 
 	<data name="FullTimeTitle" xml:space="preserve">
-    <value>All Full Time Students</value> <!-- English -->
+    <value>All Full Time Students</value> 
 </data>
 	<data name="FullTimeGroupBox" xml:space="preserve">
     <value>Student Information</value>
 </data>
+
+
+	<data name="TeacherDashboardTitle">
+		<value>Student Management System</value>
+	</data>
+	<data name="ChooseCourse">
+		<value>Choose course to view:</value>
+	</data>
+	<data name="StudentListLabel">
+		<value>Students</value>
+	</data>
+	<data name="TeacherProfile">
+		<value>Teacher Profile</value>
+	</data>
+	<data name="CoursesTaught">
+		<value>Courses taught</value>
+	</data>
+	<data name="NameLabel">
+		<value>Name:</value>
+	</data>
+	<data name="UserIDLabel">
+		<value>User ID:</value>
+	</data>
+	<data name="FeedbackLabel">
+		<value>Feedback</value>
+	</data>
+	<data name="SendFeedbackButton">
+		<value>Send feedback</value>
+	</data>
+	<data name="UpdateGradesButton">
+		<value>Update grades</value>
+	</data>
+	<data name="GradeColumn">
+		<value>Grade</value>
+	</data>
 
 
 </root>

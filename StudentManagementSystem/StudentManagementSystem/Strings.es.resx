@@ -134,4 +134,41 @@
 	<data name="FullTimeGroupBox" xml:space="preserve">
     <value>Información del estudiante</value>
 </data>
+
+	<data name="TeacherDashboardTitle">
+		<value>Sistema de Gestión de Estudiantes</value>
+	</data>
+	<data name="ChooseCourse">
+		<value>Elija un curso para ver:</value>
+	</data>
+	<data name="StudentListLabel">
+		<value>Estudiantes</value>
+	</data>
+	<data name="TeacherProfile">
+		<value>Perfil del profesor</value>
+	</data>
+	<data name="CoursesTaught">
+		<value>Cursos impartidos</value>
+	</data>
+	<data name="NameLabel">
+		<value>Nombre:</value>
+	</data>
+	<data name="UserIDLabel">
+		<value>ID de usuario:</value>
+	</data>
+	<data name="FeedbackLabel">
+		<value>Comentarios</value>
+	</data>
+	<data name="SendFeedbackButton">
+		<value>Enviar comentarios</value>
+	</data>
+	<data name="UpdateGradesButton">
+		<value>Actualizar calificaciones</value>
+	</data>
+	<data name="GradeColumn">
+		<value>Nota</value>
+	</data>
+
+
+
 </root>

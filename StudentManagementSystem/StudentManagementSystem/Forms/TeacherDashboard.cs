@@ -6,8 +6,11 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
+using System.Resources;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -18,6 +21,8 @@ namespace StudentManagementSystem.Forms
         private int userId;
         private int teacherId;
         private Course currentCourse;
+        private ResourceManager rm = new ResourceManager("StudentManagementSystem.Strings", typeof(TeacherDashboard).Assembly);
+
         public TeacherDashboard(int id)
         {
             InitializeComponent();
@@ -26,24 +31,45 @@ namespace StudentManagementSystem.Forms
 
         private void TeacherDashboard_Load(object sender, EventArgs e)
         {
-            //this.studentsTableAdapter.Fill(this.studentDBDataSet.Students);
+            SetLanguage(AppSettings.CurrentLanguage);
+
             int teachID = DatabaseConnection.getTeacherIdByUserId(userId);
             teacherId = teachID;
             Teacher teacher = DatabaseConnection.getTeacherByID(teacherId);
 
-            if (teacher  == null)
+            if (teacher == null)
             {
                 MessageBox.Show("No teacher found");
             }
 
-            IdLabel.Text = "User ID: " + teacher.UserID;
-            nameLabel.Text = "Name: " + teacher.Name;
+            IdLabel.Text = rm.GetString("TeacherID", CultureInfo.CurrentUICulture) + ": " + teacher.UserID;
+            nameLabel.Text = rm.GetString("TeacherName", CultureInfo.CurrentUICulture) + ": " + teacher.Name;
 
             List<Course> courses = DatabaseConnection.getTeacherCourses(teacherId);
             foreach (var course in courses)
             {
                 coursesListBox.Items.Add(course);
                 courseComboBox.Items.Add(course);
+            }
+        }
+
+        private void SetLanguage(string langCode)
+        {
+            CultureInfo ci = new CultureInfo(langCode);
+            Thread.CurrentThread.CurrentUICulture = ci;
+
+            titleLabel.Text = rm.GetString("TeacherDashboardTitle", ci);
+            chooseCourseLabel.Text = rm.GetString("ChooseCourse", ci);
+            label2.Text = rm.GetString("StudentsLabel", ci);
+            teacherProfileGroupBox.Text = rm.GetString("TeacherProfileGroupBox", ci);
+            coursesLabel.Text = rm.GetString("CoursesTaught", ci);
+            feedbackLabel.Text = rm.GetString("FeedbackLabel", ci);
+            sendFeedbackButton.Text = rm.GetString("SendFeedbackButton", ci);
+            updateGradesButton.Text = rm.GetString("UpdateGradesButton", ci);
+
+            if (studentDataGridView.Columns.Contains("Grade"))
+            {
+                studentDataGridView.Columns["Grade"].HeaderText = rm.GetString("GradeColumn", ci);
             }
         }
 
@@ -69,7 +95,7 @@ namespace StudentManagementSystem.Forms
                         int grade = DatabaseConnection.getStudentGrade(enrollmentid);
                         if (grade != 0)
                         {
-                           studentDataGridView.Rows[i].Cells["Grade"].Value = grade; 
+                            studentDataGridView.Rows[i].Cells["Grade"].Value = grade;
                         }
                     }
                 }
@@ -142,7 +168,7 @@ namespace StudentManagementSystem.Forms
                 }
                 else
                 {
-                    feedbackTextBox.Text = "There is currently no feedback for this student on this course";
+                    feedbackTextBox.Text = rm.GetString("NoFeedbackMessage", CultureInfo.CurrentUICulture);
                 }
             }
         }
