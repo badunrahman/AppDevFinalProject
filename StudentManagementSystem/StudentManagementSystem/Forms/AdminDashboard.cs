@@ -31,6 +31,8 @@ namespace StudentManagementSystem.Models
             SetLanguage(langCode);
         }
 
+   
+
         private void SetLanguage(string langCode)
         {
             CultureInfo ci = new CultureInfo(langCode);
@@ -54,6 +56,7 @@ namespace StudentManagementSystem.Models
 
         private void AdminDashboard_Load(object sender, EventArgs e)
         {
+            ThemeManager.ApplyTheme(this);
             CircularPictureBox(adminPictureBox);
             SetLanguage(AppSettings.CurrentLanguage);
             adminNameLabel.Text = $"{rm.GetString("WelcomeLabel", Thread.CurrentThread.CurrentUICulture)}, {_loggedInAdmin.Username}";
