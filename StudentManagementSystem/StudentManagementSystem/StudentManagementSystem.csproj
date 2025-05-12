@@ -146,22 +146,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Strings.en.resx</DependentUpon>
     </Compile>
-    <Compile Include="Services\AuthenticationService.cs" />
     <Compile Include="Services\CourseService.cs" />
-    <Compile Include="Services\GradeService.cs" />
-    <Compile Include="Services\LanguageService.cs" />
     <Compile Include="Services\StudentService.cs" />
-    <Compile Include="Services\ThemeService.cs" />
     <Compile Include="StudentDBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>StudentDBDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="ThemeManager.cs" />
-    <Compile Include="Utils\LanguageManager.cs" />
-    <Compile Include="Utils\PasswordHasher.cs" />
-    <Compile Include="Utils\ThemeManager.cs" />
-    <Compile Include="Utils\ValidationHelper.cs" />
     <EmbeddedResource Include="Forms\AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -242,9 +234,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Database\StudentDB.mdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
