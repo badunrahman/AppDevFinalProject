@@ -77,16 +77,11 @@ namespace StudentManagementSystem.Database
                 SqlCommand cmd = new SqlCommand(query, connection);
                 cmd.Parameters.AddWithValue("@username", username);
 
-                using (SqlDataReader reader = cmd.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        return reader.GetInt32(0) > 0;
-                    }
-                }
-            }
+                int count =(int) cmd.ExecuteScalar();
+                return count > 0;
 
-            return false;
+                           }
+          
         }
 
         public static void createUser(string username, string password, string role)
@@ -135,6 +130,7 @@ namespace StudentManagementSystem.Database
             }
         }
 
+        // gets the teacher by its id
         public static Teacher getTeacherByID(int teacherId)
         {
             using (SqlConnection connection = GetConnection())
