@@ -19,6 +19,7 @@ namespace StudentManagementSystem
 
         private void createAccountForm_Load(object sender, EventArgs e)
         {
+            ThemeManager.ApplyTheme(this);
             SetLanguage(AppSettings.CurrentLanguage);
         }
 

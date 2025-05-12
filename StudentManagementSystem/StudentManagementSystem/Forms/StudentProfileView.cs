@@ -21,7 +21,7 @@ namespace StudentManagementSystem.Forms
         {
             InitializeComponent();
 
-            // wire up events
+            
             this.Load += StudentProfileView_Load;
             searchButton.Click += searchButton_Click;
             teachersNameComboBox.SelectedIndexChanged += teachersNameComboBox_SelectedIndexChanged;
@@ -31,6 +31,7 @@ namespace StudentManagementSystem.Forms
 
         private void StudentProfileView_Load(object sender, EventArgs e)
         {
+            ThemeManager.ApplyTheme(this);
             SetLanguage(AppSettings.CurrentLanguage);
             this.gradesTableAdapter.Fill(this.studentDBDataSet.Grades);
             studentProfilePictureBox.Paint += studentProfilePictureBox_Paint;

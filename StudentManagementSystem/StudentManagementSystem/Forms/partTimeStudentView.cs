@@ -32,6 +32,7 @@ namespace StudentManagementSystem.Forms
 
         private void PartTimeStudentView_Load(object sender, EventArgs e)
         {
+            ThemeManager.ApplyTheme(this);
             SetLanguage(AppSettings.CurrentLanguage);
 
             List<Student> partTimeStudents = DatabaseConnection.getPartTimeStudents();

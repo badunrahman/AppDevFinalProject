@@ -43,45 +43,6 @@ namespace StudentManagementSystem.Forms
 
         private List<CourseItem> _courseItems;
 
-        private void creatStudnetTitleLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void createStudentGroupBox_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void nameTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void addressTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void contactTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void fullTimeRadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void partTimeRadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void athleteRadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void savebutton_Click(object sender, EventArgs e)
         {
@@ -154,7 +115,8 @@ namespace StudentManagementSystem.Forms
 
         private void StudentManagementForm_Load(object sender, EventArgs e)
         {
-            SetLanguage(AppSettings.CurrentLanguage); // ✅ Use global setting
+            ThemeManager.ApplyTheme(this);
+            SetLanguage(AppSettings.CurrentLanguage);
 
             _courseItems = new List<CourseItem>();
             using (var conn = DatabaseConnection.GetConnection())
@@ -185,7 +147,7 @@ namespace StudentManagementSystem.Forms
             Thread.CurrentThread.CurrentUICulture = ci;
 
             createStudentTitleLabel.Text = rm.GetString("CreateStudentTitle", ci);
-            //btnToggleTheme.Text = rm.GetString("ThemeBtn", ci);
+            
             nameLabel.Text = rm.GetString("LabelName", ci);
             addressLabel.Text = rm.GetString("LabelAddress", ci);
             contactLabel.Text = rm.GetString("LabelContact", ci);
@@ -214,61 +176,5 @@ namespace StudentManagementSystem.Forms
                     teachersListBox.Items.Add(ci.TeacherName);
         }
 
-        private void ApplyDarkTheme()
-        {
-            this.BackColor = Color.FromArgb(30, 30, 30);
-            this.ForeColor = Color.White;
-
-            foreach (Control ctrl in this.Controls)
-            {
-                ctrl.BackColor = Color.FromArgb(45, 45, 45);
-                ctrl.ForeColor = Color.White;
-            }
-        }
-
-        private void ApplyLightTheme()
-        {
-            this.BackColor = Color.White;
-            this.ForeColor = Color.Black;
-
-            foreach (Control ctrl in this.Controls)
-            {
-                ctrl.BackColor = Color.White;
-                ctrl.ForeColor = Color.Black;
-            }
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void teachersCombobox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void coursesCheckedListBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void teachersListBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnToggleTheme_Click(object sender, EventArgs e)
-        {
-            if (isDarkTheme)
-            {
-                ApplyLightTheme();
-            }
-            else
-            {
-                ApplyDarkTheme();
-            }
-            isDarkTheme = !isDarkTheme;
-        }
     }
 }

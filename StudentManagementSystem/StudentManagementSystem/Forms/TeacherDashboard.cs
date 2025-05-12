@@ -31,6 +31,7 @@ namespace StudentManagementSystem.Forms
 
         private void TeacherDashboard_Load(object sender, EventArgs e)
         {
+            ThemeManager.ApplyTheme(this);
             SetLanguage(AppSettings.CurrentLanguage);
 
             int teachID = DatabaseConnection.getTeacherIdByUserId(userId);

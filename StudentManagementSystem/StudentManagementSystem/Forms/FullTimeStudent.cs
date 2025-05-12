@@ -60,7 +60,8 @@ namespace StudentManagementSystem.Forms
 
         private void FullTimeStudent_Load(object sender, EventArgs e)
         {
-            SetLanguage(AppSettings.CurrentLanguage); // 🌐 Apply language
+            ThemeManager.ApplyTheme(this);
+            SetLanguage(AppSettings.CurrentLanguage); 
 
             var students = getFullTimeStudents();
             fullTimeDataGridView.AutoGenerateColumns = true;

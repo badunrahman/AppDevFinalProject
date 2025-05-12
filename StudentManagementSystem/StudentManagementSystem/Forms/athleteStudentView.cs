@@ -36,6 +36,7 @@ namespace StudentManagementSystem.Forms
 
         private void athleteStudentView_Load(object sender, EventArgs e)
         {
+            ThemeManager.ApplyTheme(this);
             SetLanguage(AppSettings.CurrentLanguage); // 🔄 apply global language
 
             List<Student> athletes = DatabaseConnection.getAthleteStudents();

@@ -75,7 +75,7 @@
             this.createStudentGroupBox.TabIndex = 0;
             this.createStudentGroupBox.TabStop = false;
             this.createStudentGroupBox.Text = "\'";
-            this.createStudentGroupBox.Enter += new System.EventHandler(this.createStudentGroupBox_Enter);
+           // this.createStudentGroupBox.Enter += new System.EventHandler(this.createStudentGroupBox_Enter);
             // 
             // teachersListBox
             // 
@@ -85,7 +85,7 @@
             this.teachersListBox.Name = "teachersListBox";
             this.teachersListBox.Size = new System.Drawing.Size(526, 25);
             this.teachersListBox.TabIndex = 22;
-            this.teachersListBox.SelectedIndexChanged += new System.EventHandler(this.teachersListBox_SelectedIndexChanged);
+            //this.teachersListBox.SelectedIndexChanged += new System.EventHandler(this.teachersListBox_SelectedIndexChanged);
             // 
             // coursesCheckedListBox
             // 
@@ -94,7 +94,7 @@
             this.coursesCheckedListBox.Name = "coursesCheckedListBox";
             this.coursesCheckedListBox.Size = new System.Drawing.Size(526, 28);
             this.coursesCheckedListBox.TabIndex = 21;
-            this.coursesCheckedListBox.SelectedIndexChanged += new System.EventHandler(this.coursesCheckedListBox_SelectedIndexChanged);
+           // this.coursesCheckedListBox.SelectedIndexChanged += new System.EventHandler(this.coursesCheckedListBox_SelectedIndexChanged);
             // 
             // createStudentTitleLabel
             // 
@@ -104,7 +104,7 @@
             this.createStudentTitleLabel.Size = new System.Drawing.Size(216, 43);
             this.createStudentTitleLabel.TabIndex = 18;
             this.createStudentTitleLabel.Text = "Create student";
-            this.createStudentTitleLabel.Click += new System.EventHandler(this.creatStudnetTitleLabel_Click);
+           // this.createStudentTitleLabel.Click += new System.EventHandler(this.creatStudnetTitleLabel_Click);
             // 
             // athleteRadioButton
             // 
@@ -116,7 +116,7 @@
             this.athleteRadioButton.TabStop = true;
             this.athleteRadioButton.Text = "Athletes";
             this.athleteRadioButton.UseVisualStyleBackColor = true;
-            this.athleteRadioButton.CheckedChanged += new System.EventHandler(this.athleteRadioButton_CheckedChanged);
+           // this.athleteRadioButton.CheckedChanged += new System.EventHandler(this.athleteRadioButton_CheckedChanged);
             // 
             // partTimeRadioButton
             // 
@@ -128,7 +128,7 @@
             this.partTimeRadioButton.TabStop = true;
             this.partTimeRadioButton.Text = "Part-Time";
             this.partTimeRadioButton.UseVisualStyleBackColor = true;
-            this.partTimeRadioButton.CheckedChanged += new System.EventHandler(this.partTimeRadioButton_CheckedChanged);
+           // this.partTimeRadioButton.CheckedChanged += new System.EventHandler(this.partTimeRadioButton_CheckedChanged);
             // 
             // fullTimeRadioButton
             // 
@@ -140,7 +140,7 @@
             this.fullTimeRadioButton.TabStop = true;
             this.fullTimeRadioButton.Text = "Full-Time";
             this.fullTimeRadioButton.UseVisualStyleBackColor = true;
-            this.fullTimeRadioButton.CheckedChanged += new System.EventHandler(this.fullTimeRadioButton_CheckedChanged);
+          //  this.fullTimeRadioButton.CheckedChanged += new System.EventHandler(this.fullTimeRadioButton_CheckedChanged);
             // 
             // contactTextBox
             // 
@@ -150,7 +150,7 @@
             this.contactTextBox.Name = "contactTextBox";
             this.contactTextBox.Size = new System.Drawing.Size(526, 27);
             this.contactTextBox.TabIndex = 11;
-            this.contactTextBox.TextChanged += new System.EventHandler(this.contactTextBox_TextChanged);
+           // this.contactTextBox.TextChanged += new System.EventHandler(this.contactTextBox_TextChanged);
             // 
             // addressTextBox
             // 
@@ -160,7 +160,7 @@
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.Size = new System.Drawing.Size(526, 27);
             this.addressTextBox.TabIndex = 10;
-            this.addressTextBox.TextChanged += new System.EventHandler(this.addressTextBox_TextChanged);
+          //  this.addressTextBox.TextChanged += new System.EventHandler(this.addressTextBox_TextChanged);
             // 
             // nameTextBox
             // 
@@ -170,7 +170,7 @@
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(526, 27);
             this.nameTextBox.TabIndex = 9;
-            this.nameTextBox.TextChanged += new System.EventHandler(this.nameTextBox_TextChanged);
+         //   this.nameTextBox.TextChanged += new System.EventHandler(this.nameTextBox_TextChanged);
             // 
             // clearButton
             // 

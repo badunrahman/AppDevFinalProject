@@ -28,10 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(createAccountForm));
             this.firstNameLabel = new System.Windows.Forms.Label();
-            this.frenchButton = new System.Windows.Forms.Button();
-            this.lightModeButton = new System.Windows.Forms.Button();
             this.titleLabel = new System.Windows.Forms.Label();
             this.personalInfoGroupBox = new System.Windows.Forms.GroupBox();
             this.lastNameText = new System.Windows.Forms.TextBox();
@@ -56,28 +53,6 @@
             this.firstNameLabel.Size = new System.Drawing.Size(75, 16);
             this.firstNameLabel.TabIndex = 4;
             this.firstNameLabel.Text = "First Name:";
-            // 
-            // frenchButton
-            // 
-            this.frenchButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("frenchButton.BackgroundImage")));
-            this.frenchButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.frenchButton.ForeColor = System.Drawing.Color.Silver;
-            this.frenchButton.Location = new System.Drawing.Point(378, 12);
-            this.frenchButton.Name = "frenchButton";
-            this.frenchButton.Size = new System.Drawing.Size(31, 30);
-            this.frenchButton.TabIndex = 11;
-            this.frenchButton.UseVisualStyleBackColor = true;
-            // 
-            // lightModeButton
-            // 
-            this.lightModeButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lightModeButton.BackgroundImage")));
-            this.lightModeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.lightModeButton.ForeColor = System.Drawing.Color.Silver;
-            this.lightModeButton.Location = new System.Drawing.Point(415, 12);
-            this.lightModeButton.Name = "lightModeButton";
-            this.lightModeButton.Size = new System.Drawing.Size(31, 30);
-            this.lightModeButton.TabIndex = 12;
-            this.lightModeButton.UseVisualStyleBackColor = true;
             // 
             // titleLabel
             // 
@@ -206,8 +181,6 @@
             this.Controls.Add(this.accountInfoGroupBox);
             this.Controls.Add(this.personalInfoGroupBox);
             this.Controls.Add(this.titleLabel);
-            this.Controls.Add(this.lightModeButton);
-            this.Controls.Add(this.frenchButton);
             this.Name = "createAccountForm";
             this.Text = "Create Account";
             this.personalInfoGroupBox.ResumeLayout(false);
@@ -221,8 +194,6 @@
 
         #endregion
         private System.Windows.Forms.Label firstNameLabel;
-        private System.Windows.Forms.Button frenchButton;
-        private System.Windows.Forms.Button lightModeButton;
         private System.Windows.Forms.Label titleLabel;
         private System.Windows.Forms.GroupBox personalInfoGroupBox;
         private System.Windows.Forms.Label lastNameTextBox;
