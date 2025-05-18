@@ -30,6 +30,8 @@ namespace StudentManagementSystem
 
         private void loginPageForm_Load(object sender, EventArgs e)
         {
+            usernameTextBox.Text = rm.GetString("EnterUsername", CultureInfo.CurrentCulture);
+
             if (languageComboBox.Items.Count == 0)
             {
                 languageComboBox.Items.Add("En");
@@ -55,8 +57,12 @@ namespace StudentManagementSystem
 
             logInButton.Text = rm.GetString("LoginBtn", ci);
             incorrectInfoLabel.Text = rm.GetString("LoginWelcome", ci);
-            noAccountInfoLabel.Text = rm.GetString("NoAccountLabel", ci);
-            createAccountLinkLabel.Text = rm.GetString("CreateAccountLink", ci);
+            if (usernameTextBox.Text == "")
+            {
+                usernameTextBox.Text = rm.GetString("EnterUsername", ci);
+            }
+            loginLabel.Text = rm.GetString("Login", ci);
+            titleLabel.Text = rm.GetString("Title", ci);
         }
 
         private void lightModeButton_Click(object sender, EventArgs e)
@@ -120,6 +126,7 @@ namespace StudentManagementSystem
                 MessageBoxButtons button = MessageBoxButtons.OK;
                 MessageBoxIcon icon = MessageBoxIcon.Error;
                 incorrectInfoLabel.Visible = true;
+                incorrectInfoLabel.ForeColor = Color.Red;
                 MessageBox.Show(rm.GetString("LoginError", CultureInfo.CurrentUICulture), "Error", button, icon);
             }
         }

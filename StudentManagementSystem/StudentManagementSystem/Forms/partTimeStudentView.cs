@@ -50,6 +50,19 @@ namespace StudentManagementSystem.Forms
         private void PartTimeStudentView_Load(object sender, EventArgs e)
         {
             ThemeManager.ApplyTheme(this);
+            if (ThemeManager.IsDarkTheme)
+            {
+                partTimeDataGridView.BackgroundColor = Color.FromArgb(30, 30, 30);
+                partTimeDataGridView.ForeColor = Color.FromArgb(30, 30, 30);
+                partTimeDataGridView.GridColor = Color.DimGray;
+                partTimeDataGridView.RowsDefaultCellStyle.ForeColor = Color.White;
+                partTimeDataGridView.RowsDefaultCellStyle.BackColor = Color.FromArgb(30, 30, 30);
+                partTimeDataGridView.EnableHeadersVisualStyles = false;
+                partTimeDataGridView.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(50, 50, 50);
+                partTimeDataGridView.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+                partTimeDataGridView.RowHeadersDefaultCellStyle.BackColor = Color.FromArgb(50, 50, 50);
+                partTimeDataGridView.RowHeadersDefaultCellStyle.ForeColor = Color.White;
+            }
 
             List<Student> partTimeStudents = DatabaseConnection.getPartTimeStudents();
             partTimeDataGridView.DataSource = null;

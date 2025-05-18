@@ -1,5 +1,6 @@
 ﻿using StudentManagementSystem.Database;
 using System;
+using System.Drawing.Imaging;
 using System.Globalization;
 using System.Resources;
 using System.Threading;
@@ -32,8 +33,8 @@ namespace StudentManagementSystem
             titleLabel.Text = rm.GetString("CreateFormTitle", ci);
             personalInfoGroupBox.Text = rm.GetString("GroupBoxPersonalInfo", ci);
             accountInfoGroupBox.Text = rm.GetString("GroupBoxAccountInfo", ci);
-            firstNameLabel.Text = rm.GetString("FirstNameLabel", ci);
-            lastNameTextBox.Text = rm.GetString("LastNameLabel", ci);
+            firstNameLabel.Text = rm.GetString("firstNameLabel", ci);
+            lastNameLabel.Text = rm.GetString("lastNameLabel", ci);
             usernameLabel.Text = rm.GetString("UsernameLabel", ci);
             passwordLabel.Text = rm.GetString("PasswordLabel", ci);
             createAccountButton.Text = rm.GetString("CreateBtn", ci);

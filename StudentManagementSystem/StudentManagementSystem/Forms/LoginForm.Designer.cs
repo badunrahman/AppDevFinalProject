@@ -33,8 +33,6 @@
             this.loginBox = new System.Windows.Forms.GroupBox();
             this.incorrectInfoLabel = new System.Windows.Forms.Label();
             this.logInButton = new System.Windows.Forms.Button();
-            this.createAccountLinkLabel = new System.Windows.Forms.LinkLabel();
-            this.noAccountInfoLabel = new System.Windows.Forms.Label();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.usernameTextBox = new System.Windows.Forms.TextBox();
             this.loginLabel = new System.Windows.Forms.Label();
@@ -58,8 +56,6 @@
             this.loginBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.loginBox.Controls.Add(this.incorrectInfoLabel);
             this.loginBox.Controls.Add(this.logInButton);
-            this.loginBox.Controls.Add(this.createAccountLinkLabel);
-            this.loginBox.Controls.Add(this.noAccountInfoLabel);
             this.loginBox.Controls.Add(this.passwordTextBox);
             this.loginBox.Controls.Add(this.usernameTextBox);
             this.loginBox.Controls.Add(this.loginLabel);
@@ -87,32 +83,13 @@
             this.logInButton.AutoSize = true;
             this.logInButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.logInButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logInButton.Location = new System.Drawing.Point(236, 164);
+            this.logInButton.Location = new System.Drawing.Point(91, 156);
             this.logInButton.Name = "logInButton";
             this.logInButton.Size = new System.Drawing.Size(64, 28);
             this.logInButton.TabIndex = 7;
             this.logInButton.Text = "Log In";
             this.logInButton.UseVisualStyleBackColor = true;
             this.logInButton.Click += new System.EventHandler(this.logInButton_Click);
-            // 
-            // createAccountLinkLabel
-            // 
-            this.createAccountLinkLabel.AutoSize = true;
-            this.createAccountLinkLabel.Location = new System.Drawing.Point(115, 187);
-            this.createAccountLinkLabel.Name = "createAccountLinkLabel";
-            this.createAccountLinkLabel.Size = new System.Drawing.Size(95, 13);
-            this.createAccountLinkLabel.TabIndex = 6;
-            this.createAccountLinkLabel.TabStop = true;
-            this.createAccountLinkLabel.Text = "Create an account";
-            // 
-            // noAccountInfoLabel
-            // 
-            this.noAccountInfoLabel.AutoSize = true;
-            this.noAccountInfoLabel.Location = new System.Drawing.Point(88, 164);
-            this.noAccountInfoLabel.Name = "noAccountInfoLabel";
-            this.noAccountInfoLabel.Size = new System.Drawing.Size(122, 13);
-            this.noAccountInfoLabel.TabIndex = 5;
-            this.noAccountInfoLabel.Text = "Don\'t have an account?";
             // 
             // passwordTextBox
             // 
@@ -141,9 +118,9 @@
             // loginLabel
             // 
             this.loginLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginLabel.Location = new System.Drawing.Point(149, 16);
+            this.loginLabel.Location = new System.Drawing.Point(130, 16);
             this.loginLabel.Name = "loginLabel";
-            this.loginLabel.Size = new System.Drawing.Size(100, 23);
+            this.loginLabel.Size = new System.Drawing.Size(143, 23);
             this.loginLabel.TabIndex = 2;
             this.loginLabel.Text = "Login";
             this.loginLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -198,8 +175,6 @@
         private System.Windows.Forms.TextBox usernameTextBox;
         private System.Windows.Forms.TextBox passwordTextBox;
         private System.Windows.Forms.Button logInButton;
-        private System.Windows.Forms.LinkLabel createAccountLinkLabel;
-        private System.Windows.Forms.Label noAccountInfoLabel;
         private System.Windows.Forms.Button lightModeButton;
         private System.Windows.Forms.Label incorrectInfoLabel;
         private System.Windows.Forms.ComboBox languageComboBox;

@@ -110,7 +110,7 @@
             this.nameLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameLabel.Location = new System.Drawing.Point(6, 30);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(54, 19);
+            this.nameLabel.Size = new System.Drawing.Size(161, 19);
             this.nameLabel.TabIndex = 9;
             this.nameLabel.Text = "Name";
             // 
@@ -140,7 +140,7 @@
             this.studentTypeLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.studentTypeLabel.Location = new System.Drawing.Point(6, 199);
             this.studentTypeLabel.Name = "studentTypeLabel";
-            this.studentTypeLabel.Size = new System.Drawing.Size(94, 24);
+            this.studentTypeLabel.Size = new System.Drawing.Size(161, 24);
             this.studentTypeLabel.TabIndex = 2;
             this.studentTypeLabel.Text = "Student Type";
             // 
@@ -149,7 +149,7 @@
             this.contactLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contactLabel.Location = new System.Drawing.Point(6, 131);
             this.contactLabel.Name = "contactLabel";
-            this.contactLabel.Size = new System.Drawing.Size(54, 19);
+            this.contactLabel.Size = new System.Drawing.Size(161, 19);
             this.contactLabel.TabIndex = 1;
             this.contactLabel.Text = "Contact";
             // 
@@ -158,7 +158,7 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(6, 68);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 19);
+            this.label1.Size = new System.Drawing.Size(161, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "Address";
             // 
@@ -182,7 +182,7 @@
             // chooseCoursesComboBox
             // 
             this.chooseCoursesComboBox.FormattingEnabled = true;
-            this.chooseCoursesComboBox.Location = new System.Drawing.Point(101, 127);
+            this.chooseCoursesComboBox.Location = new System.Drawing.Point(148, 127);
             this.chooseCoursesComboBox.Name = "chooseCoursesComboBox";
             this.chooseCoursesComboBox.Size = new System.Drawing.Size(299, 23);
             this.chooseCoursesComboBox.TabIndex = 14;
@@ -191,7 +191,7 @@
             // teacherIdComboBox
             // 
             this.teacherIdComboBox.FormattingEnabled = true;
-            this.teacherIdComboBox.Location = new System.Drawing.Point(101, 77);
+            this.teacherIdComboBox.Location = new System.Drawing.Point(148, 77);
             this.teacherIdComboBox.Name = "teacherIdComboBox";
             this.teacherIdComboBox.Size = new System.Drawing.Size(299, 23);
             this.teacherIdComboBox.TabIndex = 13;
@@ -200,7 +200,7 @@
             // teachersNameComboBox
             // 
             this.teachersNameComboBox.FormattingEnabled = true;
-            this.teachersNameComboBox.Location = new System.Drawing.Point(101, 30);
+            this.teachersNameComboBox.Location = new System.Drawing.Point(148, 30);
             this.teachersNameComboBox.Name = "teachersNameComboBox";
             this.teachersNameComboBox.Size = new System.Drawing.Size(299, 23);
             this.teachersNameComboBox.TabIndex = 12;
@@ -219,7 +219,7 @@
             this.coursesLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.coursesLabel.Location = new System.Drawing.Point(6, 131);
             this.coursesLabel.Name = "coursesLabel";
-            this.coursesLabel.Size = new System.Drawing.Size(54, 19);
+            this.coursesLabel.Size = new System.Drawing.Size(136, 19);
             this.coursesLabel.TabIndex = 11;
             this.coursesLabel.Text = "Course";
             // 
@@ -228,7 +228,7 @@
             this.teacherIdLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.teacherIdLabel.Location = new System.Drawing.Point(6, 79);
             this.teacherIdLabel.Name = "teacherIdLabel";
-            this.teacherIdLabel.Size = new System.Drawing.Size(80, 21);
+            this.teacherIdLabel.Size = new System.Drawing.Size(136, 21);
             this.teacherIdLabel.TabIndex = 10;
             this.teacherIdLabel.Text = "Teacher ID";
             // 
@@ -237,7 +237,7 @@
             this.teacherLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.teacherLabel.Location = new System.Drawing.Point(6, 30);
             this.teacherLabel.Name = "teacherLabel";
-            this.teacherLabel.Size = new System.Drawing.Size(54, 19);
+            this.teacherLabel.Size = new System.Drawing.Size(136, 19);
             this.teacherLabel.TabIndex = 9;
             this.teacherLabel.Text = "Name";
             // 
@@ -248,7 +248,7 @@
             this.gradesInfoGroupBox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gradesInfoGroupBox.Location = new System.Drawing.Point(1000, 183);
             this.gradesInfoGroupBox.Name = "gradesInfoGroupBox";
-            this.gradesInfoGroupBox.Size = new System.Drawing.Size(338, 279);
+            this.gradesInfoGroupBox.Size = new System.Drawing.Size(281, 279);
             this.gradesInfoGroupBox.TabIndex = 2;
             this.gradesInfoGroupBox.TabStop = false;
             this.gradesInfoGroupBox.Text = "GradesInfo";
@@ -259,7 +259,7 @@
             this.gradesDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gradesDataGridView.Location = new System.Drawing.Point(3, 19);
             this.gradesDataGridView.Name = "gradesDataGridView";
-            this.gradesDataGridView.Size = new System.Drawing.Size(332, 257);
+            this.gradesDataGridView.Size = new System.Drawing.Size(275, 257);
             this.gradesDataGridView.TabIndex = 2;
             // 
             // allGradeInputLabel
@@ -277,7 +277,7 @@
             this.feedBackTextBox.Location = new System.Drawing.Point(30, 533);
             this.feedBackTextBox.Multiline = true;
             this.feedBackTextBox.Name = "feedBackTextBox";
-            this.feedBackTextBox.Size = new System.Drawing.Size(1308, 180);
+            this.feedBackTextBox.Size = new System.Drawing.Size(1248, 180);
             this.feedBackTextBox.TabIndex = 3;
             // 
             // searchIdLabel
@@ -333,7 +333,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1350, 781);
+            this.ClientSize = new System.Drawing.Size(1288, 781);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.idTextBox);
             this.Controls.Add(this.searchIdLabel);

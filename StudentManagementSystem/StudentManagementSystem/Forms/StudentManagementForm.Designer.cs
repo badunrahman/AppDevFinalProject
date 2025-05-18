@@ -75,7 +75,6 @@
             this.createStudentGroupBox.TabIndex = 0;
             this.createStudentGroupBox.TabStop = false;
             this.createStudentGroupBox.Text = "\'";
-           // this.createStudentGroupBox.Enter += new System.EventHandler(this.createStudentGroupBox_Enter);
             // 
             // teachersListBox
             // 
@@ -85,7 +84,6 @@
             this.teachersListBox.Name = "teachersListBox";
             this.teachersListBox.Size = new System.Drawing.Size(526, 25);
             this.teachersListBox.TabIndex = 22;
-            //this.teachersListBox.SelectedIndexChanged += new System.EventHandler(this.teachersListBox_SelectedIndexChanged);
             // 
             // coursesCheckedListBox
             // 
@@ -94,7 +92,6 @@
             this.coursesCheckedListBox.Name = "coursesCheckedListBox";
             this.coursesCheckedListBox.Size = new System.Drawing.Size(526, 28);
             this.coursesCheckedListBox.TabIndex = 21;
-           // this.coursesCheckedListBox.SelectedIndexChanged += new System.EventHandler(this.coursesCheckedListBox_SelectedIndexChanged);
             // 
             // createStudentTitleLabel
             // 
@@ -104,7 +101,6 @@
             this.createStudentTitleLabel.Size = new System.Drawing.Size(216, 43);
             this.createStudentTitleLabel.TabIndex = 18;
             this.createStudentTitleLabel.Text = "Create student";
-           // this.createStudentTitleLabel.Click += new System.EventHandler(this.creatStudnetTitleLabel_Click);
             // 
             // athleteRadioButton
             // 
@@ -116,7 +112,6 @@
             this.athleteRadioButton.TabStop = true;
             this.athleteRadioButton.Text = "Athletes";
             this.athleteRadioButton.UseVisualStyleBackColor = true;
-           // this.athleteRadioButton.CheckedChanged += new System.EventHandler(this.athleteRadioButton_CheckedChanged);
             // 
             // partTimeRadioButton
             // 
@@ -128,7 +123,6 @@
             this.partTimeRadioButton.TabStop = true;
             this.partTimeRadioButton.Text = "Part-Time";
             this.partTimeRadioButton.UseVisualStyleBackColor = true;
-           // this.partTimeRadioButton.CheckedChanged += new System.EventHandler(this.partTimeRadioButton_CheckedChanged);
             // 
             // fullTimeRadioButton
             // 
@@ -140,7 +134,6 @@
             this.fullTimeRadioButton.TabStop = true;
             this.fullTimeRadioButton.Text = "Full-Time";
             this.fullTimeRadioButton.UseVisualStyleBackColor = true;
-          //  this.fullTimeRadioButton.CheckedChanged += new System.EventHandler(this.fullTimeRadioButton_CheckedChanged);
             // 
             // contactTextBox
             // 
@@ -150,7 +143,6 @@
             this.contactTextBox.Name = "contactTextBox";
             this.contactTextBox.Size = new System.Drawing.Size(526, 27);
             this.contactTextBox.TabIndex = 11;
-           // this.contactTextBox.TextChanged += new System.EventHandler(this.contactTextBox_TextChanged);
             // 
             // addressTextBox
             // 
@@ -160,7 +152,6 @@
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.Size = new System.Drawing.Size(526, 27);
             this.addressTextBox.TabIndex = 10;
-          //  this.addressTextBox.TextChanged += new System.EventHandler(this.addressTextBox_TextChanged);
             // 
             // nameTextBox
             // 
@@ -170,7 +161,6 @@
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(526, 27);
             this.nameTextBox.TabIndex = 9;
-         //   this.nameTextBox.TextChanged += new System.EventHandler(this.nameTextBox_TextChanged);
             // 
             // clearButton
             // 
@@ -197,7 +187,7 @@
             this.teacherLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.teacherLabel.Location = new System.Drawing.Point(31, 381);
             this.teacherLabel.Name = "teacherLabel";
-            this.teacherLabel.Size = new System.Drawing.Size(93, 32);
+            this.teacherLabel.Size = new System.Drawing.Size(131, 32);
             this.teacherLabel.TabIndex = 5;
             this.teacherLabel.Text = "Teacher:";
             // 
@@ -206,7 +196,7 @@
             this.coursesLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.coursesLabel.Location = new System.Drawing.Point(31, 312);
             this.coursesLabel.Name = "coursesLabel";
-            this.coursesLabel.Size = new System.Drawing.Size(93, 29);
+            this.coursesLabel.Size = new System.Drawing.Size(118, 29);
             this.coursesLabel.TabIndex = 4;
             this.coursesLabel.Text = "Courses:";
             // 
@@ -233,7 +223,7 @@
             this.addressLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addressLabel.Location = new System.Drawing.Point(31, 127);
             this.addressLabel.Name = "addressLabel";
-            this.addressLabel.Size = new System.Drawing.Size(86, 30);
+            this.addressLabel.Size = new System.Drawing.Size(118, 30);
             this.addressLabel.TabIndex = 1;
             this.addressLabel.Text = "Address:";
             // 
@@ -242,7 +232,7 @@
             this.nameLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameLabel.Location = new System.Drawing.Point(31, 63);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(73, 27);
+            this.nameLabel.Size = new System.Drawing.Size(118, 27);
             this.nameLabel.TabIndex = 0;
             this.nameLabel.Text = "Name:";
             // 

@@ -61,6 +61,19 @@ namespace StudentManagementSystem.Forms
         private void FullTimeStudent_Load(object sender, EventArgs e)
         {
             ThemeManager.ApplyTheme(this);
+            if (ThemeManager.IsDarkTheme)
+            {
+                fullTimeDataGridView.BackgroundColor = Color.FromArgb(30, 30, 30);
+                fullTimeDataGridView.ForeColor = Color.FromArgb(30, 30, 30);
+                fullTimeDataGridView.GridColor = Color.DimGray;
+                fullTimeDataGridView.RowsDefaultCellStyle.ForeColor = Color.White;
+                fullTimeDataGridView.RowsDefaultCellStyle.BackColor = Color.FromArgb(30, 30, 30);
+                fullTimeDataGridView.EnableHeadersVisualStyles = false;
+                fullTimeDataGridView.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(50, 50, 50);
+                fullTimeDataGridView.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+                fullTimeDataGridView.RowHeadersDefaultCellStyle.BackColor = Color.FromArgb(50, 50, 50);
+                fullTimeDataGridView.RowHeadersDefaultCellStyle.ForeColor = Color.White;
+            }
             SetLanguage(AppSettings.CurrentLanguage);
 
             var students = getFullTimeStudents();

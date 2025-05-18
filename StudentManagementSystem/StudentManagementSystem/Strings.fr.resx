@@ -1,323 +1,387 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-	<!-- 
-		Microsoft ResX Schema
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
 
-		Version 1.3
-
-		The primary goals of this format is to allow a simple XML format 
-		that is mostly human readable. The generation and parsing of the 
-		various data types are done through the TypeConverter classes 
-		associated with the data types.
-
-		Example:
-
-		... ado.net/XML headers & schema ...
-		<resheader name="resmimetype">text/microsoft-resx</resheader>
-		<resheader name="version">1.3</resheader>
-		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-		<data name="Name1">this is my long string</data>
-		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-			[base64 mime encoded serialized .NET Framework object]
-		</data>
-		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-			[base64 mime encoded string representing a byte array form of the .NET Framework object]
-		</data>
-
-		There are any number of "resheader" rows that contain simple 
-		name/value pairs.
-
-		Each data row contains a name, and value. The row also contains a 
-		type or mimetype. Type corresponds to a .NET class that support 
-		text/value conversion through the TypeConverter architecture. 
-		Classes that don't support this are serialized and stored with the 
-		mimetype set.
-
-		The mimetype is used for serialized objects, and tells the 
-		ResXResourceReader how to depersist the object. This is currently not 
-		extensible. For a given mimetype the value must be set accordingly:
-
-		Note - application/x-microsoft.net.object.binary.base64 is the format 
-		that the ResXResourceWriter will generate, however the reader can 
-		read any of the formats listed below.
-
-		mimetype: application/x-microsoft.net.object.binary.base64
-		value   : The object must be serialized with 
-			: System.Serialization.Formatters.Binary.BinaryFormatter
-			: and then encoded with base64 encoding.
-
-		mimetype: application/x-microsoft.net.object.soap.base64
-		value   : The object must be serialized with 
-			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-			: and then encoded with base64 encoding.
-
-		mimetype: application/x-microsoft.net.object.bytearray.base64
-		value   : The object must be serialized into a byte array 
-			: using a System.ComponentModel.TypeConverter
-			: and then encoded with base64 encoding.
-	-->
-	
-	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-		<xsd:element name="root" msdata:IsDataSet="true">
-			<xsd:complexType>
-				<xsd:choice maxOccurs="unbounded">
-					<xsd:element name="data">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
-							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="resheader">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" />
-						</xsd:complexType>
-					</xsd:element>
-				</xsd:choice>
-			</xsd:complexType>
-		</xsd:element>
-	</xsd:schema>
-	<resheader name="resmimetype">
-		<value>text/microsoft-resx</value>
-	</resheader>
-	<resheader name="version">
-		<value>1.3</value>
-	</resheader>
-	<resheader name="reader">
-		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<resheader name="writer">
-		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<data name="LoginBtn" xml:space="preserve">
-  <value>Se connecter</value>
-</data>
-	<data name="LoginError" xml:space="preserve">
-  <value>Nom d'utilisateur ou mot de passe incorrect !</value>
-</data>
-	<data name="LoginWelcome" xml:space="preserve">
-  <value>Bon retour !</value>
-</data>
-	<data name="LoginSuccess" xml:space="preserve">
-  <value>Connexion réussie !</value>
-</data>
-	<data name="ThemeBtn" xml:space="preserve"><value>Thème</value></data>
-	<data name="CreateStudentTitle" xml:space="preserve"><value>Créer un étudiant</value></data>
-	<data name="LabelName" xml:space="preserve"><value>Nom :</value></data>
-	<data name="LabelAddress" xml:space="preserve"><value>Adresse :</value></data>
-	<data name="LabelContact" xml:space="preserve"><value>Contact :</value></data>
-	<data name="LabelStudentType" xml:space="preserve"><value>Type d'étudiant :</value></data>
-	<data name="RadioFullTime" xml:space="preserve"><value>Temps plein</value></data>
-	<data name="RadioPartTime" xml:space="preserve"><value>Temps partiel</value></data>
-	<data name="RadioAthletes" xml:space="preserve"><value>Sportifs</value></data>
-	<data name="LabelCourses" xml:space="preserve"><value>Cours :</value></data>
-	<data name="LabelTeacher" xml:space="preserve"><value>Enseignant :</value></data>
-	<data name="SaveBtn" xml:space="preserve"><value>Enregistrer</value></data>
-	<data name="ClearBtn" xml:space="preserve"><value>Effacer</value></data>
-
-	<data name="firstNameLabel" xml:space="preserve"><value>Prénom :</value></data>
-	<data name="lastNameLabel" xml:space="preserve"><value>Nom :</value></data>
-	<data name="gpaLabel" xml:space="preserve"><value>Note moyenne :</value></data>
-	<data name="coursesLabel" xml:space="preserve"><value>Cours :</value></data>
-	<data name="contactLabel" xml:space="preserve"><value>Contact :</value></data>
-	<data name="grpQuickSearchGroupBox" xml:space="preserve"><value>Recherche rapide</value></data>
-	<data name="searchButton" xml:space="preserve"><value>Rechercher</value></data>
-
-	<data name="WelcomeLabel" xml:space="preserve">
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="LoginBtn" xml:space="preserve">
+    <value>Se connecter</value>
+  </data>
+  <data name="LoginWelcome" xml:space="preserve">
+    <value>Nom d'utilisateur ou mot de passe incorrecte!</value>
+  </data>
+  <data name="LoginSuccess" xml:space="preserve">
+    <value>Connexion réussie !</value>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Nom d'utilisateur ou mot de passe incorrect !</value>
+  </data>
+  <data name="WelcomeLabel" xml:space="preserve">
     <value>Bienvenue</value>
-    </data>
-
-	<data name="CreateStudentTitle" xml:space="preserve"><value>Créer un étudiant</value></data>
-	<data name="ThemeBtn" xml:space="preserve"><value>Thème</value></data>
-	<data name="LabelName" xml:space="preserve"><value>Nom :</value></data>
-	<data name="LabelAddress" xml:space="preserve"><value>Adresse :</value></data>
-	<data name="LabelContact" xml:space="preserve"><value>Contact :</value></data>
-	<data name="LabelStudentType" xml:space="preserve"><value>Type d'étudiant :</value></data>
-	<data name="RadioFullTime" xml:space="preserve"><value>Temps plein</value></data>
-	<data name="RadioPartTime" xml:space="preserve"><value>Temps partiel</value></data>
-	<data name="RadioAthletes" xml:space="preserve"><value>Sportifs</value></data>
-	<data name="LabelCourses" xml:space="preserve"><value>Cours :</value></data>
-	<data name="LabelTeacher" xml:space="preserve"><value>Enseignant :</value></data>
-	<data name="SaveBtn" xml:space="preserve"><value>Enregistrer</value></data>
-	<data name="ClearBtn" xml:space="preserve"><value>Effacer</value></data>
-
-
-	<data name="StudentInfo" xml:space="preserve"><value>Informations sur l'étudiant</value></data>
-	<data name="TeacherCourseInfo" xml:space="preserve"><value>Enseignant et cours</value></data>
-	<data name="GradesInfo" xml:space="preserve"><value>Informations sur les notes</value></data>
-	<data name="LabelName" xml:space="preserve"><value>Nom</value></data>
-	<data name="LabelAddress" xml:space="preserve"><value>Adresse</value></data>
-	<data name="LabelContact" xml:space="preserve"><value>Contact</value></data>
-	<data name="LabelStudentType" xml:space="preserve"><value>Type d'étudiant</value></data>
-	<data name="LabelTeacher" xml:space="preserve"><value>Enseignant</value></data>
-	<data name="LabelTeacherID" xml:space="preserve"><value>ID de l'enseignant</value></data>
-	<data name="LabelCourses" xml:space="preserve"><value>Cours</value></data>
-	<data name="AllGradesLabel" xml:space="preserve"><value>Toutes les notes</value></data>
-	<data name="SearchID" xml:space="preserve"><value>ID</value></data>
-	<data name="SearchBtn" xml:space="preserve"><value>Rechercher</value></data>
-	<data name="NoFeedback" xml:space="preserve"><value>(aucun commentaire pour le moment)</value></data>
-	<data name="InvalidID" xml:space="preserve"><value>Veuillez entrer un identifiant étudiant numérique valide.</value></data>
-	<data name="StudentNotFound" xml:space="preserve"><value>Étudiant non trouvé.</value></data>
-
-
-
-	<data name="AthleteInfoHeader" xml:space="preserve">
-    <value>Informations des étudiants athlètes</value>
-    </data>
-	<data name="CoursesColumn" xml:space="preserve">
-    <value>Cours</value>
-    </data>
-
-
-
-	<data name="CreateFormTitle">
-		<value>Créer un compte</value>
-	</data>
-	<data name="GroupBoxPersonalInfo">
-		<value>Informations personnelles</value>
-	</data>
-	<data name="GroupBoxAccountInfo">
-		<value>Informations du compte</value>
-	</data>
-	<data name="FirstNameLabel">
-		<value>Prénom :</value>
-	</data>
-	<data name="LastNameLabel">
-		<value>Nom :</value>
-	</data>
-	<data name="UsernameLabel">
-		<value>Nom d'utilisateur :</value>
-	</data>
-	<data name="PasswordLabel">
-		<value>Mot de passe :</value>
-	</data>
-	<data name="CreateBtn">
-		<value>Créer un compte</value>
-	</data>
-	<data name="AllFieldsWarning">
-		<value>Vous devez remplir tous les champs !</value>
-	</data>
-	<data name="InvalidFieldsTitle">
-		<value>Champs invalides</value>
-	</data>
-	<data name="UsernameExists">
-		<value>Nom d'utilisateur déjà utilisé !</value>
-	</data>
-	<data name="UsernameExistsTitle">
-		<value>Erreur - Nom existant</value>
-	</data>
-	<data name="TeacherCreated">
-		<value>Le professeur a été créé avec succès !</value>
-	</data>
-
-
-	<data name="PartTimeInfoHeader" xml:space="preserve">
-    <value>Informations sur les étudiants à temps partiel</value>
   </data>
-	<data name="CoursesColumn" xml:space="preserve">
-    <value>Cours</value>
+  <data name="firstNameLabel" xml:space="preserve">
+    <value>Prénom :</value>
   </data>
-
-
-
-	<data name="FullTimeTitle" xml:space="preserve">
-    <value>Tous les étudiants à temps plein</value>
-</data>
-	<data name="FullTimeGroupBox" xml:space="preserve">
-    <value>Informations sur les étudiants</value>
-</data>
-
-
-	<data name="TeacherDashboardTitle">
-		<value>Système de gestion des étudiants</value>
-	</data>
-	<data name="ChooseCourse">
-		<value>Choisir un cours à afficher :</value>
-	</data>
-	<data name="StudentListLabel">
-		<value>Étudiants</value>
-	</data>
-	<data name="TeacherProfile">
-		<value>Profil de l'enseignant</value>
-	</data>
-	<data name="CoursesTaught">
-		<value>Cours enseignés</value>
-	</data>
-	<data name="NameLabel">
-		<value>Nom :</value>
-	</data>
-	<data name="UserIDLabel">
-		<value>ID utilisateur :</value>
-	</data>
-	<data name="FeedbackLabel">
-		<value>Retour d'information</value>
-	</data>
-	<data name="SendFeedbackButton">
-		<value>Envoyer les commentaires</value>
-	</data>
-	<data name="UpdateGradesButton">
-		<value>Mettre à jour les notes</value>
-	</data>
-	<data name="GradeColumn">
-		<value>Note</value>
-	</data>
-
-	<data name="NoAccountLabel" xml:space="preserve">
-    <value>Vous n'avez pas de compte ?</value>
+  <data name="lastNameLabel" xml:space="preserve">
+    <value>Nom :</value>
   </data>
-	<data name="CreateAccountLink" xml:space="preserve">
-    <value>Créer un compte</value>
+  <data name="gpaLabel" xml:space="preserve">
+    <value>Note moyenne :</value>
   </data>
-
-	<data name="MenuStudentManagement" xml:space="preserve">
-    <value>Gestion des étudiants</value>
+  <data name="coursesLabel" xml:space="preserve">
+    <value>Cours :</value>
   </data>
-	<data name="MenuCreateStudent" xml:space="preserve">
+  <data name="contactLabel" xml:space="preserve">
+    <value>Contact :</value>
+  </data>
+  <data name="grpQuickSearchGroupBox" xml:space="preserve">
+    <value>Recherche rapide</value>
+  </data>
+  <data name="searchButton" xml:space="preserve">
+    <value>Rechercher</value>
+  </data>
+  <data name="InvalidID" xml:space="preserve">
+    <value>Veuillez entrer un identifiant étudiant numérique valide.</value>
+  </data>
+  <data name="StudentNotFound" xml:space="preserve">
+    <value>Étudiant non trouvé.</value>
+  </data>
+  <data name="CreateStudentTitle" xml:space="preserve">
     <value>Créer un étudiant</value>
   </data>
-	<data name="MenuManageStudent" xml:space="preserve">
+  <data name="ThemeBtn" xml:space="preserve">
+    <value>Thème</value>
+  </data>
+  <data name="LabelName" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="LabelAddress" xml:space="preserve">
+    <value>Adresse</value>
+  </data>
+  <data name="LabelContact" xml:space="preserve">
+    <value>Contact #</value>
+  </data>
+  <data name="LabelStudentType" xml:space="preserve">
+    <value>Type d'étudiant</value>
+  </data>
+  <data name="RadioFullTime" xml:space="preserve">
+    <value>Temps plein</value>
+  </data>
+  <data name="RadioPartTime" xml:space="preserve">
+    <value>Temps partiel</value>
+  </data>
+  <data name="RadioAthletes" xml:space="preserve">
+    <value>Sportifs</value>
+  </data>
+  <data name="LabelCourses" xml:space="preserve">
+    <value>Cours</value>
+  </data>
+  <data name="LabelTeacher" xml:space="preserve">
+    <value>Enseignant</value>
+  </data>
+  <data name="SaveBtn" xml:space="preserve">
+    <value>Enregistrer</value>
+  </data>
+  <data name="ClearBtn" xml:space="preserve">
+    <value>Effacer</value>
+  </data>
+  <data name="StudentInfo" xml:space="preserve">
+    <value>Informations sur l'étudiant</value>
+  </data>
+  <data name="TeacherCourseInfo" xml:space="preserve">
+    <value>Enseignant et cours</value>
+  </data>
+  <data name="GradesInfo" xml:space="preserve">
+    <value>Informations sur les notes</value>
+  </data>
+  <data name="LabelTeacherID" xml:space="preserve">
+    <value>ID de l'enseignant</value>
+  </data>
+  <data name="AllGradesLabel" xml:space="preserve">
+    <value>Toutes les notes</value>
+  </data>
+  <data name="SearchID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="SearchBtn" xml:space="preserve">
+    <value>Rechercher</value>
+  </data>
+  <data name="NoFeedback" xml:space="preserve">
+    <value>(aucun commentaire pour le moment)</value>
+  </data>
+  <data name="AthleteInfoHeader" xml:space="preserve">
+    <value>Informations des étudiants athlètes</value>
+  </data>
+  <data name="CoursesColumn" xml:space="preserve">
+    <value>Cours</value>
+  </data>
+  <data name="CreateFormTitle" xml:space="preserve">
+    <value>Créer un compte</value>
+  </data>
+  <data name="GroupBoxPersonalInfo" xml:space="preserve">
+    <value>Informations personnelles</value>
+  </data>
+  <data name="GroupBoxAccountInfo" xml:space="preserve">
+    <value>Informations du compte</value>
+  </data>
+  <data name="UsernameLabel" xml:space="preserve">
+    <value>Nom d'utilisateur :</value>
+  </data>
+  <data name="PasswordLabel" xml:space="preserve">
+    <value>Mot de passe :</value>
+  </data>
+  <data name="CreateBtn" xml:space="preserve">
+    <value>Créer un compte</value>
+  </data>
+  <data name="AllFieldsWarning" xml:space="preserve">
+    <value>Vous devez remplir tous les champs !</value>
+  </data>
+  <data name="InvalidFieldsTitle" xml:space="preserve">
+    <value>Champs invalides</value>
+  </data>
+  <data name="UsernameExists" xml:space="preserve">
+    <value>Nom d'utilisateur déjà utilisé !</value>
+  </data>
+  <data name="UsernameExistsTitle" xml:space="preserve">
+    <value>Erreur - Nom existant</value>
+  </data>
+  <data name="TeacherCreated" xml:space="preserve">
+    <value>Le professeur a été créé avec succès !</value>
+  </data>
+  <data name="PartTimeInfoHeader" xml:space="preserve">
+    <value>Informations sur les étudiants à temps partiel</value>
+  </data>
+  <data name="FullTimeTitle" xml:space="preserve">
+    <value>Étudiants à temps plein</value>
+  </data>
+  <data name="FullTimeGroupBox" xml:space="preserve">
+    <value>Liste des étudiants</value>
+  </data>
+  <data name="TeacherDashboardTitle" xml:space="preserve">
+    <value>Titre du tableau de bord de l'enseignant</value>
+  </data>
+  <data name="ChooseCourse" xml:space="preserve">
+    <value>Choisir un cours à afficher :</value>
+  </data>
+  <data name="StudentListLabel" xml:space="preserve">
+    <value>Étudiants</value>
+  </data>
+  <data name="TeacherProfile" xml:space="preserve">
+    <value>Profil de l'enseignant</value>
+  </data>
+  <data name="CoursesTaught" xml:space="preserve">
+    <value>Cours enseignés</value>
+  </data>
+  <data name="NameLabel" xml:space="preserve">
+    <value>Nom :</value>
+  </data>
+  <data name="UserIDLabel" xml:space="preserve">
+    <value>ID utilisateur :</value>
+  </data>
+  <data name="FeedbackLabel" xml:space="preserve">
+    <value>Retour d'information</value>
+  </data>
+  <data name="SendFeedbackButton" xml:space="preserve">
+    <value>Envoyer les commentaires</value>
+  </data>
+  <data name="UpdateGradesButton" xml:space="preserve">
+    <value>Mettre à jour les notes</value>
+  </data>
+  <data name="GradeColumn" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="NoAccountLabel" xml:space="preserve">
+    <value>Vous n'avez pas de compte ?</value>
+  </data>
+  <data name="CreateAccountLink" xml:space="preserve">
+    <value>Créer un compte</value>
+  </data>
+  <data name="MenuStudentManagement" xml:space="preserve">
+    <value>Gestion des étudiants</value>
+  </data>
+  <data name="MenuCreateStudent" xml:space="preserve">
+    <value>Créer un étudiant</value>
+  </data>
+  <data name="MenuManageStudent" xml:space="preserve">
     <value>Gérer les étudiants</value>
   </data>
-	<data name="MenuAthletesStudent" xml:space="preserve">
+  <data name="MenuAthletesStudent" xml:space="preserve">
     <value>Étudiant athlète</value>
   </data>
-	<data name="MenuTeacherManagement" xml:space="preserve">
+  <data name="MenuTeacherManagement" xml:space="preserve">
     <value>Gestion des enseignants</value>
   </data>
-	<data name="MenuCreateTeacher" xml:space="preserve">
+  <data name="MenuCreateTeacher" xml:space="preserve">
     <value>Créer un enseignant</value>
   </data>
-	<data name="MenuAcademicTracking" xml:space="preserve">
+  <data name="MenuAcademicTracking" xml:space="preserve">
     <value>Suivi académique</value>
   </data>
-	<data name="MenuPartTimeStudent" xml:space="preserve">
+  <data name="MenuPartTimeStudent" xml:space="preserve">
     <value>Étudiant à temps partiel</value>
   </data>
-	<data name="MenuFullTimeStudent" xml:space="preserve">
+  <data name="MenuFullTimeStudent" xml:space="preserve">
     <value>Étudiant à temps plein</value>
   </data>
-
-	<data name="FullTimeTitle" xml:space="preserve"><value>Étudiants à temps plein</value></data>
-	<data name="FullTimeGroupBox" xml:space="preserve"><value>Liste des étudiants</value></data>
-	<data name="Header_StudentID" xml:space="preserve"><value>ID Étudiant</value></data>
-	<data name="Header_Name" xml:space="preserve"><value>Nom</value></data>
-	<data name="Header_Address" xml:space="preserve"><value>Adresse</value></data>
-	<data name="Header_Contact" xml:space="preserve"><value>Contact d'urgence</value></data>
-	<data name="Header_StudentType" xml:space="preserve"><value>Type d'étudiant</value></data>
-
-	<data name="EnterStudentID" xml:space="preserve">
+  <data name="Header_StudentID" xml:space="preserve">
+    <value>ID Étudiant</value>
+  </data>
+  <data name="Header_Name" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="Header_Address" xml:space="preserve">
+    <value>Adresse</value>
+  </data>
+  <data name="Header_Contact" xml:space="preserve">
+    <value>Contact d'urgence</value>
+  </data>
+  <data name="Header_StudentType" xml:space="preserve">
+    <value>Type d'étudiant</value>
+  </data>
+  <data name="EnterStudentID" xml:space="preserve">
     <value>Entrez l'ID étudiant</value>
-    </data>
-
-
-
+  </data>
+  <data name="StudentSaved" xml:space="preserve">
+    <value>L'étudiant a été créé avec succès !</value>
+  </data>
+  <data name="WelcomeText" xml:space="preserve">
+    <value>Bienvenue</value>
+  </data>
+  <data name="EnterUsername" xml:space="preserve">
+    <value>Entrez votre nom d'utilisateur:</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Se connecter</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Système de gestion des étudiants</value>
+  </data>
+  <data name="AdminDashboard" xml:space="preserve">
+    <value>Tableau de bord d'administration</value>
+  </data>
+  <data name="StudentProfileView" xml:space="preserve">
+    <value>Affichage du profil de l'étudiant</value>
+  </data>
+  <data name="ProvidedGrades" xml:space="preserve">
+    <value>Les notes ont été mises à jour si elles étaient fournies !</value>
+  </data>
+  <data name="FeedbackSent" xml:space="preserve">
+    <value>Un retour a été envoyé à l'étudiant !</value>
+  </data>
+  <data name="EmptyFeedback" xml:space="preserve">
+    <value>Rien de fourni dans les commentaires !</value>
+  </data>
 </root>

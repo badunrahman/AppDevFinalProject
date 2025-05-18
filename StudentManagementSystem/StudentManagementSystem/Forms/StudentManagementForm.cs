@@ -94,6 +94,18 @@ namespace StudentManagementSystem.Forms
                         enrollCmd.ExecuteNonQuery();
                     }
                 }
+
+                using (var gradeCmd = new SqlCommand(
+                    "INSERT INTO Grades(EnrollmentID, Grade) VALUES(@enrollid, @grade)", conn)){
+                    var enrollVal = gradeCmd.Parameters.AddWithValue("@enrollid", SqlDbType.Int);
+                    gradeCmd.Parameters.AddWithValue("@grade", 0);
+
+                    foreach (CourseItem ci in coursesCheckedListBox.CheckedItems)
+                    {
+                        enrollVal.Value = DatabaseConnection.getEnrollmentID(newStudentId, ci.CourseID);
+                        gradeCmd.ExecuteNonQuery();
+                    }
+                }
             }
 
             MessageBox.Show(rm.GetString("StudentSaved", CultureInfo.CurrentUICulture));
@@ -110,7 +122,17 @@ namespace StudentManagementSystem.Forms
 
         private void clearButton_Click(object sender, EventArgs e)
         {
-
+            nameTextBox.Text = "";
+            addressTextBox.Text = "";
+            contactTextBox.Text = "";
+            fullTimeRadioButton.Checked = false;
+            partTimeRadioButton.Checked = false;
+            athleteRadioButton.Checked = false;
+            for (int i = 0; i < coursesCheckedListBox.Items.Count; i++)
+            {
+                coursesCheckedListBox.SetItemChecked(i, false);
+            }
+            teachersListBox.Text = "";
         }
 
         private void StudentManagementForm_Load(object sender, EventArgs e)

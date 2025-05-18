@@ -56,7 +56,7 @@ namespace StudentManagementSystem.Models
             fullTimeStudentToolStripMenuItem.Text = rm.GetString("MenuFullTimeStudent", ci);
 
             studentIdTextBox.Text = rm.GetString("EnterStudentID", ci);
-            studentIdTextBox.ForeColor = Color.Gray;
+            this.Text = rm.GetString("AdminDashboard", ci);
         }
 
         private void CircularPictureBox(PictureBox picBox)
@@ -85,10 +85,6 @@ namespace StudentManagementSystem.Models
             }
         }
 
-        private void adminNameLabel_Click(object sender, EventArgs e) { }
-
-        private void studentIdTextBox_TextChanged(object sender, EventArgs e) { }
-
         private void studentIdTextBox_Enter(object sender, EventArgs e)
          {
             string placeholder = rm.GetString("EnterStudentID", CultureInfo.CurrentUICulture);
@@ -108,8 +104,6 @@ namespace StudentManagementSystem.Models
             }
         }
 
-        private void studnetManagementToolStripMenuItem_Click(object sender, EventArgs e) { }
-
         private void createStudentToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var studentForm = new StudentManagementForm();
@@ -127,15 +121,11 @@ namespace StudentManagementSystem.Models
             athleteStudent.Show();
         }
 
-        private void teacherManagementToolStripMenuItem_Click(object sender, EventArgs e) { }
-
         private void createTeacherToolStripMenuItem_Click(object sender, EventArgs e)
         {
             createAccountForm createAccount = new createAccountForm();
             createAccount.Show();
         }
-
-        private void academicTrackingToolStripMenuItem_Click(object sender, EventArgs e) { }
 
         private void partTimeStudentToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -148,8 +138,6 @@ namespace StudentManagementSystem.Models
             FullTimeStudent fullTime = new FullTimeStudent();
             fullTime.Show();
         }
-
-        private void grpQuickSearchGroupBox_Enter(object sender, EventArgs e) { }
 
         private void searchButton_Click(object sender, EventArgs e)
         {

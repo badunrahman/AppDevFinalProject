@@ -32,6 +32,19 @@ namespace StudentManagementSystem.Forms
         private void TeacherDashboard_Load(object sender, EventArgs e)
         {
             ThemeManager.ApplyTheme(this);
+            if (ThemeManager.IsDarkTheme)
+            {
+                studentDataGridView.BackgroundColor = Color.FromArgb(30, 30, 30);
+                studentDataGridView.ForeColor = Color.FromArgb(30, 30, 30);
+                studentDataGridView.GridColor = Color.DimGray;
+                studentDataGridView.RowsDefaultCellStyle.ForeColor = Color.White;
+                studentDataGridView.RowsDefaultCellStyle.BackColor = Color.FromArgb(30, 30, 30);
+                studentDataGridView.EnableHeadersVisualStyles = false;
+                studentDataGridView.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(50, 50, 50);
+                studentDataGridView.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+                studentDataGridView.RowHeadersDefaultCellStyle.BackColor = Color.FromArgb(50, 50, 50);
+                studentDataGridView.RowHeadersDefaultCellStyle.ForeColor = Color.White;
+            }
             SetLanguage(AppSettings.CurrentLanguage);
 
             int teachID = DatabaseConnection.getTeacherIdByUserId(userId);
@@ -43,8 +56,8 @@ namespace StudentManagementSystem.Forms
                 MessageBox.Show("No teacher found");
             }
 
-            IdLabel.Text = rm.GetString("TeacherID", CultureInfo.CurrentUICulture) + ": " + teacher.UserID;
-            nameLabel.Text = rm.GetString("TeacherName", CultureInfo.CurrentUICulture) + ": " + teacher.Name;
+            IdLabel.Text = rm.GetString("LabelTeacherID", CultureInfo.CurrentUICulture) + ": " + teacher.UserID;
+            nameLabel.Text = rm.GetString("LabelName", CultureInfo.CurrentUICulture) + ": " + teacher.Name;
 
             List<Course> courses = DatabaseConnection.getTeacherCourses(teacherId);
             foreach (var course in courses)
@@ -59,7 +72,8 @@ namespace StudentManagementSystem.Forms
             CultureInfo ci = new CultureInfo(langCode);
             Thread.CurrentThread.CurrentUICulture = ci;
 
-            titleLabel.Text = rm.GetString("TeacherDashboardTitle", ci);
+            this.Text = rm.GetString("TeacherDashboardTitle", ci);
+            titleLabel.Text = rm.GetString("Title", ci);
             chooseCourseLabel.Text = rm.GetString("ChooseCourse", ci);
             label2.Text = rm.GetString("StudentsLabel", ci);
             teacherProfileGroupBox.Text = rm.GetString("TeacherProfileGroupBox", ci);
@@ -127,6 +141,7 @@ namespace StudentManagementSystem.Forms
                     }
                 }
             }
+            MessageBox.Show(rm.GetString("ProvidedGrades", CultureInfo.CurrentUICulture));
         }
 
         private void sendFeedbackButton_Click(object sender, EventArgs e)
@@ -147,10 +162,12 @@ namespace StudentManagementSystem.Forms
                 {
                     DatabaseConnection.createFeedback(enrollmentId, feedback);
                 }
+
+                MessageBox.Show(rm.GetString("FeedbackSent", CultureInfo.CurrentUICulture));
             }
             else
             {
-                MessageBox.Show("Nothing provided in feedback!");
+                MessageBox.Show(rm.GetString("EmptyFeedback", CultureInfo.CurrentUICulture));
             }
         }
 

@@ -32,6 +32,19 @@ namespace StudentManagementSystem.Forms
         private void StudentProfileView_Load(object sender, EventArgs e)
         {
             ThemeManager.ApplyTheme(this);
+            if (ThemeManager.IsDarkTheme)
+            {
+                gradesDataGridView.BackgroundColor = Color.FromArgb(30, 30, 30);
+                gradesDataGridView.ForeColor = Color.FromArgb(30, 30, 30);
+                gradesDataGridView.GridColor = Color.DimGray;
+                gradesDataGridView.RowsDefaultCellStyle.ForeColor = Color.White;
+                gradesDataGridView.RowsDefaultCellStyle.BackColor = Color.FromArgb(30, 30, 30);
+                gradesDataGridView.EnableHeadersVisualStyles = false;
+                gradesDataGridView.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(50, 50, 50);
+                gradesDataGridView.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+                gradesDataGridView.RowHeadersDefaultCellStyle.BackColor = Color.FromArgb(50, 50, 50);
+                gradesDataGridView.RowHeadersDefaultCellStyle.ForeColor = Color.White;
+            }
             SetLanguage(AppSettings.CurrentLanguage);
             this.gradesTableAdapter.Fill(this.studentDBDataSet.Grades);
             studentProfilePictureBox.Paint += studentProfilePictureBox_Paint;
@@ -58,6 +71,7 @@ namespace StudentManagementSystem.Forms
             allGradeInputLabel.Text = rm.GetString("AllGradesLabel", ci);
             searchIdLabel.Text = rm.GetString("SearchID", ci);
             searchButton.Text = rm.GetString("SearchBtn", ci);
+            this.Text = rm.GetString("StudentProfileView", ci);
         }
 
         private void studentProfilePictureBox_Paint(object sender, PaintEventArgs e)

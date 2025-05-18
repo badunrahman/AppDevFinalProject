@@ -72,7 +72,7 @@
             this.dashboardPanel.Controls.Add(this.chooseCourseLabel);
             this.dashboardPanel.Location = new System.Drawing.Point(12, 73);
             this.dashboardPanel.Name = "dashboardPanel";
-            this.dashboardPanel.Size = new System.Drawing.Size(983, 410);
+            this.dashboardPanel.Size = new System.Drawing.Size(1022, 410);
             this.dashboardPanel.TabIndex = 2;
             // 
             // updateGradesButton
@@ -111,7 +111,7 @@
             this.teacherProfileGroupBox.Controls.Add(this.IdLabel);
             this.teacherProfileGroupBox.Location = new System.Drawing.Point(625, 12);
             this.teacherProfileGroupBox.Name = "teacherProfileGroupBox";
-            this.teacherProfileGroupBox.Size = new System.Drawing.Size(347, 150);
+            this.teacherProfileGroupBox.Size = new System.Drawing.Size(394, 150);
             this.teacherProfileGroupBox.TabIndex = 8;
             this.teacherProfileGroupBox.TabStop = false;
             this.teacherProfileGroupBox.Text = "Teacher Profile";
@@ -130,7 +130,7 @@
             this.coursesListBox.FormattingEnabled = true;
             this.coursesListBox.Location = new System.Drawing.Point(132, 42);
             this.coursesListBox.Name = "coursesListBox";
-            this.coursesListBox.Size = new System.Drawing.Size(188, 108);
+            this.coursesListBox.Size = new System.Drawing.Size(256, 108);
             this.coursesListBox.TabIndex = 2;
             // 
             // nameLabel
@@ -165,14 +165,14 @@
             this.feedbackTextBox.Location = new System.Drawing.Point(625, 189);
             this.feedbackTextBox.Multiline = true;
             this.feedbackTextBox.Name = "feedbackTextBox";
-            this.feedbackTextBox.Size = new System.Drawing.Size(347, 166);
+            this.feedbackTextBox.Size = new System.Drawing.Size(394, 166);
             this.feedbackTextBox.TabIndex = 6;
             // 
             // sendFeedbackButton
             // 
             this.sendFeedbackButton.Location = new System.Drawing.Point(851, 361);
             this.sendFeedbackButton.Name = "sendFeedbackButton";
-            this.sendFeedbackButton.Size = new System.Drawing.Size(121, 33);
+            this.sendFeedbackButton.Size = new System.Drawing.Size(162, 33);
             this.sendFeedbackButton.TabIndex = 5;
             this.sendFeedbackButton.Text = "Send feedback";
             this.sendFeedbackButton.UseVisualStyleBackColor = true;
@@ -208,7 +208,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(999, 495);
+            this.ClientSize = new System.Drawing.Size(1046, 495);
             this.Controls.Add(this.dashboardPanel);
             this.Controls.Add(this.titleLabel);
             this.Name = "TeacherDashboard";

@@ -37,7 +37,20 @@ namespace StudentManagementSystem.Forms
         private void athleteStudentView_Load(object sender, EventArgs e)
         {
             ThemeManager.ApplyTheme(this);
-            SetLanguage(AppSettings.CurrentLanguage); // 🔄 apply global language
+            if (ThemeManager.IsDarkTheme)
+            {
+                athleteDataGridView.BackgroundColor = Color.FromArgb(30, 30, 30);
+                athleteDataGridView.ForeColor = Color.FromArgb(30, 30, 30);
+                athleteDataGridView.GridColor = Color.DimGray;
+                athleteDataGridView.RowsDefaultCellStyle.ForeColor = Color.White;
+                athleteDataGridView.RowsDefaultCellStyle.BackColor = Color.FromArgb(30, 30, 30);
+                athleteDataGridView.EnableHeadersVisualStyles = false;
+                athleteDataGridView.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(50, 50, 50);
+                athleteDataGridView.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+                athleteDataGridView.RowHeadersDefaultCellStyle.BackColor = Color.FromArgb(50, 50, 50);
+                athleteDataGridView.RowHeadersDefaultCellStyle.ForeColor = Color.White;
+            }
+            SetLanguage(AppSettings.CurrentLanguage);
 
             List<Student> athletes = DatabaseConnection.getAthleteStudents();
             athleteDataGridView.DataSource = null;
